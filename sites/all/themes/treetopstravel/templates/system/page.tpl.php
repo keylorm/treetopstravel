@@ -18,17 +18,18 @@
     <a href="#" id="messages-toggle"><?php print t('Close');?></a>
   </div>
   <?php endif; ?>
+  <?php if ($page['top_header']): ?>
+    <div class="top-header-container" id="top-header">
+      <?php print render($page['top_header']); ?>
+    </div>  
+  <?php endif; ?>
   <div class="grid">
   <?php if ($page['utility_bar']): ?>
     <div class="utility-bar">
       <?php print render($page['utility_bar']); ?>
     </div><!-- end utility bar -->
   <?php endif; ?>
-  <?php if ($page['top_header']): ?>
-    <div class="top-header-container" id="top-header">
-      <?php print render($page['top_header']); ?>
-    </div>  
-  <?php endif; ?>
+  
 
   <?php if ($logo): ?>
     <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
