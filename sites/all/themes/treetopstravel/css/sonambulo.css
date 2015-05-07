@@ -2,7 +2,7 @@
   =BASE
 --------------------------------------------- */
 html {
-  border-top: 6px solid #000;
+  /*border-top: 6px solid #000;*/
 }
 body {
   padding: 0;
@@ -11,7 +11,7 @@ body {
   =LAYOUT
 --------------------------------------------- */
 .header {
-  background: #3C3B3B;
+  /*background: #3C3B3B;*/
 }
 .header .grid,
 .main-content,
