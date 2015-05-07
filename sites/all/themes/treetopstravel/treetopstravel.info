@@ -54,7 +54,7 @@ stylesheets[all][] = css/sonambulo.css
 stylesheets[all][] = css/global.css
 
 ;-------------- JS -------------
-
+scripts[][] = js/global.js
 
 
 ; Information added by drupal.org packaging script on 2013-10-01
