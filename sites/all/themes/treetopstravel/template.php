@@ -127,3 +127,18 @@ function treetopstravel_preprocess_block(&$vars, $hook) {
   // Add a striping class.
   $vars['classes_array'][] = 'block-' . $vars['zebra'];
 }
+
+function treetopstravel_menu_link(array $variables) {
+//add class for li
+   $variables['element']['#attributes']['class'][] = 'menu-' . $variables['element']['#original_link']['mlid'];
+//add class for a
+   $variables['element']['#localized_options']['attributes']['class'][] = 'menu-' . $variables['element']['#original_link']['mlid'];
+//dvm($variables['element']);
+  return theme_menu_link($variables);
+}
+function treetopstravel_preprocess_page(&$vars) {
+    // - page--example.tpl.php  
+  if (isset($vars['node'])) {
+    $vars['theme_hook_suggestion'] = 'page__'.$vars['node']->type; //
+  }
+}
