@@ -37,7 +37,6 @@ regions[below_content]      = Below Content
 
 regions[pre_footer]             = Pre Footer
 regions[footer_left]             = Footer Left Column
-regions[footer_center]             = Footer Center Column
 regions[footer_right]             = Footer Right Column
 regions[footer]             = Footer One Column
 regions[closure]            = Closure
