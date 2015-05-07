@@ -20,7 +20,9 @@
   <?php endif; ?>
   <?php if ($page['top_header']): ?>
     <div class="top-header-container" id="top-header">
-      <?php print render($page['top_header']); ?>
+      <div class="grid-1000">
+        <?php print render($page['top_header']); ?>
+      </div>
     </div>  
   <?php endif; ?>
   <div class="grid">
@@ -119,11 +121,15 @@
 <?php endif; // end Below Content ?>
 
 <footer class="footer-zone" role="contentinfo">
+  
   <?php if ($page['pre_footer']): ?>
     <div class="prefooter">
-      <?php print render($page['pre_footer']); ?>
+      <div class="grid-1000">
+        <?php print render($page['pre_footer']); ?>
+      </div>
     </div>
   <?php endif; ?>
+  <div class="grid-1000">
   <?php if ($page['footer_left']): ?>
     <div class="footer-left">
       <?php print render($page['footer_left']); ?>
@@ -139,8 +145,11 @@
       <?php print render($page['footer_right']); ?>
     </div>
   <?php endif; ?>
+  </div>
   <div class="footer">
-    <?php print render($page['footer']); ?>
+    <div class="grid-1000">
+      <?php print render($page['footer']); ?>
+    </div>
   </div>
 </footer>
 
