@@ -1,23 +1,243 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo|Roboto:400,500,700|Open+Sans);
 /*
   ==========================================================================
    CSS 1 - Andrey S - 05-05-2015
   ========================================================================== 
  */
 
-#top-header{
-	background-color: #F68C1E;
-	height: 55px;
+/* #### BASE #### */
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: #58595B;
 }
-/*body .header .grid{
-	max-width: 100%;
-	
-}*/
+a{
+	text-decoration: none;
+	color: #58595B;
+}
 .grid-1000{
 	max-width: 70em;
 	margin: 0 auto;
 	overflow: hidden;	
 }
+header.header,
+div.main-content,
+footer.footerzone{
+	overflow:hidden;
+	clear:both;
+}
+.lang-dropdown-select-element{
+	border: none;
+	background: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	width: 90px !important;
+	height: 21px;		
+}
 
+/* #### TOP #### */
+#top-header{
+	background-color: #F68C1E;
+	height: 55px;
+	box-sizing:border-box;
+	padding-top: 14px;
+	
+}
+#block-block-1{
+	margin-left: 371px;
+}
+#top-header div > div{
+	float:left;
+}
+#block-lang-dropdown-language{
+	margin: 0px 10px;
+}
+.header .lang-dropdown-select-element{
+	background-image: url('../images/selector_idioma.png');
+	color: #FFF;
+}
+#block-menu-menu-top-menu .menu{
+	float:left;
+}
+#block-menu-menu-top-menu .menu li{
+}
+#block-menu-menu-top-menu .menu li a{
+	border-right: 1px solid #FFF;
+	padding-right: 10px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.search-form{
+	float:right !important;
+	margin: 0px;
+}
+.form-item, .form-actions{
+	margin: 0px;
+}
+.search-form .form-submit{
+	margin: 5px 0px 0px -20px;
+}
+.search-form input[type='text']{
+	width: 140px;
+	height: 25px;
+	padding-right: 20px;
+	border: none;
+	box-sizing:border-box;
+}
+
+#logo{
+	/*float:left;*/
+}
+
+.header .facebook-link{
+	background-image: url('../images/fb_top.png');
+}
+.header .twitter-link{
+	background-image: url('../images/tw_top.png');
+}
+.header .pinterest-link{
+	background-image: url('../images/pi_top.png');
+}
+.header .google-link{
+	background-image: url('../images/gm_top.png');
+}
+.header .youtube-link{
+	background-image: url('../images/yt_top.png');
+}
+
+
+/* #### MENUS #### */
+.menu{
+	margin: 0px; padding: 0px;
+}
+.menu li{
+	margin: 0px; padding: 0px;
+	display:inline-block;
+	*zoom: 1;
+	*display: inline;	
+}
+.menu li a{
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+}
+
+
+/* #### FOOTER #### */
+.footer-zone{
+	background-color: #F1F2F2;
+	box-sizing:border-box;
+	padding-bottom: 150px;
+}
+.footer-zone .prefooter{
+	height: 55px;
+	background-color: #D1D3D4;
+	margin-bottom: 25px;
+}
+.footer-zone .prefooter .menu li{
+	margin-top: 20px;
+}
+.footer-zone .prefooter .menu li a{
+	border-left: 1px solid #58595B;
+	line-height: 15px;
+	padding: 0px 0px 0px 10px;
+}
+.footer-zone .prefooter .menu li:first-child a{
+	border-left: none;
+}
+
+.footer-left{
+	width: 70%;
+	float: left;		
+}
+.logo-footer-content{
+	float:left;
+	margin-right: 50px;
+}
+.footer-left .block,
+.contact-info-footer{
+	float:left;
+}
+.footer-left .block:first-child{
+	margin-right: 50px;
+}
+.contact-info-ul{
+	list-style: none;
+	padding-left: 0px;
+}
+.contact-info-ul li{
+	padding-left: 35px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.contact-info-ul li.mapa{
+	background-image: url('../images/map_footer.png');
+	line-height: 15px;
+}
+.contact-info-ul li.tel{
+	background-image: url('../images/tel_footer.png');
+}
+.contact-info-ul li.email{
+	background-image: url('../images/email_footer.png');
+}
+
+.footer-colaboradores h3{
+	color: #58595B;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	margin-top: 0px; margin-bottom: 0px;
+}
+
+.footer-right{
+	width: 30%;
+	float: left;		
+}
+#block-multiblock-1{
+	clear:both;
+}
+
+.redes-top-header{
+	width: 200px;
+	float:right;
+	clear:both;
+	overflow:hidden;
+}
+.redes-top-header div a{
+	float:left;
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+}
+.facebook-link{
+	background-image: url('../images/fb_footer.png');
+}
+.twitter-link{
+	background-image: url('../images/tw_footer.png');
+}
+.pinterest-link{
+	background-image: url('../images/pi_footer.png');
+}
+.google-link{
+	background-image: url('../images/gm_footer.png');
+}
+.youtube-link{
+	background-image: url('../images/yt_footer.png');
+}
+
+.footer-zone .lang-dropdown-select-element{
+	background-image: url('../images/selector_idioma_footer.png');
+	color: #58595B;
+	float:right;
+	margin-top: 15px;
+}
 
 /*
   ==========================================================================

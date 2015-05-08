@@ -13,13 +13,13 @@ body {
 .header {
   /*background: #3C3B3B;*/
 }
-.header .grid,
+/*.header .grid,
 .main-content,
 .footer {
   max-width: 70em;
   margin: 0 auto;
   overflow: hidden;
-}
+}*/
 
 .one-sidebar .main {
   width: 60%;
