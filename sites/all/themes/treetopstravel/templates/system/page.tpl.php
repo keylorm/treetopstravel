@@ -31,7 +31,7 @@
     </div>  
   <?php endif; ?>
   <div class="main-header">
-    <div class="grid-1000">
+    
   <?php if ($page['utility_bar']): ?>
     <div class="utility-bar">
       <?php print render($page['utility_bar']); ?>
@@ -62,7 +62,7 @@
   <?php endif; ?>
 
   <?php print render($page['header']); ?>
-</div>
+
 </div>
 </header>
 
