@@ -74,5 +74,6 @@ $imagen ="";
   <ul class="slides">
 		<?php print $imagen ?>
 	</ul>
+	<div class="container-nav"></div>
 </div>
 <?php 	flexslider_add(); } ?>

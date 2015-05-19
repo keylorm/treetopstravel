@@ -3,6 +3,7 @@ jQuery(window).load(function() {
     animation: "slide",
     animationLoop: true,
     pauseOnHover: false,
-    controlsContainer: ".container-nav"
+    controlsContainer: ".container-nav",
+    directionNav: false
   });
 });
