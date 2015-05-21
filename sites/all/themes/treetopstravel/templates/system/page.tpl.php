@@ -74,7 +74,7 @@
 
 <div class="main-content">
   <?php if ($breadcrumb): ?>
-    <?php print $breadcrumb; ?>
+    <div class="grid-1000"><?php print $breadcrumb; ?></div>
   <?php endif; ?>
 
   <?php if ($page['highlighted']): ?>
