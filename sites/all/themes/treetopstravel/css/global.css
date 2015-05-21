@@ -91,11 +91,40 @@ footer.footerzone{
 .flex-direction-nav{
 	display:none;
 }
-.flex-control-nav{
-	bottom: 155px;
+.container-nav{
+	position:absolute;
+	width: 1000px;
+	margin: 0 auto; 
+	right: 0px;
 	left: 0px;
-	width: 480px;
+	top: 70%;
+	z-index: 9999; 	
 }
+.flex-control-nav{
+	width: 470px;
+}
+.flex-control-nav li{
+}
+.flex-control-paging li a{
+	width: 25px; height: 25px;
+	background: none;
+	background-image: url(../images/bullet_slider.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: none;
+}
+.flex-control-paging li a:hover{
+	background: none;
+	background-image: url(../images/bullet_slider_act.png);
+	box-shadow: none;
+}
+.flex-control-paging li a.flex-active{
+	background: none;
+	background-image: url(../images/bullet_slider_act.png);
+	box-shadow: none;
+}
+
+
 
 
 /* #### TOP #### */
@@ -347,6 +376,64 @@ footer.footerzone{
 	float:right;
 	margin-top: 15px;
 }
+
+/* CONTACTO */
+.webform-client-form-3 .form-text,
+.webform-client-form-4 .form-text,
+.webform-client-form-3 .form-select,
+.webform-client-form-4 .form-select,
+.webform-client-form-3 .form-textarea,
+.webform-client-form-4 .form-textarea{
+	width: 100%;
+	background-color: #F1F2F2;
+	border: none;
+	height: 50px;
+	padding-left: 10px;
+}
+.webform-client-form-3 .form-textarea,
+.webform-client-form-4 .form-textarea{
+	padding-top: 10px;
+	height: 200px;
+}
+.webform-client-form-3 .form-select,
+.webform-client-form-4 .form-select{
+    background-image: url(../images/selector_contacto.png);
+	background-position: 98% 50%;
+	background-repeat:no-repeat;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;	
+}
+.webform-client-form-3 label,
+.webform-client-form-4 label{
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height:55px;	
+}
+
+.webform-client-form-3 .form-submit,
+.webform-client-form-4 .form-submit{
+	border: none;
+	display:block;
+	height: 44px;
+	padding-left: 15px;
+  padding-right: 52px;
+  padding-left: ;
+  float: right;
+  background-color: #f48a1e;
+  background-image: url('../images/next_slider_map.png');
+  background-position: 92% 50%;
+  background-repeat: no-repeat;
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
 
 /*
   ==========================================================================
