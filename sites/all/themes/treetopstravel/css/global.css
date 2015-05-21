@@ -492,12 +492,14 @@ h1.title{
 .view-tipo-de-atraccion .views-row .tipo-atraccion-imagen{
 	width: 100%;
 	height: 315px;
-	margin-top: 50px;
-	padding-top: 65px;
+	/*margin-top: 50px;
+	padding-top: 65px;*/
 	-webkit-transition: all 500ms ease;
 	transition: all 500ms ease;	
+	position: relative;
 }
-.view-tipo-de-atraccion .views-row .tipo-atraccion-caption{
+.view-tipo-de-atraccion .views-row .tipo-atraccion-caption a{
+	display: block;
 	width: 100%;
 	height: 157px;
 	background-image: url('../images/bg_que_quiere_conocer.png');
@@ -508,18 +510,30 @@ h1.title{
 	font-family:'Open Sans', sans-serif;
 	color: white;
 	font-size: 31px;
-	line-height: 156px;
+	/*line-height: 156px;*/
 	text-align: center;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+	position: absolute;
+	z-index: 999;
+	top: 85px;
+	padding-top: 65px;
+}
+.view-tipo-de-atraccion .views-row-3 .tipo-atraccion-caption a{
+	padding-top: 25px;
+}
+.view-tipo-de-atraccion .views-row .tipo-atraccion-imagen p{
+	margin: 0px;
 }
 
-.view-tipo-de-atraccion .views-row:hover .tipo-atraccion-caption{
+.view-tipo-de-atraccion .views-row:hover .tipo-atraccion-caption a{
 	height: 100%;
 	background-color: rgba(246, 140, 30, 0.8);
 	background-image: none;
 	background-position: 0% 0%;
 	background-repeat: repeat;
-	line-height: 290px;
+	/*line-height: 290px;*/
+	top: 0px;
+	padding-top: 100px;
 }
 /*
   ==========================================================================
