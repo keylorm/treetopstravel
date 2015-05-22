@@ -70,7 +70,7 @@ $imagen ="";
 		}
 	}
 } ?>
-<div class="flexslider">
+<div class="flexslider flexslider-home">
   <ul class="slides">
 		<?php print $imagen ?>
 	</ul>
