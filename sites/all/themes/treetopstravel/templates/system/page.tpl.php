@@ -13,11 +13,11 @@
   
   <?php if ($page['top_header']): ?>
     <div class="top-header-container" id="top-header">
-      <div class="grid-1000">
+      <div class="grid-1000 top-header-wrapper">
         <?php if ($logo): ?>
-    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+    <div class="logo-container"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
       <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-    </a>
+    </a></div>
   <?php endif; ?>
         <?php print render($page['top_header']); ?>
       </div>
