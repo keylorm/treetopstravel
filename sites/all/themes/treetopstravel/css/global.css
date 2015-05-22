@@ -596,6 +596,48 @@ h1.title{
 	background-color: #9DB73B;
 }
 
+#block-block-5{
+	background-color: #F68C1E;
+	padding-top: 10px;
+}
+.llamado-texto{
+	width: 75%;
+	float: left;
+}
+.llamado-texto p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 21px;
+	font-weight: normal;	
+	color: #FFF;
+
+}
+.llamado-texto p span{
+	text-transform: uppercase;
+	font-family: 'Arvo', sans-serif;
+	font-size: 28px;
+	font-weight: normal;	
+	color: #FFF;		
+}
+.llamado-boton{
+	width: 25%;
+	float: left;
+}
+.llamado-boton a{
+	display:block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 21px;
+	font-weight: 500;	
+	color: #FFF;
+	text-transform: uppercase;
+	border: solid 1px #FFF;
+	background-image: url(../images/icon_btn_formhome.png);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-top: 25px;
+}
 /*
   ==========================================================================
    FIN CSS 1 - Andrey S ****************************************************
