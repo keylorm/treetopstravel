@@ -1,5 +1,5 @@
 jQuery(window).load(function() {
-  jQuery('.flexslider').flexslider({
+  jQuery('.flexslider.flexslider-home').flexslider({
     animation: "slide",
     animationLoop: true,
     pauseOnHover: false,

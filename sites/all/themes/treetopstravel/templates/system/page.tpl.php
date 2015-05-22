@@ -10,14 +10,7 @@
  */
 ?>
 <header class="header" role="banner">
-  <?php if ($messages): ?>
-  <div class="messages-wrapper">
-    <div class="messages-content">
-      <?php print $messages; ?>
-    </div>
-    <a href="#" id="messages-toggle"><?php print t('Close');?></a>
-  </div>
-  <?php endif; ?>
+  
   <?php if ($page['top_header']): ?>
     <div class="top-header-container" id="top-header">
       <div class="grid-1000">
@@ -83,6 +76,13 @@
 
     <a id="main-content"></a>
     <div class="main" role="main">
+       <?php if ($messages): ?>
+  <div class="messages-wrapper">
+    <div class="messages-content">
+      <?php print $messages; ?>
+    </div>
+  </div>
+  <?php endif; ?>
       <div class="grid-1000"><?php print render($title_prefix); ?>
       <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
       <?php print render($title_suffix); ?>
