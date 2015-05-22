@@ -102,6 +102,13 @@ function treetopstravel_html_head_alter(&$head_elements) {
 }
 
 /**
+ * Implements hook_html_form_alter().
+ */
+function treetopstravel_form_alter(&$form, &$form_state, $form_id) {
+  dpm($form);
+}
+
+/**
  * Implements hook_page_alter().
  * https://gist.github.com/jacine/1378246
  */
