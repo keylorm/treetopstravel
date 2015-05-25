@@ -697,6 +697,53 @@ h1.title{
 	padding-left: 10px;
 	margin-top: 25px;
 }
+
+
+/* Viaje a su medida */
+
+.page-node-7 h1.title{
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #F68C1E;
+  text-transform:none;	
+}
+
+#webform-client-form-7{
+	background-image: url('../images/sombra_form_viaje.png');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	padding-bottom: 127px;
+}
+#webform-client-form-7 > div{
+	background-color: #F1F2F2;
+	box-sizing:border-box;
+	padding: 20px;
+}
+#webform-client-form-7 .webform-progressbar-page-label{
+	display: none;
+}
+
+.webform-progressbar-outer{
+	border: none;
+	height: 1px;
+	background-color: #9DB73B;
+}
+.webform-progressbar-inner{
+	background: none;
+	height: 1px;
+}
+.webform-progressbar-page {
+  width: 21px;
+  height: 21px;
+  margin: -12px -4px;
+  border: 1px solid #9DB73B;
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+
 /*
   ==========================================================================
    FIN CSS 1 - Andrey S ****************************************************
