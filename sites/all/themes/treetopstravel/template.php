@@ -105,9 +105,22 @@ function treetopstravel_html_head_alter(&$head_elements) {
  * Implements hook_html_form_alter().
  */
 function treetopstravel_form_alter(&$form, &$form_state, $form_id) {
-  if($form_id == "webform_client_form_7"){
+  if($form_id == "webform_client_form_7" || $form_id == "webform_client_form_18"){
     $form['#attributes']['class'][] = 'grid-1000';
+    //agregamos la libreria de datepicker para el formulario
+    $form['#after_build'] = array('custom_form_uidatepicker');
   }
+}
+
+function custom_form_uidatepicker($form, $form_state) {
+  drupal_add_library('system', 'ui.datepicker');
+  drupal_add_js("(function ($) { $('.datepicker').datepicker({
+      dateFormat: 'dd/mm/yy'
+    });
+    $('.datepicker').datepicker( 'option', 'minDate', 'd' );
+    })(jQuery);", array('type' => 'inline', 'scope' => 'footer', 'weight' => 5));
+
+    return $form;
 }
 
 /**
