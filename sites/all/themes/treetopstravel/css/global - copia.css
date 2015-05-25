@@ -151,62 +151,21 @@ footer.footerzone{
 }
 
 /* #### TOP #### */
-
-.header{
-	z-index: 1;
-}
-
-.above-content {
-    margin-top: -140px;
-    position: relative;
-    z-index: 0;
-    max-height: 620px;
-    overflow: hidden;
-}
 #top-header{
 	background-color: #F68C1E;
 	height: 55px;
 	box-sizing:border-box;
-	z-index: 99;
-	position: relative;
-
-	width: 100%;
-	
-	
-}
-.grid-1000.top-header-wrapper {
-    overflow: visible;
-}
-
-#block-block-1{
 	padding-top: 14px;
-	}
-
-
-.logo-container{
-	z-index: 1;
+	
 }
-
-.main-header {
-   margin-top: -55px;
-    position: relative;
-    z-index: 0;
+#block-block-1{
+	margin-left: 240px;
 }
-
-#block-menu-menu-top-menu {
-    display: block;
-    float: left;
-    padding-top: 14px;
-}
-#block-custom-search-blocks-1 {
-    padding-top: 14px;
-}	
 #top-header div > div{
 	float:left;
 }
 #block-lang-dropdown-language{
 	margin: 0px 15px 0px 0px;
-	padding-top: 14px;
 }
 .header .lang-dropdown-select-element{
 	background-image: url('../images/selector_idioma.png');
@@ -255,7 +214,7 @@ footer.footerzone{
 
 #logo{
 	float:left;
-	
+	position:absolute;
 	z-index: 999;
 	top: 0px;
 	margin-left: -27px;
@@ -284,7 +243,7 @@ footer.footerzone{
 	height: 90px;
 	top: 55px;
 	left: 0px;
-	z-index: -1;
+	z-index: 99;
 	position:absolute;
 	background-image: url('../images/bg_menu.png');
 	background-repeat: repeat;
@@ -515,8 +474,6 @@ h1.title{
 	margin: 0 auto;
 	position:relative;
 }
-
-
 
 .imagen-top-titulo{
 	position:absolute;
