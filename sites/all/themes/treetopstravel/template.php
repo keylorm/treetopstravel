@@ -105,7 +105,9 @@ function treetopstravel_html_head_alter(&$head_elements) {
  * Implements hook_html_form_alter().
  */
 function treetopstravel_form_alter(&$form, &$form_state, $form_id) {
-  dpm($form);
+  if($form_id == "webform_client_form_7"){
+    $form['#attributes']['class'][] = 'grid-1000';
+  }
 }
 
 /**
