@@ -18,7 +18,7 @@ $imagen ="";
 
 
 		if (isset($items[$i]['field_image']['#items'][0]['uri'])){
-			$url = '/sites/default/files/slides/'.str_replace("public://slides/","",$items[$i]['field_image']['#items'][0]['uri']);
+			$url = '/sites/default/files/slides_internos/'.str_replace("public://slides_internos/","",$items[$i]['field_image']['#items'][0]['uri']);
 			
 
 		}
@@ -83,7 +83,7 @@ $imagen ="";
 		}
 	}
 } ?>
-<div class="flexslider flexslider-home">
+<div class="flexslider flexslider-interno">
   <ul class="slides">
 		<?php print $imagen ?>
 	</ul>
