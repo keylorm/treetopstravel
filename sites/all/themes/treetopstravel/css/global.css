@@ -762,6 +762,7 @@ input[type="checkbox"]:checked + label span {
 	background-color: #F1F2F2;
 	box-sizing:border-box;
 	padding-bottom: 50px;
+	overflow: hidden;
 	
 }
 .form-viaje-a-su-medida .webform-progressbar-page-label{
@@ -777,6 +778,7 @@ input[type="checkbox"]:checked + label span {
 }
 .form-viaje-a-su-medida .webform-component{
 	padding: 20px 50px;
+	clear: both;
 }
 
 .form-viaje-a-su-medida .webform-component > label{
@@ -848,6 +850,16 @@ input[type="checkbox"]:checked + label span {
 	height: 45px;	
 }
 
+.form-viaje-a-su-medida #edit-submitted-adults{
+	background-image: url('../images/adultos.png'), url('../images/selector_formhome.png');
+	background-repeat: no-repeat, no-repeat;
+	background-position: 0% 50%, 99% 50%;	
+}
+.form-viaje-a-su-medida #edit-submitted-children{
+	background-image: url('../images/ninos.png'), url('../images/selector_formhome.png');
+	background-repeat: no-repeat, no-repeat;
+	background-position: 0% 50%, 99% 50%;	
+}
 .form-viaje-a-su-medida .webform-datepicker input[type="image"]{
 	display: none;
 }
@@ -878,6 +890,9 @@ input[type="checkbox"]:checked + label span {
 	background-position: center;
 }
 
+.form-viaje-a-su-medida .form-actions{
+	clear:both;
+}
 .form-viaje-a-su-medida .form-actions .form-submit{
 	position:absolute;
   padding-right: 55px;
