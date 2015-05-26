@@ -101,11 +101,21 @@ function treetopstravel_html_head_alter(&$head_elements) {
   unset($head_elements['system_meta_content_type']);
 }
 
+function treetopstravel_form_element($variables) {
+  
+  if(isset($variables['element']['#title']) && $variables['element']['#type'] == 'checkbox'){
+    $variables['element']['#title'] = "<span></span>".$variables['element']['#title'];
+  }
+  /*if($variables['element']['#field_name'] == 'the_field_name') {
+  }*/
+  return theme_form_element($variables);
+}
+
 /**
  * Implements hook_html_form_alter().
  */
 function treetopstravel_form_alter(&$form, &$form_state, $form_id) {
-  if($form_id == "webform_client_form_7" || $form_id == "webform_client_form_18"){
+  if($form_id == "webform_client_form_7" || $form_id == "webform_client_form_18" || $form_id == "webform_client_form_3" || $form_id == "webform_client_form_18"){
     $form['#attributes']['class'][] = 'grid-1000';
     //agregamos la libreria de datepicker para el formulario
     $form['#after_build'] = array('custom_form_uidatepicker');
