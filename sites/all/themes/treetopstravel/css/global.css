@@ -701,6 +701,32 @@ h1.title{
 
 /* Viaje a su medida */
 
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label {
+    color:#000;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    margin: -1px 4px 0 0;
+    vertical-align:middle;
+    background-image:url('../images/checkoff.png');
+	background-repeat: no-repeat;
+	background-position:center;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background-image:url('../images/checkon.png');
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
 .page-node-7 h1.title{
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
@@ -708,26 +734,86 @@ h1.title{
   color: #F68C1E;
   text-transform:none;	
 }
-
+#webform-client-form-7 label{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #808285;	
+}
+#edit-submitted-experiencia{
+	overflow:hidden;
+}
+#edit-submitted-experiencia .form-type-checkbox{
+	display:inline-block;
+	width: 32%;
+	margin-bottom: 40px;
+	float:left;
+}
 #webform-client-form-7{
 	background-image: url('../images/sombra_form_viaje.png');
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	padding-bottom: 127px;
+	position: relative;
 }
 #webform-client-form-7 > div{
 	background-color: #F1F2F2;
 	box-sizing:border-box;
-	padding: 20px;
+	
 }
 #webform-client-form-7 .webform-progressbar-page-label{
 	display: none;
 }
 
+.webform-progressbar{
+	width: 100%;
+	padding: 55px 120px;
+	background-image: url('../images/line_form_viaje.png');
+	background-repeat:repeat-x;
+	background-position: bottom center;
+}
+.webform-component{
+	padding: 20px 50px;
+}
+.encabezado-pasos{
+	clear:both;
+	width: 100%;
+	overflow: hidden;
+}
+.encabezado-pasos h3{
+	color: #9DB73B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 27px;
+	line-height: 30px;
+	margin: 15px 0px;
+	margin-bottom: 0px;
+	font-weight: 500;	
+}
+.encabezado-pasos p{
+	margin-top: 0px;
+	font-family:'Open Sans', sans-serif;
+	font-size: 13px;
+	color: #6D6E71;
+}
+#webform-client-form-7 .paso{
+	background-color: #9DB73B;
+	border-radius: 50%;
+	width: 86px;
+	height: 86px;
+	float:left;
+	font-family: 'Roboto', sans-serif;
+	font-size: 61px;
+	font-weight: 500;
+	color: #FFF;
+	text-align: center;
+	line-height: 88px;	
+	margin-right: 20px;
+}
 .webform-progressbar-outer{
 	border: none;
 	height: 1px;
 	background-color: #9DB73B;
+	margin: 0px;
 }
 .webform-progressbar-inner{
 	background: none;
@@ -740,6 +826,33 @@ h1.title{
   border: 1px solid #9DB73B;
   background-color: white;
   border-radius: 50%;
+}
+.webform-progressbar-page.current,
+.webform-progressbar-page.completed,
+.webform-progressbar-page.clickable:hover{
+	background-color: white;
+	background-image: url('../images/on_paso_viajes.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.form-actions .form-submit{
+	position:absolute;
+  padding-right: 55px;
+  padding-left: 20px;
+  right: 50px;
+  margin-top: -27px;
+  background-color: #f48a1e;
+  background-image: url('../images/next_slider_map.png');
+  background-position: 92% 50%;
+  background-repeat: no-repeat;
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  height: 51px;
 }
 
 
