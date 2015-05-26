@@ -115,10 +115,14 @@ function treetopstravel_form_element($variables) {
  * Implements hook_html_form_alter().
  */
 function treetopstravel_form_alter(&$form, &$form_state, $form_id) {
-  if($form_id == "webform_client_form_7" || $form_id == "webform_client_form_18" || $form_id == "webform_client_form_3" || $form_id == "webform_client_form_18"){
+  if($form_id == "webform_client_form_7" || $form_id == "webform_client_form_18"){
     $form['#attributes']['class'][] = 'grid-1000 form-viaje-a-su-medida';
     //agregamos la libreria de datepicker para el formulario
     $form['#after_build'] = array('custom_form_uidatepicker');
+  }
+
+  if($form_id == "webform_client_form_3" || $form_id == "webform_client_form_18"){
+    $form['#attributes']['class'][] = 'grid-1000';
   }
 }
 
