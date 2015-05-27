@@ -706,15 +706,16 @@ input[type="checkbox"] {
     display:none;
 }
 input[type="checkbox"] + label {
-    color:#000;
-    font-family:Arial, sans-serif;
-    font-size:14px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #808285;	
 }
 input[type="checkbox"] + label span {
     display:inline-block;
     width:30px;
     height:30px;
-    margin: -1px 4px 0 0;
+    margin: -4px 10px 0 0;
     vertical-align:middle;
     background-image:url('../images/checkoff.png');
 	background-repeat: no-repeat;
@@ -734,53 +735,66 @@ input[type="checkbox"]:checked + label span {
   color: #F68C1E;
   text-transform:none;	
 }
-#webform-client-form-7 label{
+.form-viaje-a-su-medida label{
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: normal;
   color: #808285;	
 }
-#edit-submitted-experiencia{
+.form-viaje-a-su-medida #edit-submitted-experiencia,
+.form-viaje-a-su-medida #edit-submitted-experience{
 	overflow:hidden;
 }
-#edit-submitted-experiencia .form-type-checkbox{
+.form-viaje-a-su-medida .form-type-checkbox{
 	display:inline-block;
 	width: 32%;
 	margin-bottom: 40px;
 	float:left;
 }
-#webform-client-form-7{
+.form-viaje-a-su-medida{
 	background-image: url('../images/sombra_form_viaje.png');
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	padding-bottom: 127px;
 	position: relative;
 }
-#webform-client-form-7 > div{
+.form-viaje-a-su-medida > div{
 	background-color: #F1F2F2;
 	box-sizing:border-box;
+	padding-bottom: 50px;
+	overflow: hidden;
 	
 }
-#webform-client-form-7 .webform-progressbar-page-label{
+.form-viaje-a-su-medida .webform-progressbar-page-label{
 	display: none;
 }
 
-.webform-progressbar{
+.form-viaje-a-su-medida .webform-progressbar{
 	width: 100%;
 	padding: 55px 120px;
 	background-image: url('../images/line_form_viaje.png');
 	background-repeat:repeat-x;
 	background-position: bottom center;
 }
-.webform-component{
+.form-viaje-a-su-medida .webform-component{
 	padding: 20px 50px;
+	clear: both;
 }
-.encabezado-pasos{
+
+.form-viaje-a-su-medida .webform-component > label{
+	color: #F68C1E;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: normal;	
+}
+
+
+.form-viaje-a-su-medida .encabezado-pasos{
 	clear:both;
 	width: 100%;
 	overflow: hidden;
 }
-.encabezado-pasos h3{
+.form-viaje-a-su-medida h3{
 	color: #9DB73B;
 	font-family: 'Roboto', sans-serif;
 	font-size: 27px;
@@ -789,13 +803,18 @@ input[type="checkbox"]:checked + label span {
 	margin-bottom: 0px;
 	font-weight: 500;	
 }
-.encabezado-pasos p{
+.form-viaje-a-su-medida p,
+.form-viaje-a-su-medida h3 span{
 	margin-top: 0px;
 	font-family:'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #6D6E71;
+	line-height: 16px;
 }
-#webform-client-form-7 .paso{
+.form-viaje-a-su-medida h3 span{
+	padding-left: 15px;
+}
+.form-viaje-a-su-medida .paso{
 	background-color: #9DB73B;
 	border-radius: 50%;
 	width: 86px;
@@ -809,27 +828,52 @@ input[type="checkbox"]:checked + label span {
 	line-height: 88px;	
 	margin-right: 20px;
 }
-#webform-client-form-7 .form-select{
+.form-viaje-a-su-medida .datepicker{
+	background-image: url('../images/calendario_formviaje.png');
+	background-repeat: no-repeat;
+	background-position: 99% 50%;	
+}
+.form-viaje-a-su-medida .form-select{
 	border: 1px solid #808285;
 	width: 100%;
 	height: 45px;
+	background-image: url('../images/selector_formhome.png');
+	background-repeat: no-repeat;
+	background-position: 99% 50%;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
 }
-#webform-client-form-7 .form-type-select{
+.form-viaje-a-su-medida .form-text{
+	border: 1px solid #808285;
+	width: 100%;
+	height: 45px;	
 }
-#webform-client-form-7 .webform-datepicker input[type="image"]{
+
+.form-viaje-a-su-medida #edit-submitted-adults{
+	background-image: url('../images/adultos.png'), url('../images/selector_formhome.png');
+	background-repeat: no-repeat, no-repeat;
+	background-position: 0% 50%, 99% 50%;	
+}
+.form-viaje-a-su-medida #edit-submitted-children{
+	background-image: url('../images/ninos.png'), url('../images/selector_formhome.png');
+	background-repeat: no-repeat, no-repeat;
+	background-position: 0% 50%, 99% 50%;	
+}
+.form-viaje-a-su-medida .webform-datepicker input[type="image"]{
 	display: none;
 }
-.webform-progressbar-outer{
+.form-viaje-a-su-medida .webform-progressbar-outer{
 	border: none;
 	height: 1px;
 	background-color: #9DB73B;
 	margin: 0px;
 }
-.webform-progressbar-inner{
+.form-viaje-a-su-medida .webform-progressbar-inner{
 	background: none;
 	height: 1px;
 }
-.webform-progressbar-page {
+.form-viaje-a-su-medida .webform-progressbar-page {
   width: 21px;
   height: 21px;
   margin: -12px -4px;
@@ -837,21 +881,24 @@ input[type="checkbox"]:checked + label span {
   background-color: white;
   border-radius: 50%;
 }
-.webform-progressbar-page.current,
-.webform-progressbar-page.completed,
-.webform-progressbar-page.clickable:hover{
+.form-viaje-a-su-medida .webform-progressbar-page.current,
+.form-viaje-a-su-medida .webform-progressbar-page.completed,
+.form-viaje-a-su-medida .webform-progressbar-page.clickable:hover{
 	background-color: white;
 	background-image: url('../images/on_paso_viajes.png');
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.form-actions .form-submit{
+.form-viaje-a-su-medida .form-actions{
+	clear:both;
+}
+.form-viaje-a-su-medida .form-actions .form-submit{
 	position:absolute;
   padding-right: 55px;
   padding-left: 20px;
   right: 50px;
-  margin-top: -27px;
+  margin-top: 23px;
   background-color: #f48a1e;
   background-image: url('../images/next_slider_map.png');
   background-position: 92% 50%;

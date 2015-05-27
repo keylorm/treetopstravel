@@ -102,7 +102,6 @@ function treetopstravel_html_head_alter(&$head_elements) {
 }
 
 function treetopstravel_form_element($variables) {
-  
   if(isset($variables['element']['#title']) && $variables['element']['#type'] == 'checkbox'){
     $variables['element']['#title'] = "<span></span>".$variables['element']['#title'];
   }
@@ -115,6 +114,7 @@ function treetopstravel_form_element($variables) {
  * Implements hook_html_form_alter().
  */
 function treetopstravel_form_alter(&$form, &$form_state, $form_id) {
+
   if($form_id == "webform_client_form_7" || $form_id == "webform_client_form_18"){
     $form['#attributes']['class'][] = 'grid-1000 form-viaje-a-su-medida';
     //agregamos la libreria de datepicker para el formulario
