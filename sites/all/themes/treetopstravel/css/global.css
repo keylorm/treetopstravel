@@ -913,6 +913,60 @@ input[type="checkbox"]:checked + label span {
 }
 
 
+/* DESTINOS */
+
+#block-views-regiones-block{
+
+}
+.ui-accordion{
+	box-sizing: border-box;
+	padding: 20px; padding-bottom: 40px;
+	background-color: #F1F2F2;
+}
+.ui-accordion .ui-accordion-content{
+	margin-bottom: 0px;
+}
+.view-regiones{
+	background-image: url('../images/sombra_form_viaje.png');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	padding-bottom: 127px;
+	position: relative;
+}
+
+h3.ui-accordion-header{
+	background: none;
+	border: none;
+	border-radius: 0px;
+	border-bottom: 1px solid #F48A1E;
+	
+	background-image: url('../images/acordeon_close.png');
+	background-position: 100% 50%;
+	background-repeat: no-repeat;			
+}
+h3.ui-accordion-header.ui-state-active{
+	background-image: url('../images/acordeon_open.png');
+}
+.ui-accordion-header a, .ui-accordion-header a:link, .ui-accordion-header a:visited{
+	text-transform: uppercase;
+	font-family: 'Arvo', sans-serif;
+	font-size: 32px;
+	color: #F48A1E;
+	font-weight: normal;
+	padding-left: 0px;	
+}
+.ui-accordion-header .ui-icon{
+	display: none;
+}
+
+.ui-accordion .ui-accordion-content {
+  margin-top: 0px;
+  border: none;
+  background: none;
+  padding-left: 0px;
+}
+
+
 
 /*
   ==========================================================================
