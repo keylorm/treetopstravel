@@ -918,12 +918,12 @@ input[type="checkbox"]:checked + label span {
 #block-views-regiones-block{
 
 }
-.ui-accordion{
+#block-views-regiones-block .ui-accordion{
 	box-sizing: border-box;
-	padding: 20px; padding-bottom: 40px;
+	padding: 20px; padding-bottom: 70px;
 	background-color: #F1F2F2;
 }
-.ui-accordion .ui-accordion-content{
+#block-views-regiones-block .ui-accordion .ui-accordion-content{
 	margin-bottom: 0px;
 }
 .view-regiones{
@@ -947,7 +947,7 @@ h3.ui-accordion-header{
 h3.ui-accordion-header.ui-state-active{
 	background-image: url('../images/acordeon_open.png');
 }
-.ui-accordion-header a, .ui-accordion-header a:link, .ui-accordion-header a:visited{
+#block-views-regiones-block .ui-accordion-header a, .ui-accordion-header a:link, .ui-accordion-header a:visited{
 	text-transform: uppercase;
 	font-family: 'Arvo', sans-serif;
 	font-size: 32px;
@@ -955,18 +955,114 @@ h3.ui-accordion-header.ui-state-active{
 	font-weight: normal;
 	padding-left: 0px;	
 }
-.ui-accordion-header .ui-icon{
+#block-views-regiones-block .ui-accordion-header .ui-icon{
 	display: none;
 }
 
-.ui-accordion .ui-accordion-content {
+#block-views-regiones-block .ui-accordion .ui-accordion-content {
   margin-top: 0px;
   border: none;
   background: none;
   padding-left: 0px;
 }
+#block-views-regiones-block .ui-accordion .ui-accordion-content .views-row{
+	float:left;
+	width: 50%;
+}
+#block-views-regiones-block .ui-accordion .ui-accordion-content .views-row .views-field-title a{
+	display:block;
+	background-image: url('../images/next_testimonios.png');
+	background-repeat: no-repeat;
+	background-position: center left;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	color: #58595B;	
+	padding-left: 40px;
+}
 
 
+
+.view-id-destinos{
+}
+
+.view-id-destinos .view-header h2{
+	color: #9DB73B;
+	font-family: 'Arvo', sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: normal;	
+}
+.view-id-destinos .view-header h2 span{
+	color: #58595B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 26px;
+	font-weight: normal;
+	text-transform: none;	
+}
+.view-id-destinos .view-content{
+	overflow:hidden;
+	margin: 80px 0px;
+}
+.view-id-destinos .view-content .views-row{
+	display: inline-block;
+	position: relative;
+	margin-right: 18px;
+}
+.view-id-destinos .view-content .views-row .top-destino-caption{
+	display:table;
+	position: absolute;
+	top: 35%;
+	background: rgba(35, 31, 32, 0.5);
+	border: solid 1px #FFF;
+	width: 160px;
+	height: 60px;
+	line-height: 25px;
+	margin: 0 auto;
+	right: 0px;
+	left: 0px;
+	box-sizing: border-box;
+	text-align: center;	
+}
+.view-id-destinos .view-content .views-row .top-destino-caption a {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+font-family: 'Arvo', sans-serif;
+font-size: 21px;
+font-weight: normal;
+text-transform: uppercase;
+color: #FFF; 
+padding: 4px 10px;
+}
+
+
+/* ATRACCIONES */
+
+.pager{
+}
+.pager li{
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+.pager .pager-item{
+	background-image: url('../images/paginacion_off.png');
+	
+}
+.pager .pager-current{
+	background-image: url('../images/paginacion_on.png');
+}
+.pager .pager-previous{
+}
+.pager .pager-next{
+}
+.pager .pager-last,
+.pager .pager-first{
+	display: none;
+}
 
 /*
   ==========================================================================
