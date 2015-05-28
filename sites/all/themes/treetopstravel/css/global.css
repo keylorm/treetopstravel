@@ -1240,9 +1240,10 @@ h1.title{
 
 .view-blog .views-row{
 	clear:both;
-	overflow: hidden;
 	background-color: #F1F2F2;
 	margin-bottom: 50px;
+	height: 223px;
+	position: relative;
 }
 
 .view-blog .views-row .group-left{
@@ -1250,6 +1251,53 @@ h1.title{
 	float:left;
 }
 .view-blog .views-row .group-right{
+	width: 57%;
+}
+.view-blog .views-row .group-right .field-group-div h3{
+	display: none;
+}
+.view-blog .views-row .group-right .field-group-div div{
+	display: inline-block;
+}
+.view-blog .views-row .group-right .field-group-div.group-comm-views-date div{
+	color: #58595B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	
+}
+
+.view-blog .views-row .group-right .field-group-div.group-comm-views-date div.field{
+	border-right: 1px solid #58595B;
+	padding-right: 5px; margin-right: 5px; line-height: 14px;
+}
+
+.view-blog .views-row .group-right .field-group-div.group-comm-views-date div.field.field-name-post-date{
+	border: none;
+	padding-right: 0px; margin-right: 0px;
+}
+
+.view-blog .views-row .group-right .field-group-div .field-name-field-etiquetas{
+	margin-top: 8px;
+	float:left;
+	width: 100%;
+}
+.view-blog .views-row .group-right .field-group-div .field-name-field-etiquetas .field-items a{
+  display: block;
+  margin-right: 10px;
+  padding-right: 8px;
+  padding-left: 8px;
+  float: left;
+  border-radius: 5px;
+  background-color: #a7a9ac;
+  font-family:'Open Sans', sans-serif;
+  color: white;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 400;	
+}
+
+.view-blog .views-row .group-right .field-group-div {
 }
 
 .view-blog .views-row .group-right .field-name-title a{
@@ -1257,6 +1305,9 @@ h1.title{
 	font-size: 21px;
 	font-weight: 500;	
 	color: #BF6632;
+}
+.view-blog .views-row .group-right .field-name-title h2{
+	margin-bottom: 0px;
 }
 
 .view-blog .views-row .group-right .field-name-body{
@@ -1282,6 +1333,9 @@ h1.title{
 	background-position: 95% 50%;
 	padding-left: 8px;	
 	box-sizing:border-box;
+	
+	position: absolute;
+	margin-top: 18px;
 }
 
 /*
