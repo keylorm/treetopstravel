@@ -178,7 +178,3 @@ function treetopstravel_preprocess_page(&$vars) {
     $vars['theme_hook_suggestion'] = 'page__'.$vars['node']->type; //
   }
 }
-
-function treetopstravel_preprocess_region(&$vars){
-  dpm($vars);
-}
