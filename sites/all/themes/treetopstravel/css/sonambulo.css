@@ -25,14 +25,14 @@ body {
   width: 60%;
   padding: 0 0.875em;
 }
-.one-sidebar #sidebar-second {
+.one-sidebar #sidebar-first, #sidebar-second  {
   width: 40%;
   padding: 0 0.875em;
 }
-.sidebar-first .main {
+.sidebar-first .main, .sidebar-second .main {
   float: left;
 }
-.sidebar-first #sidebar-first {
+.sidebar-first #sidebar-first, .sidebar-second #sidebar-second {
   float: right;
 }
 
