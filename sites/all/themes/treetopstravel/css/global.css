@@ -14,7 +14,8 @@ a{
 	text-decoration: none;
 	color: #58595B;
 }
-.grid-1000{
+.grid-1000,
+.main-content{
 	max-width: 1000px;
 	margin: 0 auto;
 	overflow: hidden;	

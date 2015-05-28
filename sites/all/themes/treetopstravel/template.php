@@ -173,8 +173,12 @@ function treetopstravel_menu_link(array $variables) {
   return theme_menu_link($variables);
 }
 function treetopstravel_preprocess_page(&$vars) {
-    // - page--example.tpl.php  
+    // - page--example.tpl.php
   if (isset($vars['node'])) {
     $vars['theme_hook_suggestion'] = 'page__'.$vars['node']->type; //
   }
+}
+
+function treetopstravel_preprocess_region(&$vars){
+  dpm($vars);
 }
