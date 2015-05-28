@@ -778,10 +778,11 @@ input[type="checkbox"]:checked + label span {
 	background-repeat:repeat-x;
 	background-position: bottom center;
 }
-.form-viaje-a-su-medida .webform-component{
+.form-viaje-a-su-medida .webform-component, .form-viaje-a-su-medida .webform-component--fecha-salida-llegada{
 	padding: 20px 50px;
 	clear: both;
 }
+
 
 .form-viaje-a-su-medida .webform-component > label{
 	/*color: #F68C1E;
@@ -1350,3 +1351,15 @@ h1.title{
  	width: 50%;
  	float: right;
  }
+
+
+.webform-component--fecha-salida-llegada--fecha-de-llegada, .webform-component--fecha-salida-llegada--fecha-de-salida {
+	width: 49%;
+ 	float: left;
+ 	padding: 0 !important;	
+ 	clear: none !important;
+}
+
+.webform-component--fecha-salida-llegada--fecha-de-llegada input, .webform-component--fecha-salida-llegada--fecha-de-salida input {
+	width: 93% !important;
+}
