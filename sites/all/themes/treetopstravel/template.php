@@ -102,8 +102,15 @@ function treetopstravel_html_head_alter(&$head_elements) {
 }
 
 function treetopstravel_form_element($variables) {
-  if(isset($variables['element']['#title']) && $variables['element']['#type'] == 'checkbox'){
+  //$path = current_path();
+  //$node = menu_get_object("node",1,$path);
+  /*$path_alias = drupal_lookup_path('alias',$path);
+  $node = menu_get_object("node", 1, $path_alias);*/
+  //dpm($node);
+
+  if(isset($variables['element']['#title']) && (($variables['element']['#type'] == 'checkbox') || $variables['element']['#type'] == 'radio')) {
     $variables['element']['#title'] = "<span></span>".$variables['element']['#title'];
+    
   }
   /*if($variables['element']['#field_name'] == 'the_field_name') {
   }*/
@@ -115,7 +122,7 @@ function treetopstravel_form_element($variables) {
  */
 function treetopstravel_form_alter(&$form, &$form_state, $form_id) {
 
-  if($form_id == "webform_client_form_7" || $form_id == "webform_client_form_18"){
+  if($form_id == "webform_client_form_7" || $form_id == "webform_client_form_18" || $form_id == "webform_client_form_98" || $form_id == "webform_client_form_101"){
     $form['#attributes']['class'][] = 'grid-1000 form-viaje-a-su-medida';
     //agregamos la libreria de datepicker para el formulario
     $form['#after_build'] = array('custom_form_uidatepicker');

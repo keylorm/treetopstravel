@@ -32,7 +32,7 @@ jQuery(document).ajaxSuccess(function() {
 });
 
 // Controlled by buttons
-var $controlledByButtons = $('#controlledByButtons');
+/*var $controlledByButtons = $('#controlledByButtons');
 $controlledByButtons.updown({
 	step: 10,
 	shiftStep: 100
@@ -45,4 +45,4 @@ $('#btnIncrease').click(function(event){
 $('#btnDecrease').click(function(event){
 	$updown.decrease(event);
 	$updown.triggerEvents();
-});
+});*/
