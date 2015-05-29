@@ -1347,19 +1347,38 @@ h1.title{
 
 
  /***  Added by Juan M.  **/
- .webform-component--ano .form-item {
+ .webform-component--ano .form-item, .webform-component--year .form-item {
  	width: 50%;
  	float: right;
  }
 
 
-.webform-component--fecha-salida-llegada--fecha-de-llegada, .webform-component--fecha-salida-llegada--fecha-de-salida {
-	width: 49%;
- 	float: left;
+.webform-component--fecha-salida-llegada--fecha-de-llegada, .webform-component--fecha-salida-llegada--fecha-de-salida,
+.webform-component--row-specific-row--check-in, .webform-component--row-specific-row--check-out {
+	width: 49% !important;
+ 	float: left !important;
  	padding: 0 !important;	
  	clear: none !important;
 }
 
 .webform-component--fecha-salida-llegada--fecha-de-llegada input, .webform-component--fecha-salida-llegada--fecha-de-salida input {
 	width: 93% !important;
+}
+
+.webform-component--destinos-fila-1, .webform-component--destinos-fila-2, .webform-component--personas-fila-1, .row-group {
+	padding: 0 20px;
+	float: left;
+	clear: both;
+}
+
+.webform-component--destinos-fila-1 div, .webform-component--destinos-fila-2 div, .row-group div {
+	width: 23%;
+	float: left;
+	clear: none !important;
+	padding: 10px 20px !important;
+}
+
+.webform-component--destinos-fila-1 div div, .webform-component--destinos-fila-2 div div, .row-group div div {
+	width: 100% !important;
+	padding: 0 !important;
 }
