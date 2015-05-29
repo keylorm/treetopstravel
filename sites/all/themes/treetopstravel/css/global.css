@@ -1240,7 +1240,8 @@ h1.title{
 
 /* CONSEJOS Y ACTUALIDAD */
 
-.view-blog{
+.view-blog .item-list .pager .pager-current {
+  background-image: url('../images/paginacion_on_blog.png');
 }
 
 .view-blog .views-row{
@@ -1269,7 +1270,6 @@ h1.title{
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	font-weight: normal;
-	
 }
 
 .view-blog .views-row .group-right .field-group-div.group-comm-views-date div.field{
@@ -1300,9 +1300,6 @@ h1.title{
   font-size: 10px;
   line-height: 20px;
   font-weight: 400;	
-}
-
-.view-blog .views-row .group-right .field-group-div {
 }
 
 .view-blog .views-row .group-right .field-name-title a{
@@ -1344,8 +1341,6 @@ h1.title{
 	right: 15px;
 }
 
-#sidebar-second{
-}
 
 #sidebar-second .block{
 	clear:both;
@@ -1375,6 +1370,67 @@ h1.title{
 	box-sizing:border-box;
 }
 
+#block-tagclouds-1{
+	background-color: #E6E7E8;
+	border-bottom: 2px solid #BCBEC0;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-top: 30px;
+}
+
+#block-tagclouds-1 a{
+	color: #939598;
+}
+
+#block-block-12{
+	margin-top: 40px;
+	border-top: 1px solid #58595B;
+}
+
+#block-block-12 h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 32px;
+	text-transform:none;
+	font-weight: normal;
+	color: #58595B;
+	margin: 40px 0px 30px 0px;		
+}
+#block-block-12 h3 span{
+	color: #F48A1E;
+	text-transform: uppercase;
+	font-family: 'Arvo', sans-serif;
+	font-size: 40px;
+	font-weight: normal;	
+}
+#block-block-12 .descripcion{
+	font-family:'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 17px;	
+	background-color: #F1F2F2;
+	box-sizing:border-box;
+	padding: 20px;
+	padding-bottom: 40px;
+}
+#block-block-12 a.viaje-a-su-medida{
+	display: block;
+	width: 170px;
+	background-color: #F48A1E;
+	float: right;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	line-height: 32px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #FFF;
+	background-image: url('../images/icon_btn.png');
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	padding-left: 8px;
+	box-sizing: border-box;
+	margin-top: -40px;	
+	margin-right: 20px;
+}
 
 /*
   ==========================================================================
