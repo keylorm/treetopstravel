@@ -752,6 +752,7 @@ input[type="checkbox"]:checked + label span {
 	width: 32%;
 	margin-bottom: 40px;
 	float:left;
+	padding-left: 42px !important;
 }
 .form-viaje-a-su-medida{
 	background-image: url('../images/sombra_form_viaje.png');
@@ -794,7 +795,7 @@ input[type="checkbox"]:checked + label span {
 }
 .form-viaje-a-su-medida .webform-layout-box .webform-component .form-type-checkbox{
 	margin-bottom: 10px;
-	margin-left: 42px;
+	padding-left: 42px !important;
 }
 
 
