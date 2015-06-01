@@ -117,12 +117,29 @@ function treetopstravel_form_element($variables) {
   return theme_form_element($variables);
 }
 
+
+function treetopstravel_breadcrumb($variables) {
+  $breadcrumb = $variables['breadcrumb'];
+  $path_alias = drupal_get_path_alias(current_path());
+  $breadcrumb_array = explode("/",$path_alias);
+  //dpm($breadcrumb_array);
+  if (!empty($breadcrumb)) {
+      $crumbs = '<ul class="breadcrumbs">';
+
+      foreach($breadcrumb as $value) {
+           $crumbs .= '<li>'.$value.'</li>';
+      }
+      $crumbs .= '</ul>';
+    }
+      return $crumbs;
+}
+
 /**
  * Implements hook_html_form_alter().
  */
 function treetopstravel_form_alter(&$form, &$form_state, $form_id) {
 
-  if($form_id == "webform_client_form_7" || $form_id == "webform_client_form_18" || $form_id == "webform_client_form_98" || $form_id == "webform_client_form_101"){
+  if($form_id == "webform_client_form_7" || $form_id == "webform_client_form_18" || $form_id == "webform_client_form_98" || $form_id == "webform_client_form_101" || $form_id == "webform_client_form_104" || $form_id == "webform_client_form_102" || $form_id == "webform_client_form_105" || $form_id == "webform_client_form_106"){
     $form['#attributes']['class'][] = 'grid-1000 form-viaje-a-su-medida';
     //agregamos la libreria de datepicker para el formulario
     $form['#after_build'] = array('custom_form_uidatepicker');
