@@ -59,6 +59,9 @@
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+  
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "b1e90e93-44ab-4872-9284-5e84f8540c7e", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
