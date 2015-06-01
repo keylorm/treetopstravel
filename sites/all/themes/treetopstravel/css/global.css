@@ -717,7 +717,7 @@ input[type="checkbox"] + label span {
     display:inline-block;
     width:30px;
     height:30px;
-    margin: -4px 10px 0 -42px;
+    margin: -4px 10px 0 -42px; /*-42*/
     vertical-align:middle;
     background-image:url('../images/checkoff.png');
 	background-repeat: no-repeat;
