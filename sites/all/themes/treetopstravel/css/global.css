@@ -1443,7 +1443,7 @@ h1.title{
 
 /* ACERCA DE TREE TOPS TRAVEL */
 
-p{
+.node-page p{
 	font-family:'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: normal;
@@ -1489,29 +1489,57 @@ p{
 	font-weight: normal; text-transform: none;
 }
 
-#block-block-8{
-	
-}
-#block-block-8 h2{
+#block-block-8 h2,
+#block-block-10 h2{
 	text-transform: uppercase;
 	font-family: 'Arvo', sans-serif;
 	font-size: 28px;
 	font-weight: normal;
 	color: #9DB73B;
 }
-#block-block-8 .content{
+#block-block-8 .content,
+#block-block-10 .content{
 	background-color: #F1F2F2;
 	box-sizing: border-box;
-	padding: 10px 20px;
+	padding: 10px 20px 20px 20px;
 }
-#block-block-8 .content p{
+#block-block-8 .content p,
+#block-block-10 .content p{
 	font-family:'Open Sans', sans-serif;
 	font-size: 15px;
 	line-height: 16px;
 	font-weight: 600;
 	position: relative;		
 }
-#block-block-8 .planee-viaje{
+
+#block-block-8 .telefono,
+#block-block-10 .telefono {
+  padding-left: 35px;
+  background-image: url('../images/tel_footer.png');
+  background-position: 0px 50%;
+  background-repeat: no-repeat;
+  font-family:'Open Sans', sans-serif;
+  color: #6d6e71;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 400;
+}
+#block-block-8 .email,
+#block-block-10 .email {
+  padding-left: 35px;
+  background-image: url('../images/email_footer.png');
+  background-position: 0px 50%;
+  background-repeat: no-repeat;
+  font-family:'Open Sans', sans-serif;
+  color: #6d6e71;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#block-block-8 .planee-viaje,
+#block-block-10 .planee-viaje{
   display: block;
   width: 170px;
   background-color: #F48A1E;
@@ -1527,10 +1555,87 @@ p{
   background-position: 95% 50%;
   padding-left: 8px;
   box-sizing: border-box;
-  margin-top: -40px;
-  margin-right: 20px;	
+  position: absolute;
+  right: 0px;
 }
 
+#block-block-9,
+#block-block-11{
+	border-top: 1px solid #58595B;
+	margin-top: 30px;
+	padding-top: 15px;
+	float:left;
+	overflow:hidden;
+}
+
+#block-block-9 h2,
+#block-block-11 h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: normal;	
+}
+#block-block-9 h2 span,
+#block-block-11 h2 span{
+	font-family: 'Arvo', sans-serif;
+	font-size: 28px;
+	font-weight: normal;	
+	color: #BF6632;
+	text-transform: uppercase;
+}
+
+#porque-ttt{
+}
+
+#porque-ttt .block{
+  margin-top: 2px;
+  padding: 20px;	
+}
+
+#porque-ttt .block#block1 {
+  background-color: #f1f2f2;
+}
+#porque-ttt .block#block2 {
+  background-color: #e6e7e8;
+}
+#porque-ttt .block#block3 {
+  background-color: #d1d3d4;
+}
+#porque-ttt .block h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #58595B;
+  font-size: 23px;
+  line-height: 23px;
+  font-weight: 400;
+  margin: 0px;
+}
+#porque-ttt .block p{
+  font-family:'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: normal;
+  color: #6E6E6E;
+}
+
+
+/* ACERCA DE CR */
+
+#block-menu-block-2 .menu{
+	
+	margin: 0px; padding: 0px;
+}
+
+#block-menu-block-2 .menu li{
+	list-style: none;
+	margin: 0px; padding: 0px;
+}
+
+#block-menu-block-2 .menu li a{
+	display: block;
+	background-color: #E6E7E8;
+}
+#block-menu-block-2 .menu li a:hover,
+#block-menu-block-2 .menu li a.active{
+}
 
 /*
   ==========================================================================
