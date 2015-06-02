@@ -1679,7 +1679,55 @@ h1.title{
 #block-views-blog-block-list-art-side-bar .view-blog{
 }
 #block-views-blog-block-list-art-side-bar .view-blog .views-row{
+	background: none;
+	height: 104px;
 }
+
+#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-left{
+	width: 130px;
+	height: 104px;
+	float: left;
+	position: relative;
+	background-image: url('../images/bgimg_list_blog.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-left img{
+	position:absolute;
+	z-index: -1;
+}
+#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-right{
+	float: left;
+	padding-left: 15px;
+}
+#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-right h3{
+	margin: 0px; line-height: 20px;
+}
+#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-right h3 a{
+	color: #58595B;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 20px;	
+	
+
+}
+
+#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-right .field-name-post-date{
+	color: #58595B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: italic;	
+}
+
+#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-right .field-name-node-link a{
+	float:left;
+	right: initial;
+	bottom: 0px;
+}
+
 .no-encuentra-lo-que-busca{
 	clear:both;
 	margin-bottom: 50px;
