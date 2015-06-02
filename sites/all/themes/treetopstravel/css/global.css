@@ -1680,10 +1680,58 @@ h1.title{
 }
 #block-views-blog-block-list-art-side-bar .view-blog .views-row{
 }
-
 .no-encuentra-lo-que-busca{
+	clear:both;
+	margin-bottom: 50px;
+	position: relative;
+	border-top: 1px solid #58595B;
 }
-
+.no-encuentra-lo-que-busca h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 32px;
+	font-weight: normal;
+	color: #58595B;
+	text-align: right;
+	line-height: 37px;
+	margin-bottom: 10px;
+}
+.no-encuentra-lo-que-busca h3 span{
+	color: #F48A1E;
+	font-family: 'Arvo', sans-serif;
+	font-size: 40px;
+	font-weight: normal;
+	text-transform: uppercase;	
+}
+.no-encuentra-lo-que-busca .descripcion{
+	background-color: #F1F2F2;
+	box-sizing: border-box;
+	padding: 10px 20px 40px 20px;
+	position:relative;	
+	font-family:'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;	
+}
+.no-encuentra-lo-que-busca .viaje-a-su-medida{
+	display: block;
+	width: 170px;
+	background-color: #F48A1E;
+	float: right;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	line-height: 32px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #FFF;
+	background-image: url('../images/icon_btn.png');
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	padding-left: 8px;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: -12px;
+	right: 20px;
+}
 
 .node-page .transporte{
 	clear:both;
