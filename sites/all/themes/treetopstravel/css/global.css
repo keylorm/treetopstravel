@@ -73,7 +73,7 @@ footer.footerzone{
 
 .flexslider .flex-caption h3 a{
 	display:block;
-	width: 470px;
+	width: 480px;
 	font-family: 'Arvo', sans-serif;
 	font-size: 33px;
 	color: #FFF;
@@ -82,7 +82,7 @@ footer.footerzone{
 	letter-spacing: 1px;
 }
 .flexslider .flex-caption p{
-	width: 470px;
+	width: 480px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 21px;
 	line-height: 25px;
@@ -1362,13 +1362,15 @@ h1.title{
 	font-size: 28px;
 	font-weight: normal;	
 }
-
+#block-custom-search-blocks-2 .search-form{
+	position:relative;
+}
 #block-custom-search-blocks-2 .search-form .form-submit{
 	width: 40px; height: 40px;
 	background: none;
 	border: none;
 	position: absolute;
-	right: 10px; top: 60px;
+	right: 10px; top: 7px;
 }
 #block-custom-search-blocks-2 .search-form input[type='text']{
 	width: 100%;
@@ -1391,12 +1393,13 @@ h1.title{
 	color: #939598;
 }
 
-#block-block-12{
+#block-block-12, #block-block-13{
 	margin-top: 40px;
 	border-top: 1px solid #58595B;
 }
 
-#block-block-12 h3{
+#block-block-12 h3,
+#block-block-13 h3{
 	font-family: 'Roboto', sans-serif;
 	font-size: 32px;
 	text-transform:none;
@@ -1404,14 +1407,16 @@ h1.title{
 	color: #58595B;
 	margin: 40px 0px 30px 0px;		
 }
-#block-block-12 h3 span{
+#block-block-12 h3 span,
+#block-block-13 h3 span{
 	color: #F48A1E;
 	text-transform: uppercase;
 	font-family: 'Arvo', sans-serif;
 	font-size: 40px;
 	font-weight: normal;	
 }
-#block-block-12 .descripcion{
+#block-block-12 .descripcion,
+#block-block-13 .descripcion{
 	font-family:'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 600;
@@ -1421,7 +1426,8 @@ h1.title{
 	padding: 20px;
 	padding-bottom: 40px;
 }
-#block-block-12 a.viaje-a-su-medida{
+#block-block-12 a.viaje-a-su-medida,
+#block-block-13 a.viaje-a-su-medida{
 	display: block;
 	width: 170px;
 	background-color: #F48A1E;
