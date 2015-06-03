@@ -181,6 +181,20 @@ function treetopstravel_page_alter(&$page) {
 function treetopstravel_preprocess_node(&$vars) {
   // Add a striping class.
   $vars['classes_array'][] = 'node-' . $vars['zebra'];
+
+}
+
+function treetopstravel_preprocess_field(&$variables, $hook) {
+  $element = $variables ['element'];
+    $temp_title = "";
+    if($element['#view_mode'] == 'articulos_relacionados'){
+      $temp_title = $element['#object']->title;
+    }
+    $temp_title = truncate($temp_title, 20);
+    $element['#object']->title = $temp_title;
+    $variables['element'] = $element;
+
+    dpm($variables['element']);
 }
 
 function treetopstravel_preprocess_block(&$vars, $hook) {
@@ -201,4 +215,9 @@ function treetopstravel_preprocess_page(&$vars) {
   if (isset($vars['node'])) {
     $vars['theme_hook_suggestion'] = 'page__'.$vars['node']->type; //
   }
+}
+
+
+function truncate($str, $width) {
+    return strtok(wordwrap($str, $width, "...\n"), "\n");
 }
