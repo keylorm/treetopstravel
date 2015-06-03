@@ -60,7 +60,7 @@ $imagen ="";
 					}
 					
 
-					$imagen .= "<li><a href=\"".$link."\" ><img src='".$url."' /></a><div class='flex-caption'>".$titulo_slide_markup.$desc_slide_markup.$texto_boton_link_slide_markup."</div></li>";
+					$imagen .= "<li><a href=\"".$link."\" ><img src='".$url."' /></a><div class='flex-caption'><div class='flex-caption-inner'>".$titulo_slide_markup.$desc_slide_markup.$texto_boton_link_slide_markup."</div></div></li>";
 				}else{
 					$imagen .= "<li><a href=\"".$link."\" ><img src='".$url."' /></a></li>";
 				}
@@ -74,7 +74,7 @@ $imagen ="";
 					}
 					
 
-					$imagen .= "<li><img src='".$url."' /><div class='flex-caption'>".$titulo_slide_markup.$desc_slide_markup."</div></li>";
+					$imagen .= "<li><img src='".$url."' /><div class='flex-caption'><div class='flex-caption-inner'>".$titulo_slide_markup.$desc_slide_markup."</div></div></li>";
 				}else{
 					$imagen .= "<li><img src='".$url."' /></li>";
 			}

@@ -184,19 +184,21 @@ function treetopstravel_preprocess_node(&$vars) {
 
 }
 
-function treetopstravel_preprocess_field(&$variables, $hook) {
+/*function treetopstravel_preprocess_field(&$variables, $hook) {
   $element = $variables ['element'];
     $temp_title = "";
-    if($element['#view_mode'] == 'articulos_relacionados'){
+    if($element['#view_mode'] == 'articulos_relacionados' && $element['#title'] == 'Title'){
       $temp_title = $element['#object']->title;
+      $temp_title = truncate($temp_title, 20);
+      $nid = $element['#object']->vid;
+      $path_alias = drupal_get_path_alias("node/".$nid);
+      $element['#items'][0]['value'] = "<h3><a href=\"/".$path_alias."\">".$temp_title."</a></h3>";
+      $element[0]['#markup'] = "<h3><a href=\"/".$path_alias."\">".$temp_title."</a></h3>";
+      $variables['element'] = $element;
+      dpm($variables['element']);
     }
-    $temp_title = truncate($temp_title, 20);
-    $element['#object']->title = $temp_title;
-    $variables['element'] = $element;
-
-    dpm($variables['element']);
 }
-
+*/
 function treetopstravel_preprocess_block(&$vars, $hook) {
   // Add a striping class.
   $vars['classes_array'][] = 'block-' . $vars['zebra'];
