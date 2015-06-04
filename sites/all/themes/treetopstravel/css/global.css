@@ -16,6 +16,7 @@ a{
 }
 .grid-1000,
 .main-content{
+	width: 1000px;
 	max-width: 1000px;
 	margin: 0 auto;
 	overflow: hidden;	
@@ -1661,20 +1662,20 @@ h1.title{
 }
 
 
-#block-views-blog-block-list-art-side-bar{
+.listado-blog-sidebar.view-blog{
 	border-top: 1px solid #58595B;
 	margin-top: 30px;
 	padding-top: 15px;	
 }
 
-#block-views-blog-block-list-art-side-bar h2{
+.listado-blog-sidebar.view-blog h2{
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
   font-weight: normal;
   text-transform: lowercase;	
 }
 
-#block-views-blog-block-list-art-side-bar h2 span{
+.listado-blog-sidebar.view-blog h2 span{
 	font-family: 'Arvo', sans-serif;
 	font-size: 28px;
 	font-weight: normal;	
@@ -1682,14 +1683,12 @@ h1.title{
 	text-transform: uppercase;
 }
 
-#block-views-blog-block-list-art-side-bar .view-blog{
-}
-#block-views-blog-block-list-art-side-bar .view-blog .views-row{
+.listado-blog-sidebar.view-blog .views-row{
 	background: none;
 	height: 104px;
 }
 
-#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-left{
+.listado-blog-sidebar.view-blog .views-row .group-left{
 	width: 130px;
 	height: 104px;
 	float: left;
@@ -1699,21 +1698,21 @@ h1.title{
 	background-position: right center;
 }
 
-#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-left img,
+.listado-blog-sidebar.view-blog .views-row .group-left img,
 #block-views-blog-block-art-rel .view-blog .views-row .group-left .field-name-field-imagen img{
 	position:absolute;
 	z-index: -1;
 }
-#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-right,
+.listado-blog-sidebar.view-blog .views-row .group-right,
 #block-views-blog-block-art-rel .view-blog .views-row .group-right{
 	float: left;
 	padding-left: 15px;
 }
-#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-right h3,
+.listado-blog-sidebar.view-blog .views-row .group-right h3,
 #block-views-blog-block-art-rel .view-blog .views-row .group-right h3{
 	margin: 0px; line-height: 20px;
 }
-#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-right h3 a,
+.listado-blog-sidebar.view-blog .views-row .group-right h3 a,
 #block-views-blog-block-art-rel .view-blog .views-row .group-right h3 a{
 	color: #58595B;
   font-family: 'Roboto', sans-serif;
@@ -1725,7 +1724,7 @@ h1.title{
 
 }
 
-#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-right .field-name-post-date,
+.listado-blog-sidebar.view-blog .views-row .group-right .field-name-post-date,
 #block-views-blog-block-art-rel .view-blog .views-row .group-right .field-name-post-date{
 	color: #58595B;
 	font-family: 'Roboto', sans-serif;
@@ -1734,7 +1733,7 @@ h1.title{
 	font-style: italic;	
 }
 
-#block-views-blog-block-list-art-side-bar .view-blog .views-row .group-right .field-name-node-link a,
+.listado-blog-sidebar.view-blog .views-row .group-right .field-name-node-link a,
 #block-views-blog-block-art-rel .view-blog .views-row .group-right .field-name-node-link a{
 	float:left;
 	right: initial;
@@ -2125,6 +2124,11 @@ h1.title{
 .node-type-page .flexslider .flex-caption{
 	
 }
+
+.node-type-page .flexslider .flex-caption .flex-caption-inner{
+	width: 380px;
+}
+
 .node-type-page .flexslider .flex-caption p{
 	background: rgba(0,0,0,0.6);
 }
@@ -2162,87 +2166,316 @@ h1.title{
 }
 
 
-#block-views-3b97d78774b2196290996be2430021a9 .view-id-listados_de_tours_y_hoteles{
-}
 
-#block-views-3b97d78774b2196290996be2430021a9 .view-id-listados_de_tours_y_hoteles .view-content{
-}
 
-#block-views-3b97d78774b2196290996be2430021a9 .view-id-listados_de_tours_y_hoteles .view-content .views-row{
-	width: 578px;
+.listado-tours-general .view-content .views-row{
+	width: 100%;
 	height: 222px;
-	background-color: #f1f2f2;	
+	margin-top: 20px;
 }
-
-#block-views-3b97d78774b2196290996be2430021a9 .view-id-listados_de_tours_y_hoteles .view-content .views-row .tour-list-item-imagen{
-  width: 205px;
-  height: 222px;
-  float: left;
-  position:relative;
-  background-image: url('../images/bgimg_list_items.png');
-  background-position: 100% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;	
+.listado-tours-general .view-content .views-row .tour-list-item-imagen a{
+	width: 205px;
+	height: 222px;
+	float: left;
+	position:relative;
+	background-image: url('../images/bgimg_list_items.png');
+	background-position: 100% 50%;
+	background-size: auto;
+	background-repeat: no-repeat;	
 }
-#block-views-3b97d78774b2196290996be2430021a9 .view-id-listados_de_tours_y_hoteles .view-content .views-row .tour-list-item-imagen img{
+.listado-tours-general .view-content .views-row .tour-list-item-imagen {
+	width: 205px;
+	height: 222px;
+	float: left;
+}
+.listado-tours-general .view-content .views-row .tour-list-item-imagen img{
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	z-index: -1;
 }
+.listado-tours-general .view-content .views-row .tour-list-listado-detalles{
+	float:left;
+	height: 222px;
+	background-color: #f1f2f2;
+	box-sizing:border-box;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+.listado-tours-general .view-content .views-row .tour-list-item-info {
+	position: relative;
+	z-index: 999;
+	width: 300px;
+	height: 222px;
+	padding-top: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	float: left; 
+	box-sizing: border-box;
+}
+.listado-tours-general .view-content .views-row .tour-list-price-box {
+	width: 78px;
+	height: 100%;
+	float: left;
+	padding-bottom: 8px;
+	border-radius: 5px;
+	/*background-color: #51376b;*/
+}
+.listado-tours-general .view-content .views-row .tour-list-titulo a{
+	margin-bottom: 15px;
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: 500;
+	display:block;
+}
+.listado-tours-general .view-content .views-row .tour-list-locali {
+	margin-bottom: 8px;
+	font-family: Roboto, sans-serif;
+	color: #58595b;
+	font-size: 16px;
+	font-weight: 400;
+}
+.listado-tours-general .view-content .views-row .tour-list-tags a{
+	display: block;
+	margin-right: 10px;
+	padding-right: 8px;
+	padding-left: 8px;
+	float: left;
+	border-radius: 5px;
+	background-color: #a7a9ac;
+	font-family:'Open Sans', sans-serif;
+	color: white;
+	font-size: 10px;
+	line-height: 20px;
+	font-weight: 400;	
+}
+.listado-tours-general .view-content .views-row .tour-list-descripcion-corta {
+	margin-top: 5px;
+	float: left;
+	font-family:'Open Sans', sans-serif;
+	color: #6d6e71;
+	font-size: 13px;
+	line-height: 17px;
+	font-weight: 400;
+}
+.listado-tours-general .view-content .views-row .tour-list-type {
+	width: 100%;
+	margin-bottom: 0px;
+	float: left;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	/*background-color: #552b70;*/
+	font-family: Roboto, sans-serif;
+	color: white;
+	font-size: 11px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+}
+.listado-tours-general .view-content .views-row .tour-list-precio {
+	width: 100%;
+	padding-top: 6px;
+	padding-bottom: 5px;
+	float: left;
+	/*background-color: #724e89;*/
+}
+.listado-tours-general .view-content .views-row .tour-list-precio-monto {
+	font-family: Roboto, sans-serif;
+	color: white;
+	font-size: 30px;
+	font-weight: 500;
+	text-align: center;
+	margin: 0px;
+}
+.listado-tours-general .view-content .views-row .tour-list-precio-grupo {
+	font-family: Roboto, sans-serif;
+	color: white;
+	font-size: 10px;
+	line-height: 15px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0px;
+}
+.listado-tours-general .view-content .views-row .tour-list-duracion {
+	width: 100%;
+	margin-top: 1px;
+	padding-top: 6px;
+	padding-bottom: 5px;
+	float: left;
+	/*background-color: #724e89;*/
+}
+.listado-tours-general .view-content .views-row .tour-list-dias {
+	font-family: Roboto, sans-serif;
+	color: white;
+	font-size: 22px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0px;
+}
+.listado-tours-general .view-content .views-row .tour-list-noche{
+	font-family: Roboto, sans-serif;
+	color: white;
+	font-size: 13px;
+	line-height: 15px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0px;
+}
+.listado-tours-general .view-content .views-row .tour-list-vermas a {
+	display: block;
+	width: 100%;
+	padding-top: 40px;
+	float: left;
+	background-image: url('../images/btn_reserva.png');
+	background-position: 50% 9px;
+	background-repeat: no-repeat;
+	font-family: Roboto, sans-serif;
+	color: white;
+	font-size: 13px;
+	line-height: 15px;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
 
-.listado_img {
-  width: 205px;
-  height: 222px;
-  float: left;
-  background-image: url('../images/bgimg_list_items.png'), url('../images/Hydrangeas.jpg');
-  background-position: 100% 50%, 50% 50%;
-  background-size: auto, cover;
-  background-repeat: no-repeat, no-repeat;
+/* COLOR ITINERARIOS */
+
+.listado-tours-general .view-content .views-row .item-type-itinerario .tour-list-price-box {
+	background-color: #53891A;
 }
-.listado_info {
+.listado-tours-general .view-content .views-row .item-type-itinerario .tour-list-titulo a{
+	color: #9BB53B;
+}
+.listado-tours-general .view-content .views-row .item-type-itinerario .tour-list-type {
+	background-color: #386B10;
+}
+.listado-tours-general .view-content .views-row .item-type-itinerario .tour-list-precio,
+.listado-tours-general .view-content .views-row .item-type-itinerario .tour-list-duracion {
+	background-color: #9BB53B;
+}
+
+
+/* COLOR XXXXX */
+
+.listado-tours-general .view-content .views-row .item-type-xxxxx .tour-list-price-box {
+	background-color: #;
+}
+.listado-tours-general .view-content .views-row .item-type-xxxxx .tour-list-titulo a{
+	color: #;
+}
+.listado-tours-general .view-content .views-row .item-type-xxxxx .tour-list-type {
+	background-color: #;
+}
+.listado-tours-general .view-content .views-row .item-type-xxxxx .tour-list-precio,
+.listado-tours-general .view-content .views-row .item-type-xxxxx .tour-list-duracion {
+	background-color: #;
+}
+
+
+
+.listado-tours-recomedados{
+}
+.listado-tours-recomedados h3{
+	color: #F48A1E;
+	text-transform: uppercase;
+	font-family: 'Arvo', sans-serif;
+	font-size: 40px;
+	font-weight: normal;
+	margin: 0px; margin-bottom: 20px;
+}
+.listado-tours-recomedados h3 span{
+	color: #58595B;
+	font-family: Roboto, sans-serif;
+	font-size: 26px;
+	font-weight: normal;	
+}
+
+.listado-tours-recomedados .views-row {
   position: relative;
-  z-index: 999;
-  width: 372px;
-  height: 222px;
-  padding-top: 8px;
-  padding-right: 8px;
-  padding-bottom: 8px;
-  float: left;
+  width: 100%;/*367*/
+  height: 270px;
+  margin-bottom: 25px;
+  /*background-image: url('../images/Hydrangeas.jpg');
+  background-size: cover;*/
 }
-.listado_info_det {
-  width: 284px;
-  padding-top: 5px;
-  padding-right: 20px;
-  padding-bottom: 5px;
-  float: left;
+.listado-tours-recomedados .views-row .views-field-field-imagenes-de-slider{
+	position: relative;
 }
-.listado_info_pre {
-  width: 78px;
-  height: 100%;
-  float: left;
-  border-radius: 5px;
-  background-color: #51376b;
+.listado-tours-recomedados .views-row .views-field-field-imagenes-de-slider img{
+	position:absolute;
+	width: 100%;
+	z-index: -1;
 }
-.listado_titulo {
-  margin-bottom: 15px;
-  font-family: Roboto, sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-}
-.listado_lugar {
-  margin-bottom: 8px;
-  font-family: Roboto, sans-serif;
-  color: #58595b;
-  font-size: 16px;
-  font-weight: 400;
-}
-.listado_desc {
-  margin-top: 5px;
-  float: left;
+.listado-tours-recomedados .tours-oferta-top {
+  width: 100%;
+  height: 107px;
+  padding-top: 15px;
+  padding-right: 17px;
+  padding-left: 17px;
+  background-image: url('../images/top_oferta.png');
+  background-position: 50% 0px;
+  background-repeat: no-repeat;
   font-family:'Open Sans', sans-serif;
-  color: #6d6e71;
-  font-size: 13px;
+  color: white;
+  font-size: 14px;
   line-height: 17px;
+}
+.tours-oferta-titulo a {
+  display: block;
+  margin-bottom: 10px;
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+.tours-oferta-desc {
+  font-family:'Open Sans', sans-serif;
+  color: white;
+  font-size: 13px;
   font-weight: 400;
+}
+.tours-oferta-precio p {
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0px;
+  background-image: url('../images/precio_oferta.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  font-family:'Open Sans', sans-serif;
+  color: #f48a1e;
+  font-size: 26px;
+  line-height: 80px;
+  text-align: center;
+}
+.tours-oferta-vermas a {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  display: block;
+  height: 36px;
+  padding-right: 43px;
+  padding-left: 8px;
+  background-color: #f48a1e;
+  background-image: url('../images/btn_reserva.png');
+  background-position: 93% 50%;
+  background-repeat: no-repeat;
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 12px;
+  line-height: 37px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 
