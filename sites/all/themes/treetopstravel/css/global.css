@@ -1330,7 +1330,7 @@ h1.title{
 
 .view-blog .views-row .group-right .field-name-node-link a{
 	display:block;
-	width: 100px;
+	width: 110px;
 	background-color: #BF6632;
 	float: right;
 	font-family: 'Roboto', sans-serif;
@@ -1952,7 +1952,8 @@ h1.title{
 }
 
 
-#block-block-14{
+#block-block-14,
+#block-block-15{
 	margin: 30px 0px;
 	border-top: 1px solid #58595B;
 	border-bottom: 1px solid #58595B;
@@ -1960,14 +1961,16 @@ h1.title{
 	padding: 20px 0px;
 }
 
-#block-block-14 .cont_comp{
+#block-block-14 .cont_comp,
+#block-block-15 .cont_comp{
 	width: 350px;
 	height: 40px;
 	margin: 0 auto;
 	clear:both;
 }
 
-#block-block-14 strong{
+#block-block-14 strong,
+#block-block-15 strong{
 	float:left;
 	color: #BF6632;
 	font-family: 'Roboto', sans-serif;
@@ -1977,25 +1980,31 @@ h1.title{
 	
 }
 
-#block-block-14 div > span{
+#block-block-14 div > span,
+#block-block-15 div > span{
 	margin-left: 10px;
 }
-#block-block-14 div span span span{
+#block-block-14 div span span span,
+#block-block-15 div span span span{
 	width: 40px; height: 40px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-#block-block-14 div .st_facebook_large .stLarge{
+#block-block-14 div .st_facebook_large .stLarge,
+#block-block-15 div .st_facebook_large .stLarge{
 	background-image: url('../images/fb_compartir.png') !important;
 }
-#block-block-14 div .st_twitter_large .stLarge{
+#block-block-14 div .st_twitter_large .stLarge,
+#block-block-15 div .st_twitter_large .stLarge{
 	background-image: url('../images/tw_compartir.png') !important;
 }
-#block-block-14 div .st_pinterest_large .stLarge{
+#block-block-14 div .st_pinterest_large .stLarge,
+#block-block-15 div .st_pinterest_large .stLarge{
 	background-image: url('../images/pi_compartir.png') !important;
 }
-#block-block-14 div .st_googleplus_large .stLarge{
+#block-block-14 div .st_googleplus_large .stLarge,
+#block-block-15 div .st_googleplus_large .stLarge{
 	background-image: url('../images/gm_compartir.png') !important;
 }
 
@@ -2106,6 +2115,135 @@ h1.title{
 	background-position: 96% 50%;	
 }
 
+
+/* ITINERARIOS */
+
+.node-type-page .flexslider .flex-control-paging{
+	display: none;
+}
+
+.node-type-page .flexslider .flex-caption{
+	
+}
+.node-type-page .flexslider .flex-caption p{
+	background: rgba(0,0,0,0.6);
+}
+
+#views-exposed-form-listados-de-tours-y-hoteles-block{
+  padding: 10px;
+  border-bottom: 1px solid #f48a1e;
+  background-color: #fef6ed;	
+}
+
+#views-exposed-form-listados-de-tours-y-hoteles-block select{
+	width: 100%;
+	height: 27px;
+  border: 1px solid #f48a1e;
+  font-family:'Open Sans', sans-serif;
+  color: #808285;
+  font-size: 13px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url('../images/flecha_select_filtrado.png');
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
+}
+#views-exposed-form-listados-de-tours-y-hoteles-block label{
+  font-family: Roboto, sans-serif;
+  color: #f48a1e;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#views-exposed-form-listados-de-tours-y-hoteles-block .views-exposed-widget{
+	width: 33.3%;
+}
+
+
+#block-views-3b97d78774b2196290996be2430021a9 .view-id-listados_de_tours_y_hoteles{
+}
+
+#block-views-3b97d78774b2196290996be2430021a9 .view-id-listados_de_tours_y_hoteles .view-content{
+}
+
+#block-views-3b97d78774b2196290996be2430021a9 .view-id-listados_de_tours_y_hoteles .view-content .views-row{
+	width: 578px;
+	height: 222px;
+	background-color: #f1f2f2;	
+}
+
+#block-views-3b97d78774b2196290996be2430021a9 .view-id-listados_de_tours_y_hoteles .view-content .views-row .tour-list-item-imagen{
+  width: 205px;
+  height: 222px;
+  float: left;
+  position:relative;
+  background-image: url('../images/bgimg_list_items.png');
+  background-position: 100% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;	
+}
+#block-views-3b97d78774b2196290996be2430021a9 .view-id-listados_de_tours_y_hoteles .view-content .views-row .tour-list-item-imagen img{
+	position: absolute;
+	z-index: -1;
+}
+
+.listado_img {
+  width: 205px;
+  height: 222px;
+  float: left;
+  background-image: url('../images/bgimg_list_items.png'), url('../images/Hydrangeas.jpg');
+  background-position: 100% 50%, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+.listado_info {
+  position: relative;
+  z-index: 999;
+  width: 372px;
+  height: 222px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  float: left;
+}
+.listado_info_det {
+  width: 284px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  float: left;
+}
+.listado_info_pre {
+  width: 78px;
+  height: 100%;
+  float: left;
+  border-radius: 5px;
+  background-color: #51376b;
+}
+.listado_titulo {
+  margin-bottom: 15px;
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+.listado_lugar {
+  margin-bottom: 8px;
+  font-family: Roboto, sans-serif;
+  color: #58595b;
+  font-size: 16px;
+  font-weight: 400;
+}
+.listado_desc {
+  margin-top: 5px;
+  float: left;
+  font-family:'Open Sans', sans-serif;
+  color: #6d6e71;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+}
 
 
 /*
