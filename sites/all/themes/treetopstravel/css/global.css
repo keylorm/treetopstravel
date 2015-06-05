@@ -2496,8 +2496,6 @@ h1.title{
 	background-image: url('../images/next_slider_map.png');
 }
 
-
-
 .panels-flexible-tour_detail_layout .flexslider .flex-control-paging{
 	display: none;
 }
@@ -2509,6 +2507,50 @@ h1.title{
 	color: #9BB53B;
 	margin: 0px; margin-bottom: 20px;
 }
+
+
+
+.panels-flexible-tour_detail_layout h2{
+	color: #F48A1E;
+	font-family: 'Arvo', sans-serif;
+	font-size: 29px;
+	font-weight: normal;
+	text-transform: uppercase;	
+}
+
+.panels-flexible-tour_detail_layout h2 span{
+	font-family: Roboto, sans-serif;
+	font-size: 28px;
+	font-weight: normal;	
+	color: #58595B;
+	text-transform: none;	
+}
+
+.panels-flexible-tour_detail_layout .pane-node-body p{
+	color: #6D6E71;
+	font-family:'Open Sans', sans-serif;
+	font-size: 13px;
+	line-height: 15px;
+	font-weight: normal;
+}
+
+.panels-flexible-tour_detail_layout .pane-node-field-actividades-por-dia{
+}
+
+.field-name-field-titulo-dia{
+	background-color: #F48A1E;
+	width: 100px; height: 100px;
+	text-align:center;
+	line-height: 100px;
+	font-family: Roboto, sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	color: #FFF;	
+	text-transform:uppercase;
+	border-radius: 50%;
+}
+
+
 .panels-flexible-tour_detail_layout .panel-separator{
 	clear:both;
 	width: 100%;
