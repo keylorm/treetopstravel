@@ -2133,13 +2133,13 @@ h1.title{
 	background: rgba(0,0,0,0.6);
 }
 
-#views-exposed-form-listados-de-tours-y-hoteles-block{
+.listado-tours-general form{
   padding: 10px;
   border-bottom: 1px solid #f48a1e;
   background-color: #fef6ed;	
 }
 
-#views-exposed-form-listados-de-tours-y-hoteles-block select{
+.listado-tours-general form select{
 	width: 100%;
 	height: 27px;
   border: 1px solid #f48a1e;
@@ -2153,7 +2153,7 @@ h1.title{
   background-repeat: no-repeat;
   background-position: 97% 50%;
 }
-#views-exposed-form-listados-de-tours-y-hoteles-block label{
+.listado-tours-general form label{
   font-family: Roboto, sans-serif;
   color: #f48a1e;
   font-size: 14px;
@@ -2161,11 +2161,9 @@ h1.title{
   text-transform: uppercase;
 }
 
-#views-exposed-form-listados-de-tours-y-hoteles-block .views-exposed-widget{
+.listado-tours-general form .views-exposed-widget{
 	width: 33.3%;
 }
-
-
 
 
 .listado-tours-general .view-content .views-row{
@@ -2377,17 +2375,13 @@ h1.title{
 	background-color: #;
 }
 
-
-
-.listado-tours-recomedados{
-}
 .listado-tours-recomedados h3{
 	color: #F48A1E;
 	text-transform: uppercase;
 	font-family: 'Arvo', sans-serif;
 	font-size: 40px;
 	font-weight: normal;
-	margin: 0px; margin-bottom: 20px;
+	margin: 0px; margin-top: 73px; margin-bottom: 20px;
 }
 .listado-tours-recomedados h3 span{
 	color: #58595B;
@@ -2477,6 +2471,271 @@ h1.title{
   text-decoration: none;
   text-transform: uppercase;
 }
+
+
+/* DETALLE ITINERARIO */
+
+.panels-flexible-tour_detail_layout .flexslider{
+	width: 477px;
+}
+.panels-flexible-tour_detail_layout .flexslider .flex-direction-nav{
+	display: block;
+}
+
+.panels-flexible-tour_detail_layout .flexslider .flex-direction-nav a{
+	width: 35px;
+	height: 35px;
+	background-repeat: no-repeat;
+	background-position: center;
+	line-height: 83;
+}
+.panels-flexible-tour_detail_layout .flexslider .flex-direction-nav .flex-prev{
+	background-image: url('../images/prev_slider_map.png');
+}
+.panels-flexible-tour_detail_layout .flexslider .flex-direction-nav .flex-next{
+	background-image: url('../images/next_slider_map.png');
+}
+
+
+
+.panels-flexible-tour_detail_layout .flexslider .flex-control-paging{
+	display: none;
+}
+
+.panels-flexible-tour_detail_layout h1{
+	font-family: Roboto, sans-serif;
+	font-size: 30px;
+	font-weight: normal;	
+	color: #9BB53B;
+	margin: 0px; margin-bottom: 20px;
+}
+.panels-flexible-tour_detail_layout .panel-separator{
+	clear:both;
+	width: 100%;
+}
+.pane-node-field-descripcion-corta{
+	color: #6D6E71;
+	font-family:'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 14px;	
+}
+
+.display-table{
+	display: table;
+}
+.display-table-cell{
+	display: table-cell;
+}
+
+.detalles-tours{
+	clear:both;
+	margin-top: 30px;
+}
+
+.detalles-tours-col1{
+	float: left;
+	width: 70%;
+}
+.detalles-tours-col1 div{
+	padding-left: 23px;
+	height: 35px;
+	color: #58595B;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+	background-repeat: no-repeat;
+	background-position: left center;
+	margin-bottom: 25px;
+	vertical-align:middle;
+}
+.detalles-tours-col1 .detalles-tours-locali{
+	background-image: url('../images/localizacion.png');
+}
+.detalles-tours-col1 .detalles-tours-duracion{
+	background-image: url('../images/duracion.png');
+}
+.detalles-tours-col1 .detalles-tours-precio-detallado{
+	background-image: url('../images/precio_hotel_dolar.png');
+}
+
+
+.detalles-tours-col2{
+	float: left;
+	width: 30%;
+	
+}
+.detalles-tours-col2 .detalles-tour-precio-total{
+	width: 120px;
+	height: 120px;
+	float:right;
+	border-radius: 13px;
+	box-sizing:border-box;
+	padding: 10px;
+	background-color: #9BB53B;
+}
+.detalles-tours-col2 .detalles-tour-precio-total p{
+	color: #FFF;
+	font-family: Roboto, sans-serif;
+	font-weight: 500;
+	text-align:center;
+	margin: 0px; 
+}
+.detalles-tours-col2 .detalles-tour-precio-total p.detalles-tour-label-precio{
+	font-size: 23px;
+}
+.detalles-tours-col2 .detalles-tour-precio-total p.detalles-tour-precio-monto{
+	font-size: 43px; margin: 10px 0px;
+}
+.detalles-tours-col2 .detalles-tour-precio-total p.detalles-tour-precio-grupo{
+	font-size: 18px;
+}
+
+.panels-flexible-tour_detail_layout .field-name-field-tags-tours a{
+	display: block;
+	margin-right: 10px;
+	padding-right: 8px;
+	padding-left: 8px;
+	float: left;
+	border-radius: 5px;
+	background-color: #a7a9ac;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-size: 10px;
+	line-height: 20px;
+	font-weight: 400;	
+}
+
+
+
+.pane-block-20 .compartir-label{
+	display: inline-block;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	line-height: 45px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #58595B;
+	margin-right: 30px;
+	float:left;
+}
+.compartir-box{
+	float: left;
+	height: 45px;
+	border-bottom: 1px solid #58595B;
+	border-top: 1px solid #58595B;
+}
+.pane-block-20 .share-icons{
+	display: inline-block;
+	vertical-align: middle;
+	float:left;
+}
+.pane-block-20 .share-icons span{
+	width: 32px; height: 43px;
+	background-repeat: no-repeat;
+	background-position: center;
+	vertical-align: middle;
+	margin-right: 7px;
+}
+
+.share-icons .st_facebook_large .stLarge{
+	background-image: url('../images/detal_cp_fb.png') !important;
+}
+.share-icons .st_twitter_large .stLarge{
+	background-image: url('../images/detal_cp_tw.png') !important;
+}
+.share-icons .st_pinterest_large .stLarge{
+	background-image: url('../images/detal_cp_pi.png') !important;
+}
+.share-icons .st_googleplus_large .stLarge{
+	background-image: url('../images/detal_cp_gm.png') !important;
+}
+
+.boton-reservar-tour{
+	float:right;
+}
+.boton-reservar-tour a{
+  display: block;
+  width: 160px;
+  height: 45px;
+  padding-right: 43px;
+  padding-left: 13px;
+  background-color: #f48a1e;
+  background-image: url('../images/icon_btn_formhome.png');
+  background-position: 93% 50%;
+  background-repeat: no-repeat;
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 17px;
+  line-height: 45px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;	
+}
+
+
+.sidebar-column h2.pane-title{
+	color: #F48A1E;
+	text-transform: uppercase;
+	font-family: 'Arvo', sans-serif;
+	font-size: 29px;
+	font-weight: normal;	
+}
+
+.necesita-ayuda-block{
+	margin-top: 40px;
+	position:relative;
+}
+.necesita-ayuda-block h3{
+	font-family: Roboto, sans-serif;
+	font-size: 32px;
+	font-weight: normal;	
+	color: #58595B;
+	margin-bottom: 20px;
+}
+.necesita-ayuda-block h3 span{
+	color: #F48A1E;
+	font-family: 'Arvo', sans-serif;
+	font-size: 40px;
+	font-weight: normal;	
+}
+.necesita-ayuda-block .descripcion{
+	border: 1px solid #58595B;
+	padding: 15px;
+	box-sizing:border-box;
+	color: #6D6E71;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	line-height: 17px;
+	font-size: 14px;	
+}
+.necesita-ayuda-block .descripcion .telefono{
+}
+.necesita-ayuda-block .descripcion .email{
+}
+.necesita-ayuda-block .viaje-a-su-medida{
+  display: block;
+  width: 170px;
+  background-color: #F48A1E;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #FFF;
+  background-image: url('../images/icon_btn.png');
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  padding-left: 8px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -12px;
+  right: 20px;
+}
+
+
 
 
 /*
