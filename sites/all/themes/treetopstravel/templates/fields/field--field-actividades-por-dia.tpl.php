@@ -2,48 +2,49 @@
 <?php
 if ($items){
 
-$imagen ="";
+$columna1_markup ="";
+$columna2_markup ="";
 ?>
 <!-- Place somewhere in the <body> of your page -->
 <?php for ($i=0; $i < count($items); $i++) {
 	dpm($items);
-	/*$url = "";
-	$link="";
-	$titulo_slide="";
-	$desc_slide="";
-	$titulo_slide_markup = "";
-	$desc_slide_markup = "";
-	$texto_boton_link_slide = "";
-	$texto_boton_link_slide_markup="";
+	$titulo_dia = "";
+	$descri="";
+	$noche="";
+	$tour="";
+	$titulo_dia_markup = "";
+	$descri_markup = "";
+	$tour_markup = "";
+	$noche_markup="";
 
 
-		if (isset($items[$i]['field_image']['#items'][0]['uri'])){
-			$url = '/sites/default/files/slides/'.str_replace("public://slides/","",$items[$i]['field_image']['#items'][0]['uri']);
+		
+
+		if (isset($items[$i]['field_titulo_dia']['#items'][0]['value'])){
+			$titulo_dia = $items[$i]['field_titulo_dia']['#items'][0]['value'];
+			
+
+		}else{	
+			$titulo_dia = $i+1;
+		}
+
+
+		if (isset($items[$i]['field_descripcion_actividad ']['#items'][0]['value'])){
+			$descri = $items[$i]['field_descripcion_actividad ']['#items'][0]['value'];
+			
+
+		}
+		if (isset($items[$i]['field_noche']['#items'][0]['value'])){
+			$noche = $items[$i]['field_noche']['#title'].": ".$items[$i]['field_noche']['#items'][0]['value'];
 			
 
 		}
 
-		if (isset($items[$i]['field_slide_link']['#items'][0]['value'])){
-			$link = $items[$i]['field_slide_link']['#items'][0]['value'];
+		if (isset($items[$i]['field_tour']['#items'][0]['value'])){
+			$tour = $items[$i]['field_tour']['#title'].": ".$items[$i]['field_tour ']['#items'][0]['value'];
 			
 
-		}
-		if (isset($items[$i]['field_slide_titulo']['#items'][0]['value'])){
-			$titulo_slide = $items[$i]['field_slide_titulo']['#items'][0]['value'];
-			
-
-		}
-		if (isset($items[$i]['field_slide_descripcion']['#items'][0]['value'])){
-			$desc_slide = $items[$i]['field_slide_descripcion']['#items'][0]['value'];
-			
-
-		}
-
-		if (isset($items[$i]['field_slide_texto_boton_link']['#items'][0]['value'])){
-			$texto_boton_link_slide = $items[$i]['field_slide_texto_boton_link']['#items'][0]['value'];
-			
-
-		}
+		}/*
 		
 		if($url != ''){
 			if($link != ''){
