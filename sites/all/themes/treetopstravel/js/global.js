@@ -17,17 +17,17 @@ jQuery(window).load(function() {
 });
 
 jQuery(document).ready(function() {
-  jQuery(".i18n-es .views-exposed-form .form-item-field-region-tid select option[value='All']").text("Todas las regiones");
-  jQuery(".i18n-es .views-exposed-form .form-item-field-destino-target-id select option[value='All']").text("Todos los destinos");    
-  jQuery(".i18n-en .views-exposed-form .form-item-field-region-tid select option[value='All']").text("All the regions");
-  jQuery(".i18n-en .views-exposed-form .form-item-field-destino-target-id select option[value='All']").text("All the destinations");    
+  jQuery(".i18n-es .view-display-id-block .views-exposed-form .form-item-field-region-tid select option[value='All']").text("Todas las regiones");
+  jQuery(".i18n-es .view-display-id-block .views-exposed-form .form-item-field-destino-target-id select option[value='All']").text("Todos los destinos");    
+  jQuery(".i18n-en .view-display-id-block_1 .views-exposed-form .form-item-field-region-tid select option[value='All']").text("All the regions");
+  jQuery(".i18n-en .view-display-id-block_1 .views-exposed-form .form-item-field-destino-target-id select option[value='All']").text("All the destinations");    
 
 });
 jQuery(document).ajaxSuccess(function() {
-  jQuery(".i18n-es .views-exposed-form .form-item-field-region-tid select option[value='All']").text("Todas las regiones");
-  jQuery(".i18n-es .views-exposed-form .form-item-field-destino-target-id select option[value='All']").text("Todos los destinos");    
-  jQuery(".i18n-en .views-exposed-form .form-item-field-region-tid select option[value='All']").text("All the regions");
-  jQuery(".i18n-en .views-exposed-form .form-item-field-destino-target-id select option[value='All']").text("All the destinations");    
+  jQuery(".i18n-es .view-display-id-block .views-exposed-form .form-item-field-region-tid select option[value='All']").text("Todas las regiones");
+  jQuery(".i18n-es .view-display-id-block .views-exposed-form .form-item-field-destino-target-id select option[value='All']").text("Todos los destinos");    
+  jQuery(".i18n-en .view-display-id-block_1 .views-exposed-form .form-item-field-region-tid select option[value='All']").text("All the regions");
+  jQuery(".i18n-en .view-display-id-block_1 .views-exposed-form .form-item-field-destino-target-id select option[value='All']").text("All the destinations");    
 
 });
 
