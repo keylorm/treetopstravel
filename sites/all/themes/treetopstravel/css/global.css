@@ -2539,15 +2539,16 @@ h1.title{
 
 .field-name-field-titulo-dia{
 	background-color: #F48A1E;
-	width: 100px; height: 100px;
+	width: 105px; height: 105px;
 	text-align:center;
-	line-height: 100px;
+	line-height: 105px;
 	font-family: Roboto, sans-serif;
 	font-size: 33px;
 	font-weight: 500;
 	color: #FFF;	
 	text-transform:uppercase;
 	border-radius: 50%;
+	-webkit-border-radius: 50%;
 }
 
 
@@ -2744,7 +2745,7 @@ h1.title{
 }
 .necesita-ayuda-block .descripcion{
 	border: 1px solid #58595B;
-	padding: 15px;
+	padding: 15px; padding-bottom: 20px;
 	box-sizing:border-box;
 	color: #6D6E71;
 	font-family: 'Open Sans', sans-serif;
@@ -2753,8 +2754,20 @@ h1.title{
 	font-size: 14px;	
 }
 .necesita-ayuda-block .descripcion .telefono{
+  background-image: url('../images/tel_detalle.png');
+  background-repeat: no-repeat;
+  background-position: left center;	
+  padding-left: 25px;
+  margin: 15px 0px 0px 10px;
+  display: block;
 }
 .necesita-ayuda-block .descripcion .email{
+  background-image: url('../images/email_detalle.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 25px;
+  margin: 0px 0px 0px 10px;
+  display: block;
 }
 .necesita-ayuda-block .viaje-a-su-medida{
   display: block;
@@ -2777,7 +2790,13 @@ h1.title{
   right: 20px;
 }
 
-
+.pane-listados-de-tours-y-hoteles{
+	border-top: 1px solid #58595B;
+	padding-top: 20px;
+}
+.sidebar-column .listado-tours-recomedados h3{
+	font-size: 32px;
+}
 
 
 /*
