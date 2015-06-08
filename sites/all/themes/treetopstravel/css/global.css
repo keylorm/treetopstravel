@@ -748,45 +748,47 @@ input[type="checkbox"]:checked + label span {
 .form-viaje-a-su-medida #edit-submitted-experience{
 	overflow:hidden;
 }
-.form-viaje-a-su-medida .form-type-checkbox{
+/*form-viaje-a-su-medida */
+.formulario-estilo-general .form-type-checkbox{
 	display:inline-block;
 	width: 32%;
 	margin-bottom: 40px;
 	float:left;
 	padding-left: 42px !important;
 }
-.form-viaje-a-su-medida{
+.formulario-estilo-general{
 	background-image: url('../images/sombra_form_viaje.png');
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	padding-bottom: 127px;
 	position: relative;
 }
-.form-viaje-a-su-medida > div{
+.formulario-estilo-general > div{
 	background-color: #F1F2F2;
 	box-sizing:border-box;
 	padding-bottom: 80px;
 	overflow: hidden;
 	
 }
-.form-viaje-a-su-medida .webform-progressbar-page-label{
+.formulario-estilo-general .webform-progressbar-page-label{
 	display: none;
 }
 
-.form-viaje-a-su-medida .webform-progressbar{
+.formulario-estilo-general .webform-progressbar{
 	width: 100%;
 	padding: 55px 120px;
 	background-image: url('../images/line_form_viaje.png');
 	background-repeat:repeat-x;
 	background-position: bottom center;
 }
-.form-viaje-a-su-medida .webform-component, .form-viaje-a-su-medida .webform-component--fecha-salida-llegada{
+.formulario-estilo-general .webform-component,
+.formulario-estilo-general .webform-component--fecha-salida-llegada{
 	padding: 20px 50px;
 	clear: both;
 }
 
 
-.form-viaje-a-su-medida .webform-layout-box .webform-component > label{
+.formulario-estilo-general .webform-layout-box .webform-component > label{
 	color: #F68C1E;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
@@ -794,19 +796,19 @@ input[type="checkbox"]:checked + label span {
 	font-weight: 500;
 	margin-bottom: 30px;
 }
-.form-viaje-a-su-medida .webform-layout-box .webform-component .form-type-checkbox{
+.formulario-estilo-general .webform-layout-box .webform-component .form-type-checkbox{
 	margin-bottom: 10px;
 	padding-left: 42px !important;
 }
 
 
 
-.form-viaje-a-su-medida .encabezado-pasos{
+.formulario-estilo-general .encabezado-pasos{
 	clear:both;
 	width: 100%;
 	overflow: hidden;
 }
-.form-viaje-a-su-medida h3{
+.formulario-estilo-general h3{
 	color: #9DB73B;
 	font-family: 'Roboto', sans-serif;
 	font-size: 27px;
@@ -815,18 +817,18 @@ input[type="checkbox"]:checked + label span {
 	margin-bottom: 0px;
 	font-weight: 500;	
 }
-.form-viaje-a-su-medida p,
-.form-viaje-a-su-medida h3 span{
+.formulario-estilo-general p,
+.formulario-estilo-general h3 span{
 	margin-top: 0px;
 	font-family:'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #6D6E71;
 	line-height: 16px;
 }
-.form-viaje-a-su-medida h3 span{
+.formulario-estilo-general h3 span{
 	padding-left: 15px;
 }
-.form-viaje-a-su-medida .paso{
+.formulario-estilo-general .paso{
 	background-color: #9DB73B;
 	border-radius: 50%;
 	width: 86px;
@@ -840,13 +842,13 @@ input[type="checkbox"]:checked + label span {
 	line-height: 88px;	
 	margin-right: 20px;
 }
-.form-viaje-a-su-medida .datepicker{
+.formulario-estilo-general .datepicker{
 	max-width: 63% !important;
 	background-image: url('../images/calendario_formviaje.png');
 	background-repeat: no-repeat;
 	background-position: 99% 50%;	
 }
-.form-viaje-a-su-medida .form-select{
+.formulario-estilo-general .form-select{
 	border: 1px solid #808285;
 	width: 90%;
 	height: 45px;
@@ -857,41 +859,41 @@ input[type="checkbox"]:checked + label span {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 }
-.form-viaje-a-su-medida .form-text{
+.formulario-estilo-general .form-text{
 	border: 1px solid #808285;
 	width: 100%;
 	height: 45px;	
 }
 
-.form-viaje-a-su-medida .form-item-submitted-ano-year label,
-.form-viaje-a-su-medida .form-item-submitted-ano-year div{
+.formulario-estilo-general .form-item-submitted-ano-year label,
+.formulario-estilo-general .form-item-submitted-ano-year div{
 	display: inline-block;
 }
 
-.form-viaje-a-su-medida #edit-submitted-adults{
+.formulario-estilo-general #edit-submitted-adults{
 	background-image: url('../images/adultos.png'), url('../images/selector_formhome.png');
 	background-repeat: no-repeat, no-repeat;
 	background-position: 0% 50%, 99% 50%;	
 }
-.form-viaje-a-su-medida #edit-submitted-children{
+.formulario-estilo-general #edit-submitted-children{
 	background-image: url('../images/ninos.png'), url('../images/selector_formhome.png');
 	background-repeat: no-repeat, no-repeat;
 	background-position: 0% 50%, 99% 50%;	
 }
-.form-viaje-a-su-medida .webform-datepicker input[type="image"]{
+.formulario-estilo-general .webform-datepicker input[type="image"]{
 	display: none;
 }
-.form-viaje-a-su-medida .webform-progressbar-outer{
+.formulario-estilo-general .webform-progressbar-outer{
 	border: none;
 	height: 1px;
 	background-color: #9DB73B;
 	margin: 0px;
 }
-.form-viaje-a-su-medida .webform-progressbar-inner{
+.formulario-estilo-general .webform-progressbar-inner{
 	background: none;
 	height: 1px;
 }
-.form-viaje-a-su-medida .webform-progressbar-page {
+.formulario-estilo-general .webform-progressbar-page {
   width: 21px;
   height: 21px;
   margin: -12px -4px;
@@ -899,19 +901,19 @@ input[type="checkbox"]:checked + label span {
   background-color: white;
   border-radius: 50%;
 }
-.form-viaje-a-su-medida .webform-progressbar-page.current,
-.form-viaje-a-su-medida .webform-progressbar-page.completed,
-.form-viaje-a-su-medida .webform-progressbar-page.clickable:hover{
+.formulario-estilo-general .webform-progressbar-page.current,
+.formulario-estilo-general .webform-progressbar-page.completed,
+.formulario-estilo-general .webform-progressbar-page.clickable:hover{
 	background-color: white;
 	background-image: url('../images/on_paso_viajes.png');
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.form-viaje-a-su-medida .form-actions{
+.formulario-estilo-general .form-actions{
 	clear:both;
 }
-.form-viaje-a-su-medida .form-actions .form-submit{
+.formulario-estilo-general .form-actions .form-submit{
 	position:absolute;
   padding-right: 55px;
   padding-left: 20px;
@@ -2652,7 +2654,8 @@ h1.title{
 
 
 
-.pane-block-20 .compartir-label{
+.pane-block-20 .compartir-label,
+.pane-block-21 .compartir-label{
 	display: inline-block;
 	font-family: Roboto, sans-serif;
 	font-size: 16px;
@@ -2669,17 +2672,24 @@ h1.title{
 	border-bottom: 1px solid #58595B;
 	border-top: 1px solid #58595B;
 }
-.pane-block-20 .share-icons{
+.pane-block-20 .share-icons,
+.pane-block-21 .share-icons{
 	display: inline-block;
 	vertical-align: middle;
 	float:left;
 }
-.pane-block-20 .share-icons span{
+.pane-block-20 .share-icons span,
+.pane-block-21 .share-icons span{
 	width: 32px; height: 43px;
 	background-repeat: no-repeat;
 	background-position: center;
 	vertical-align: middle;
-	margin-right: 7px;
+	margin-right: 7px; overflow: hidden;
+}
+.pane-block-20 .share-icons span:hover,
+.pane-block-21 .share-icons span:hover{
+	background-repeat: no-repeat;
+	background-position: center;	
 }
 
 .share-icons .st_facebook_large .stLarge{
@@ -2790,13 +2800,155 @@ h1.title{
   right: 20px;
 }
 
-.pane-listados-de-tours-y-hoteles{
+
+.sidebar-column .listado-tours-recomedados{
 	border-top: 1px solid #58595B;
-	padding-top: 20px;
+	margin-top: 50px;
+	clear:both;	
 }
 .sidebar-column .listado-tours-recomedados h3{
 	font-size: 32px;
+	margin-top: 30px;
 }
+
+.sidebar-column .listado-tours-recomedados .ver-mas-itinerarios a{
+	color: #F48A1E;
+	font-family: 'Roboto', sans-serif;
+	font-size: 19px;
+	font-weight: 500;
+	float:right;
+}
+
+
+.panels-flexible-tour_detail_layout .panels-flexible-region-first{
+  padding-right: 30px; box-sizing:border-box;
+}
+.panels-flexible-tour_detail_layout .formulario-estilo-general{
+	background: none;
+	padding-bottom: 0px;
+}
+.panels-flexible-tour_detail_layout .formulario-estilo-general > div{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.panels-flexible-tour_detail_layout .formulario-estilo-general .row-group div{
+	width: 50%;
+	padding: 0px !important; margin: 0px !important;
+	box-sizing:border-box;
+}
+
+.panels-flexible-tour_detail_layout .formulario-estilo-general .row-group div:first-child{
+	box-sizing:border-box;
+	padding-right: 15px !important;
+}
+.panels-flexible-tour_detail_layout .formulario-estilo-general .row-group div:last-child{
+	box-sizing:border-box;
+	padding-left: 15px !important;
+}
+
+
+.panels-flexible-tour_detail_layout .formulario-estilo-general input[type="text"],
+.panels-flexible-tour_detail_layout .formulario-estilo-general input[type="email"],
+.panels-flexible-tour_detail_layout .formulario-estilo-general select{
+	border: none;
+	border-bottom: 2px solid #D1D3D4;
+	padding-left: 10px;
+}
+
+
+.panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component{
+	  padding: 15px 30px;
+}
+
+
+.panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component label{
+	color: #6D6E71;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 15px;	
+}
+.panels-flexible-tour_detail_layout .formulario-estilo-general fieldset{
+	margin: 0px; padding: 0px; border: none;
+}
+.panels-flexible-tour_detail_layout .formulario-estilo-general fieldset legend span{
+	display: block;
+	color: #9BB53B;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-size: 27px;
+	font-weight: 500;	
+	padding: 40px 0px 30px 30px;
+}
+.panels-flexible-tour_detail_layout .formulario-estilo-general .form-radios > div{
+	display: inline-block;
+	margin-right: 20px;
+}
+.panels-flexible-tour_detail_layout .formulario-estilo-general .webform-layout-box .webform-component .form-radios > div > label{
+	color: #6D6E71;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	text-transform: none;
+}
+
+.panels-flexible-tour_detail_layout .formulario-estilo-general .form-actions .form-submit{
+	position:static;
+	float: right;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+
+.panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component--datos-itinerario--datos-del-itinerario--itinerario label,
+.panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component--datos-itinerario--datos-del-itinerario--tipo-viaje label{
+	float:left;
+}
+.panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component--datos-itinerario--datos-del-itinerario--itinerario input,
+.panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component--datos-itinerario--datos-del-itinerario--tipo-viaje input{
+	float:left;
+}
+
+.panels-flexible-tour_detail_layout .formulario-estilo-general #edit-submitted-datos-itinerario-datos-del-itinerario-itinerario,
+.panels-flexible-tour_detail_layout .formulario-estilo-general #edit-submitted-datos-itinerario-datos-del-itinerario-tipo-viaje{
+	border: none;
+	background-color: transparent;
+	height: 20px;
+	float:left;
+	color: #9BB53B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	font-weight: normal;
+	font-style: italic;	
+	width: 50%;
+}
+
+.panels-flexible-tour_detail_layout .formulario-estilo-general input[type="radio"] {
+    display:none;
+}
+.panels-flexible-tour_detail_layout .formulario-estilo-general input[type="radio"] + label {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #808285;	
+}
+.panels-flexible-tour_detail_layout .formulario-estilo-general input[type="radio"] + label span {
+    display:inline-block;
+    width: 23px;
+    height: 23px;
+    margin: -3px 5px 0 0px;
+    vertical-align:middle;
+    background-image:url('../images/radio_reserva_off.png');
+	background-repeat: no-repeat;
+	background-position:center;
+    cursor:pointer;
+}
+.panels-flexible-tour_detail_layout .formulario-estilo-general input[type="radio"]:checked + label span {
+    background-image:url('../images/radio_reserva_on.png');
+	background-repeat: no-repeat;
+	background-position:center;	
+}
+
 
 
 /*
