@@ -1,10 +1,18 @@
 jQuery(window).load(function() {
-  jQuery('.flexslider.flexslider-home').flexslider({
+  jQuery('.front .flexslider').flexslider({
     animation: "slide",
     animationLoop: true,
     pauseOnHover: false,
     controlsContainer: ".container-nav",
     directionNav: false
+  });
+
+  jQuery('.not-front .flexslider').flexslider({
+    animation: "slide",
+    animationLoop: true,
+    pauseOnHover: false,
+    controlsContainer: ".container-nav",
+    directionNav: true
   });
 
   jQuery('.flexslider.flexslider-interno').flexslider({
