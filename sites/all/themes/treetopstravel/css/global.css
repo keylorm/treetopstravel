@@ -2580,7 +2580,17 @@ h1.title{
 .panels-flexible-tour_detail_layout .pane-node-field-actividades-por-dia{
 }
 
-.field-name-field-titulo-dia{
+.actividades-por-dia-field{
+}
+.actividades-por-dia-field .actividad-row{
+	width: 100%;
+	clear:both;
+}
+.actividades-por-dia-field .actividad-row .actividad-col-izq{
+	float:left;
+	width: 25%;
+}
+.actividades-por-dia-field .actividad-row .actividad-col-izq .actividad-dia-numero{
 	background-color: #F48A1E;
 	width: 105px; height: 105px;
 	text-align:center;
@@ -2591,8 +2601,36 @@ h1.title{
 	color: #FFF;	
 	text-transform:uppercase;
 	border-radius: 50%;
-	-webkit-border-radius: 50%;
+	-webkit-border-radius: 50%;	
 }
+.actividades-por-dia-field .actividad-row.actividad-row2 .actividad-col-izq .actividad-dia-numero{
+	background-color: #9BB53B;
+}
+
+.actividades-por-dia-field .actividad-row .actividad-col-der{
+	float:left;
+	width: 75%;	
+}
+.actividades-por-dia-field .actividad-row .actividad-col-der .actividad-desc{
+	color: #6D6E71;
+	font-family:'Open Sans', sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: normal;	
+}
+.actividades-por-dia-field .actividad-row .actividad-col-der .actividad-tour,
+.actividades-por-dia-field .actividad-row .actividad-col-der .actividad-noche{
+	font-size: 14px; line-height: 16px; color: #9CB72E;
+}
+.actividades-por-dia-field .actividad-row .actividad-col-der div span{
+	color: #6E6E6E;
+}
+
+
+
+
+
+
 
 
 .panels-flexible-tour_detail_layout .panel-separator{
@@ -2852,7 +2890,7 @@ h1.title{
 	margin-top: 30px;
 }
 
-.sidebar-column .listado-tours-recomedados .ver-mas-itinerarios a{
+.sidebar-column .listado-tours-recomedados .ver-mas-recomendaciones a{
 	color: #F48A1E;
 	font-family: 'Roboto', sans-serif;
 	font-size: 19px;
@@ -2903,7 +2941,15 @@ h1.title{
 .panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component,
 .panels-flexible-tour_detail_layout .formulario-estilo-general .row-group{
 	margin-bottom: 25px;
+	width: 100%;
+	overflow:hidden;
 }
+
+.panels-flexible-tour_detail_layout .formulario-estilo-general .campo-adultos,
+.panels-flexible-tour_detail_layout .formulario-estilo-general .campo-ninos{
+	width: 50%;
+}
+
 
 
 .panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component label{
@@ -2924,7 +2970,7 @@ h1.title{
 	font-family: 'Roboto', sans-serif;
 	font-size: 27px;
 	font-weight: 500;	
-	padding: 40px 0px 30px 30px;
+	padding: 5px 0px 30px 20px;
 }
 .panels-flexible-tour_detail_layout .formulario-estilo-general .form-radios > div{
 	display: inline-block;
