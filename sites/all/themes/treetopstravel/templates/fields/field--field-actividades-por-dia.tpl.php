@@ -2,12 +2,13 @@
 <?php
 if ($items){
 
-$columna1_markup ="";
-$columna2_markup ="";
+$actividad="";
+$class_par="";
+
 ?>
 <!-- Place somewhere in the <body> of your page -->
 <?php for ($i=0; $i < count($items); $i++) {
-	dpm($items);
+	
 	$titulo_dia = "";
 	$descri="";
 	$noche="";
@@ -29,8 +30,8 @@ $columna2_markup ="";
 		}
 
 
-		if (isset($items[$i]['field_descripcion_actividad ']['#items'][0]['value'])){
-			$descri = $items[$i]['field_descripcion_actividad ']['#items'][0]['value'];
+		if (isset($items[$i]['field_descripcion_actividad']['#items'][0]['value'])){
+			$descri = $items[$i]['field_descripcion_actividad']['#items'][0]['value'];
 			
 
 		}
@@ -41,53 +42,30 @@ $columna2_markup ="";
 		}
 
 		if (isset($items[$i]['field_tour']['#items'][0]['value'])){
-			$tour = $items[$i]['field_tour']['#title'].": ".$items[$i]['field_tour ']['#items'][0]['value'];
+			$tour = $items[$i]['field_tour']['#title'].": ".$items[$i]['field_tour']['#items'][0]['value'];
 			
 
-		}/*
-		
-		if($url != ''){
-			if($link != ''){
-				if ($titulo_slide != '' || $desc_slide != '' || $texto_boton_link_slide != ''){
-					if($titulo_slide != ''){
-						$titulo_slide_markup = "<h3><a href=\"".$link."\" >".$titulo_slide."</a></h3>";
-					}
-					if($desc_slide != ''){
-						$desc_slide_markup = "<p>".$desc_slide."</p>";
-					}
-
-					if($texto_boton_link_slide != ''){
-						$texto_boton_link_slide_markup = "<p><a class='link-ver-mas-slide' href='".$link."'>".$texto_boton_link_slide."</a></p>";
-					}
-					
-
-					$imagen .= "<li><a href=\"".$link."\" ><img src='".$url."' /></a><div class='flex-caption'><div class='flex-caption-inner'>".$titulo_slide_markup.$desc_slide_markup.$texto_boton_link_slide_markup."</div></div></li>";
-				}else{
-					$imagen .= "<li><a href=\"".$link."\" ><img src='".$url."' /></a></li>";
-				}
-			}else{
-				if ($titulo_slide != '' || $desc_slide != ''){
-					if($titulo_slide != ''){
-						$titulo_slide_markup = "<h3>".$titulo_slide."</h3>";
-					}
-					if($desc_slide != ''){
-						$desc_slide_markup = "<p>".$desc_slide."</p>";
-					}
-					
-
-					$imagen .= "<li><img src='".$url."' /><div class='flex-caption'><div class='flex-caption-inner'>".$titulo_slide_markup.$desc_slide_markup."</div></div></li>";
-				}else{
-					$imagen .= "<li><img src='".$url."' /></li>";
-			}
-
-			
 		}
-	}*/
+
+		if(($i%2)==0){
+			$class_par="par";
+
+		}else{
+			$class_par="impar";
+		}
+
+
+
+		$actividad .= "<div class='actividad-row actividad-row-".$class_par." actividad-row".($i+1)."'>
+		<div class='actividad-col-izq'><div class='actividad-dia-numero'><p>".$titulo_dia."</p></div></div>
+		<div class='actividad-col-der'><div class='actividad-desc'>".$descri."</div><div class='actividad-tour'>".$tour."</div><div class='actividad-noche'>".$noche."</div></div></div>";
+
+		
 } ?>
-<div class="flexslider flexslider-home">
-  <ul class="slides">
-		<?php print $imagen ?>
-	</ul>
-	<div class="container-nav"></div>
+<div class="actividades-por-dia-field">
+  
+		<?php print $actividad ?>
+	
 </div>
-<?php 	flexslider_add(); } ?>
+<div class="linea-divisoria"></div>
+<?php 	} ?>
