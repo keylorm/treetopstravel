@@ -36,13 +36,13 @@ $class_par="";
 
 		}
 		if (isset($items[$i]['field_noche']['#items'][0]['value'])){
-			$noche = $items[$i]['field_noche']['#title'].": ".$items[$i]['field_noche']['#items'][0]['value'];
+			$noche = "<span>".$items[$i]['field_noche']['#title']."</span>: ".$items[$i]['field_noche']['#items'][0]['value'];
 			
 
 		}
 
 		if (isset($items[$i]['field_tour']['#items'][0]['value'])){
-			$tour = $items[$i]['field_tour']['#title'].": ".$items[$i]['field_tour']['#items'][0]['value'];
+			$tour = "<span>".$items[$i]['field_tour']['#title']."</span>: ".$items[$i]['field_tour']['#items'][0]['value'];
 			
 
 		}
