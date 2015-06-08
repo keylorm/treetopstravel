@@ -2473,7 +2473,7 @@ h1.title{
   font-size: 13px;
   font-weight: 400;
 }
-.tours-oferta-precio p {
+.tours-oferta-precio {
   position: absolute;
   left: 30px;
   bottom: 20px;
