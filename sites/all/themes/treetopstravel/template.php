@@ -138,14 +138,14 @@ function treetopstravel_breadcrumb($variables) {
  * Implements hook_html_form_alter().
  */
 function treetopstravel_form_alter(&$form, &$form_state, $form_id) {
-
+  
   if($form_id == "webform_client_form_7" || $form_id == "webform_client_form_18" ){
     $form['#attributes']['class'][] = 'form-viaje-a-su-medida';
     //agregamos la libreria de datepicker para el formulario
     $form['#after_build'] = array('custom_form_uidatepicker');
   }
 
-  if($form_id == "webform_client_form_7" || $form_id == "webform_client_form_18" || $form_id == "webform_client_form_98" || $form_id == "webform_client_form_101" || $form_id == "webform_client_form_104" || $form_id == "webform_client_form_102" || $form_id == "webform_client_form_105" || $form_id == "webform_client_form_106"){
+  if($form_id == "webform_client_form_7" || $form_id == "webform_client_form_18" || $form_id == "webform_client_form_98" || $form_id == "webform_client_form_101" || $form_id == "webform_client_form_104" || $form_id == "webform_client_form_102" || $form_id == "webform_client_form_105" || $form_id == "webform_client_form_106"|| $form_id == "webform_client_form_201"|| $form_id == "webform_client_form_202"){
     $form['#attributes']['class'][] = 'formulario-estilo-general';
     //agregamos la libreria de datepicker para el formulario
     $form['#after_build'] = array('custom_form_uidatepicker');
@@ -153,8 +153,11 @@ function treetopstravel_form_alter(&$form, &$form_state, $form_id) {
 
   /*if($form_id == "webform_client_form_3" || $form_id == "webform_client_form_18"){
     $form['#attributes']['class'][] = 'grid-1000';
+
   }*/
 }
+
+
 
 function custom_form_uidatepicker($form, $form_state) {
   drupal_add_library('system', 'ui.datepicker');
@@ -172,6 +175,7 @@ function custom_form_uidatepicker($form, $form_state) {
  * https://gist.github.com/jacine/1378246
  */
 function treetopstravel_page_alter(&$page) {
+
   // Remove all the region wrappers.
   foreach (element_children($page) as $key => $region) {
     if (!empty($page[$region]['#theme_wrappers'])) {
@@ -185,6 +189,7 @@ function treetopstravel_page_alter(&$page) {
 }
 
 function treetopstravel_preprocess_node(&$vars) {
+
   // Add a striping class.
   $vars['classes_array'][] = 'node-' . $vars['zebra'];
 
@@ -219,6 +224,7 @@ function treetopstravel_menu_link(array $variables) {
   return theme_menu_link($variables);
 }
 function treetopstravel_preprocess_page(&$vars) {
+
     // - page--example.tpl.php
   
   if (isset($vars['node'])) {
