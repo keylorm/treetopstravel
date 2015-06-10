@@ -220,6 +220,7 @@ function treetopstravel_menu_link(array $variables) {
 }
 function treetopstravel_preprocess_page(&$vars) {
     // - page--example.tpl.php
+  
   if (isset($vars['node'])) {
     $vars['theme_hook_suggestion'] = 'page__'.$vars['node']->type; //
   }

@@ -83,10 +83,10 @@
     </div>
   </div>
   <?php endif; ?>
-      <div class="grid-1000"><?php print render($title_prefix); ?>
-      <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+    <?php /*<div class="grid-1000"><?php print render($title_prefix); ?>
+      <?php if ($title): ?><h2 class="title" id="page-title"><?php print $title; ?></h2><?php endif; ?>
       <?php print render($title_suffix); ?>
-    </div>
+    </div>   */?>
 
       <?php if ($tabs): ?>
         <?php print render($tabs); ?>
