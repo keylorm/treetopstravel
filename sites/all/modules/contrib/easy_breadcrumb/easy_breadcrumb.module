@@ -161,7 +161,7 @@ function theme_easy_breadcrumb($variables) {
 				$html .= '<span class="' . $class . '">'	. check_plain($content) . '</span>';
 			}
 			if ($i < $s) {
-				$html .= '<span class="easy-breadcrumb_segment-separator"> ' . $separator . ' </span>';
+				$html .= '<span class="easy-breadcrumb-segment-separator"> ' . $separator . ' </span>';
 			}
     }
     

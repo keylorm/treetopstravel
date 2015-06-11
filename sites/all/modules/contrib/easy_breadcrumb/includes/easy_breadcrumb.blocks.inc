@@ -16,7 +16,7 @@ function _easy_breadcrumb_block() {
   // Array storing the breadcrumb's segments.
   $breadcrumb = array();
   // Default classes for the segments.
-  $segments_classes = array('easy-breadcrumb_segment');
+  $segments_classes = array('easy-breadcrumb-segment');
   // Gets the flag saying if the front page segment should be included.
   $include_front_page_segment = variable_get(EasyBreadcrumbConstants::DB_VAR_INCLUDE_HOME_SEGMENT, TRUE);
 
@@ -24,7 +24,7 @@ function _easy_breadcrumb_block() {
   if ($include_front_page_segment) {
     $front_text = _easy_breadcrumb_obtain_home_title();
     // Marks the front--segment with an identifier class (useful for CSS).
-    $segments_classes[1] = 'easy-breadcrumb_segment-front';
+    $segments_classes[1] = 'easy-breadcrumb-segment-front';
     // Adds a segment for the front page.
     $breadcrumb[] = _easy_breadcrumb_build_item($front_text, $segments_classes, '<front>');
   }
@@ -76,7 +76,7 @@ function _easy_breadcrumb_block() {
         continue;
       }
 
-      $segments_classes[1] = 'easy-breadcrumb_segment-' . $idx_1;
+      $segments_classes[1] = 'easy-breadcrumb-segment-' . $idx_1;
       // Obtain the internal path it represents.
       $segment_normal_path = drupal_get_normal_path($segment_url);
 
@@ -100,7 +100,7 @@ function _easy_breadcrumb_block() {
     // Adds the page's title to the breadcrumb.
     if ($include_page_title_segment) {
       // Marks the page's-title-segment with an identifier class (useful for CSS).
-      $segments_classes[1] = 'easy-breadcrumb_segment-title';
+      $segments_classes[1] = 'easy-breadcrumb-segment-title';
       // The title is the last segment in the URL.
       $segment_text = $alias_arr[$segments_quantity - 1];
       $segment_title = _easy_breadcrumb_obtain_page_title($segment_text);
