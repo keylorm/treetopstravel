@@ -73,6 +73,7 @@ footer.footerzone{
   margin: 0 auto; 
 }
 
+.flexslider .flex-caption h3,
 .flexslider .flex-caption h3 a{
 	display:block;
 	width: 480px;
@@ -333,6 +334,7 @@ footer.footerzone{
 	background-color: #F1F2F2;
 	box-sizing:border-box;
 	padding-bottom: 150px;
+	/*margin-top: 50px;*/
 }
 .footer-zone .prefooter{
 	height: 55px;
@@ -446,6 +448,16 @@ footer.footerzone{
 }
 
 /* CONTACTO */
+
+.page-node-3.node-type-webform .verde-22{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 22px;	
+	color: #9BB53B;
+}
+.page-node-3.node-type-webform .main-content{
+	margin-bottom: 50px;
+}
 .webform-client-form-3 .form-text,
 .webform-client-form-4 .form-text,
 .webform-client-form-3 .form-select,
@@ -528,16 +540,30 @@ footer.footerzone{
 	right: 0px; left: 0px;
 	overflow: hidden;
 }
-.imagen-top-titulo h2{
+
+h1{
 	font-family: 'Arvo', sans-serif;
 	font-size: 40px;
-	text-shadow: 2px 2px 2px #0F0F0F;
-	text-transform: uppercase;
-	color: #FFF;
 	font-weight: normal;
+	text-transform: uppercase;
+	color: #F48A1E;
+}
+h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 32px;
+	text-transform: uppercase;
+	font-weight: 500;	
+	color: #F68C1E;	
+}
+.imagen-top-titulo h1{
+	text-shadow: 2px 2px 2px #0F0F0F;
+	color: #FFF;
+}
+.field-name-title h2{
+	color: #9BB53B;
 }
 
-#block-views-tipo-de-atraccion-block h2,
+/*#block-views-tipo-de-atraccion-block h2,
 #block-views-tipo-de-atraccion-block-2 h2,
 #block-views-tipo-de-atraccion-block-1 h2,
 #block-views-tipo-de-atraccion-block-3 h2{
@@ -546,7 +572,7 @@ footer.footerzone{
 	text-transform: uppercase;
 	font-weight: 500;	
 	color: #F68C1E;
-}
+}*/
 
 /*.view-tipo-de-atraccion*/ .listado-categorias-tours-atracciones .views-row{
 	width: 314px;
@@ -732,7 +758,7 @@ input[type="checkbox"]:checked + label span {
 	background-position:center;	
 }
 
-.page-node-7 h1.title{
+.page-node-7 h2{
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-weight: 500;
@@ -1063,13 +1089,13 @@ padding: 4px 10px;
 
 /* ATRACCIONES */
 
-h1.title{
+/*h1.title{
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 500;
   color: #F68C1E;	
-}
+}*/
 .view-atracciones .view-header p{
 	margin: 0px; padding: 0px;
 }
@@ -1192,6 +1218,8 @@ h1.title{
 .item-list .pager{
   clear: both;
   overflow: hidden;
+  float: left;
+  margin-top: 50px;  
 }
 .item-list .pager li{
 	padding: 0px; margin: 0px;
@@ -1268,7 +1296,9 @@ h1.title{
 	height: 223px;
 	position: relative;
 }
-
+.view-blog .views-row-last{
+	margin-bottom: 0px;
+}
 .view-blog .views-row .group-left{
 	width: 220px;
 	float:left;
@@ -1326,7 +1356,7 @@ h1.title{
 	color: #BF6632;
 }
 .view-blog .views-row .group-right .field-name-title h2{
-	margin-bottom: 0px;
+	margin-bottom: 0px;  margin-top: 15px;
 }
 
 .view-blog .views-row .group-right .field-name-body{
@@ -1482,7 +1512,9 @@ h1.title{
 	color: #9BB53B;
 	text-transform: uppercase;
 }
-
+#block-views-equipo-block{
+	margin-top: 40px;
+}
 .view-equipo .view-content{
 	overflow:hidden;
 	margin-bottom: 50px;
@@ -1595,7 +1627,9 @@ h1.title{
 #block-block-11 h2{
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
-  font-weight: normal;	
+  font-weight: normal;
+  color: #58595B;
+  text-transform: none;
 }
 #block-block-9 h2 span,
 #block-block-11 h2 span{
@@ -1688,7 +1722,8 @@ h1.title{
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
   font-weight: normal;
-  text-transform: lowercase;	
+  text-transform: lowercase;
+  color: #58595B;	
 }
 
 .listado-blog-sidebar.view-blog h2 span{
@@ -1760,6 +1795,7 @@ h1.title{
 .no-encuentra-lo-que-busca{
 	clear:both;
 	margin-bottom: 50px;
+	margin-top: 30px;
 	position: relative;
 	border-top: 1px solid #58595B;
 }
@@ -1832,6 +1868,7 @@ h1.title{
   font-weight: 500;
   text-transform: none;	
   margin: 0px;
+  color: #9BB53B;
   margin-bottom: 30px;
 }
 .node-type-page .transporte .right p{
@@ -1846,14 +1883,13 @@ h1.title{
 .node-type-blog{
 }
 
-.node-type-blog h1{
+.node-type-blog h2{
 	color: #BF6632;
 	font-family: 'Roboto', sans-serif;
 	font-size: 32px;
 	line-height: 32px;
 	font-weight: 500;
 	text-transform: none;
-
 }
 
 .node-type-blog .group-comm-views-date{
@@ -2133,69 +2169,57 @@ h1.title{
 
 /* ITINERARIOS */
 
-.node-type-page .flexslider .container-nav,
-.page-taxonomy .flexslider .container-nav {
+.slider-interno .flexslider .container-nav {
   top: 50%;
 }
-.node-type-page .flexslider .flex-control-paging,
-.page-taxonomy .flexslider .flex-control-paging{
+.slider-interno .flexslider .flex-control-paging{
 	/*display: none;*/
 	width: 100%;
 	bottom: -285px;
 	-moz-bottom: -280px;
 }
-.node-type-page .flexslider .container-nav,
-.page-taxonomy .flexslider .container-nav{
+.slider-interno .flexslider .container-nav{
 	width: 98%;
 }
-.node-type-page .flexslider .flex-direction-nav,
-.page-taxonomy .flexslider .flex-direction-nav{
+.slider-interno .flexslider .flex-direction-nav{
 	display: block;
 	top: 50%;
 }
-.node-type-page .flexslider .flex-direction-nav a,
-.page-taxonomy .flexslider .flex-direction-nav a{
+.slider-interno .flexslider .flex-direction-nav a{
 	width: 45px; height: 45px;
 	background-repeat: no-repeat;
 	background-position: center;
 	line-height: 83;	
 }
-.node-type-page .flexslider .flex-direction-nav .flex-next,
-.page-taxonomy .flexslider .flex-direction-nav .flex-next{
+.slider-interno .flexslider .flex-direction-nav .flex-next{
 	background-image: url('../images/next_slider_interno.png');
 }
-.node-type-page .flexslider .flex-direction-nav .flex-prev,
-.page-taxonomy .flexslider .flex-direction-nav .flex-prev{
+.slider-interno .flexslider .flex-direction-nav .flex-prev{
 	background-image: url('../images/prev_slider_interno.png');
 }
 
 
 
-.node-type-page .flexslider .flex-caption .flex-caption-inner,
-.page-taxonomy .flexslider .flex-caption .flex-caption-inner{
+.slider-interno .flexslider .flex-caption .flex-caption-inner{
 	width: 515px;
 	background: rgba(0,0,0,0.6);
 	box-sizing:border-box;
 	padding: 10px 15px;
 }
-.node-type-page .flexslider .flex-caption,
-.page-taxonomy .flexslider .flex-caption{
+.slider-interno .flexslider .flex-caption{
 	text-align: left;
 }
-.node-type-page .flexslider .flex-caption h3 a,
-.page-taxonomy .flexslider .flex-caption h3 a{
+.slider-interno .flexslider .flex-caption h3 a{
 	text-transform:none;
 	text-align: left;	
 }
-.node-type-page .flexslider .flex-caption p,
-.page-taxonomy .flexslider .flex-caption p{
+.slider-interno .flexslider .flex-caption p{
 	text-align:left;
 	font-size: 19px;
 	line-height: 22px;
 }
 
-.node-type-page .flexslider .flex-caption .link-ver-mas-slide,
-.page-taxonomy .flexslider .flex-caption .link-ver-mas-slide{
+.slider-interno .flexslider .flex-caption .link-ver-mas-slide{
 	color: #FFF;
 	background-image: url(../images/icon_btn.png);
 	background-repeat: no-repeat;
@@ -2309,7 +2333,8 @@ h1.title{
 }
 .listado-tours-general .view-content .views-row .tour-list-tags a{
 	display: block;
-	margin-right: 10px;
+	margin-right: 5px; /*10*/
+	margin-bottom: 5px;
 	padding-right: 8px;
 	padding-left: 8px;
 	float: left;
@@ -2502,6 +2527,110 @@ h2.titulo-naranja-tours-listado{
 	font-size: 17px;
 }
 
+
+/* COLOR HOTELES */
+
+.listado-tours-general .view-content .views-row .item-type-hotel .tour-list-price-box {
+	background-color: #51376B;
+}
+.listado-tours-general .view-content .views-row .item-type-hotel .tour-list-titulo a{
+	color: #724E89;
+}
+.listado-tours-general .view-content .views-row .item-type-hotel .tour-list-type {
+	background-color: #552B70;
+}
+.listado-tours-general .view-content .views-row .item-type-hotel .tour-list-precio,
+.listado-tours-general .view-content .views-row .item-type-hotel .tour-list-duracion {
+	background-color: #724E89;
+}
+
+/* HOTELES RECOMENDADOS */
+
+.listado-hoteles-sidebar{
+	border-top: 1px solid #58595B;
+	margin-top: 30px;
+}
+
+.listado-hoteles-sidebar h3{
+	font-family: 'Arvo', sans-serif;
+	font-size: 39px;
+	font-weight: normal;	
+	color: #27AAE1;
+	text-transform: uppercase;
+	margin: 30px 0px;
+}
+.listado-hoteles-sidebar h3 span{
+	font-family: Roboto, sans-serif;
+	font-size: 25px;
+	font-weight: normal;	
+	color: #58595B;
+	text-transform: none;
+}
+
+.listado-hoteles-sidebar .views-row{
+  width: 367px;
+  height: 145px;
+  margin-bottom: 30px;
+}
+.listado-hoteles-sidebar .views-row .hotel-sidebar-left{
+  position: relative;
+  width: 145px;
+  height: 145px;
+  float: left;
+}
+.listado-hoteles-sidebar .views-row .hotel-sidebar-right{
+  width: 201px;
+  /*padding-top: 10px;*/
+  padding-left: 19px;
+  float: left;
+}
+.listado-hoteles-sidebar .views-row .hotel-sidebar-destino{
+  font-family: Roboto, sans-serif;
+  color: #58595b;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 500;
+}
+.listado-hoteles-sidebar .views-row .hotel-sidebar-titulo a{
+  font-family: Roboto, sans-serif;
+  color: #27aae1;
+  font-size: 20px;
+  font-weight: 500;
+}
+.listado-hoteles-sidebar .views-row .hotel-sidebar-descripcion {
+  font-family:'Open Sans', sans-serif;
+  color: #6d6e71;
+  font-size: 12px;
+  line-height: 14px;
+}
+.listado-hoteles-sidebar .views-row .link-hotel{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  width: 85px;
+  height: 21px;
+  padding-right: 23px;
+  background-image: url('../images/icon_btn_hotel.png'), url('../images/bg_btn_recomendados.png');
+  background-position: 95% 50%, 50% 50%;
+  background-repeat: no-repeat, no-repeat;
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: right;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
 /* COLOR XXXXX */
 
 .listado-tours-general .view-content .views-row .item-type-xxxxx .tour-list-price-box {
@@ -2647,7 +2776,7 @@ h2.titulo-naranja-tours-listado{
 	display: none;
 }
 
-.panels-flexible-tour_detail_layout h1{
+.panels-flexible-tour_detail_layout h2{
 	font-family: Roboto, sans-serif;
 	font-size: 30px;
 	font-weight: normal;	
@@ -2657,7 +2786,7 @@ h2.titulo-naranja-tours-listado{
 
 
 
-.panels-flexible-tour_detail_layout h2{
+.panels-flexible-tour_detail_layout .fila-2-tour h2{
 	color: #F48A1E;
 	font-family: 'Arvo', sans-serif;
 	font-size: 29px;
@@ -2665,7 +2794,7 @@ h2.titulo-naranja-tours-listado{
 	text-transform: uppercase;	
 }
 
-.panels-flexible-tour_detail_layout h2 span{
+.panels-flexible-tour_detail_layout .fila-2-tour h2 span{
 	font-family: Roboto, sans-serif;
 	font-size: 28px;
 	font-weight: normal;	
