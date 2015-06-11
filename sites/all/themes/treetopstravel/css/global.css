@@ -2529,7 +2529,9 @@ padding: 4px 10px;
 	right: 0;	
 }*/
 .page-taxonomy-term-59 #sidebar-second,
-.page-taxonomy-term-60 #sidebar-second{
+.page-taxonomy-term-60 #sidebar-second,
+
+.node-type-destino #sidebar-second{
 	padding-top: 66px;
 }
 .page-taxonomy-term-59 h1,
@@ -3210,7 +3212,8 @@ h2.titulo-naranja-tours-listado{
 	color: #F48A1E;
 	font-family: 'Arvo', sans-serif;
 	font-size: 40px;
-	font-weight: normal;	
+	font-weight: normal;
+	text-transform: uppercase;	
 }
 .necesita-ayuda-block .descripcion{
 	border: 1px solid #58595B;
