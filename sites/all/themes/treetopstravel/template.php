@@ -119,7 +119,7 @@ function treetopstravel_form_element($variables) {
 
 
 function treetopstravel_breadcrumb($variables) {
-  $breadcrumb = $variables['breadcrumb'];
+ /* $breadcrumb = $variables['breadcrumb'];
   $path_alias = drupal_get_path_alias(current_path());
   $breadcrumb_array = explode("/",$path_alias);
   //dpm($breadcrumb_array);
@@ -132,6 +132,7 @@ function treetopstravel_breadcrumb($variables) {
       $crumbs .= '</ul>';
     }
       return $crumbs;
+*/
 }
 
 /**
