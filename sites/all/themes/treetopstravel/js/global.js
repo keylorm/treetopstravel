@@ -27,6 +27,10 @@ jQuery(window).load(function() {
   var label_menores_12 = jQuery(".webform-component--datos-itinerario--datos-del-itinerario--fila-4--menores-de-12-anos label");
   jQuery(".webform-component--datos-itinerario--datos-del-itinerario--fila-4--menores-de-12-anos select").after(label_menores_12);
 
+
+   var label_menores_12_eng = jQuery(".webform-component--datos-itinerario--datos-del-itinerario--fila-4--under-12 label");
+  jQuery(".webform-component--datos-itinerario--datos-del-itinerario--fila-4--under-12 select").after(label_menores_12_eng);
+
 });
 
 jQuery(document).ready(function() {
