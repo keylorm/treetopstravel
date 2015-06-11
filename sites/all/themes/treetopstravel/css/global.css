@@ -21,10 +21,6 @@ a{
 	margin: 0 auto;
 	overflow: hidden;	
 }
-#block-block-24{
-}
-.volver-a-tours-link{
-}
 
 header.header,
 div.main-content,
@@ -168,7 +164,7 @@ footer.footerzone{
     position: relative;
     z-index: 0;
     /*max-height: 620px;*/
-    overflow: hidden;
+   /* overflow: hidden;*/
 }
 #top-header{
 	background-color: #F68C1E;
@@ -524,8 +520,6 @@ footer.footerzone{
 	position:relative;
 }
 
-
-
 .imagen-top-titulo{
 	position:absolute;
 	bottom: 0px;
@@ -554,18 +548,18 @@ footer.footerzone{
 	color: #F68C1E;
 }
 
-.view-tipo-de-atraccion .views-row{
+/*.view-tipo-de-atraccion*/ .listado-categorias-tours-atracciones .views-row{
 	width: 314px;
 	margin-right: 20px;
 	float: left;
 	margin-bottom: 50px;
 }
 
-.view-tipo-de-atraccion .views-row:nth-child(3n){
+/*.view-tipo-de-atraccion*/ .listado-categorias-tours-atracciones .views-row:nth-child(3n){
 	margin-right: 0px;
 }
   
-.view-tipo-de-atraccion .views-row .tipo-atraccion-imagen{
+/*.view-tipo-de-atraccion*/ .listado-categorias-tours-atracciones .views-row .tipo-atraccion-imagen{
 	width: 100%;
 	height: 315px;
 	/*margin-top: 50px;
@@ -574,8 +568,9 @@ footer.footerzone{
 	transition: all 500ms ease;	
 	position: relative;
 }
-.view-tipo-de-atraccion .views-row .tipo-atraccion-caption a{
-	display: block;
+/*.view-tipo-de-atraccion*/ .listado-categorias-tours-atracciones .views-row .tipo-atraccion-caption a{
+	display: table-cell;
+	vertical-align:middle;
 	width: 100%;
 	height: 157px;
 	background-image: url('../images/bg_que_quiere_conocer.png');
@@ -589,19 +584,22 @@ footer.footerzone{
 	/*line-height: 156px;*/
 	text-align: center;
 	text-transform: uppercase;
-	position: absolute;
+	/*position: absolute;
 	z-index: 999;
 	top: 85px;
-	padding-top: 65px;
-}
-.view-tipo-de-atraccion .views-row-3 .tipo-atraccion-caption a{
-	/*padding-top: 50px;*/
-}
-.view-tipo-de-atraccion .views-row .tipo-atraccion-imagen p{
-	margin: 0px;
+	padding-top: 65px;*/
+	
 }
 
-.view-tipo-de-atraccion .views-row .tipo-atraccion-imagen:hover .tipo-atraccion-caption a{
+/*.view-tipo-de-atraccion*/ .listado-categorias-tours-atracciones .views-row .tipo-atraccion-caption{
+	margin: 0px; display: table; width: 100%; height: 100%;
+	position: absolute;
+	z-index: 999;
+	top: 0px;
+	/*padding-top: 65px;	*/
+}
+
+/*.view-tipo-de-atraccion*/ .listado-categorias-tours-atracciones .views-row .tipo-atraccion-imagen:hover .tipo-atraccion-caption a{
 	height: 100%;
 	background-color: rgba(246, 140, 30, 0.8);
 	background-image: none;
@@ -609,16 +607,20 @@ footer.footerzone{
 	background-repeat: repeat;
 	/*line-height: 290px;*/
 	top: 0px;
-	padding-top: 150px;
+	/*padding-top: 150px;*/
 }
 
 .view-tipo-de-atraccion.view-display-id-block_2 .views-row .tipo-atraccion-imagen:hover .tipo-atraccion-caption a,
 .view-tipo-de-atraccion.view-display-id-block_3 .views-row .tipo-atraccion-imagen:hover .tipo-atraccion-caption a{
-	
 	background-color: rgba(157, 186, 59, 0.8);
-	
 }
-.view-tipo-de-atraccion .views-row .views-field-description p{
+.view-tipo-de-atraccion.view-display-id-block_2 .views-row .ver-mas-atraccion a,
+.view-tipo-de-atraccion.view-display-id-block_3 .views-row .ver-mas-atraccion a{
+	background-color: #9DB73B;
+}
+
+
+/*.view-tipo-de-atraccion*/ .listado-categorias-tours-atracciones .views-row .views-field-description p{
   margin-top: 15px;
   margin-bottom: 15px;
   font-family:'Open Sans', sans-serif;
@@ -626,7 +628,7 @@ footer.footerzone{
   font-size: 12px;
   line-height: 15px;
 }
-.view-tipo-de-atraccion .views-row .ver-mas-atraccion a{
+/*.view-tipo-de-atraccion*/ .listado-categorias-tours-atracciones .views-row .ver-mas-atraccion a{
   display: block;
   height: 35px;
   padding-right: 60px;
@@ -644,12 +646,6 @@ footer.footerzone{
   text-decoration: none;
   text-transform: uppercase;	
 }
-
-.view-tipo-de-atraccion.view-display-id-block_2 .views-row .ver-mas-atraccion a,
-.view-tipo-de-atraccion.view-display-id-block_3 .views-row .ver-mas-atraccion a{
-	background-color: #9DB73B;
-}
-
 
 #block-views-tipo-de-atraccion-block-2,
 #block-views-tipo-de-atraccion-block-3{
@@ -1097,6 +1093,7 @@ h1.title{
 	border-right: 1px solid #9BB53B;
 }
 .view-atracciones .view-filters select{
+	width: 180px;
 	border: none;
 	background-image: url('../images/selector_v.png');
 	background-repeat: no-repeat;
@@ -2138,14 +2135,40 @@ h1.title{
 
 .node-type-page .flexslider .container-nav,
 .page-taxonomy .flexslider .container-nav {
-  top: 95%;
+  top: 50%;
 }
 .node-type-page .flexslider .flex-control-paging,
 .page-taxonomy .flexslider .flex-control-paging{
 	/*display: none;*/
 	width: 100%;
-	bottom: 0px;
+	bottom: -285px;
+	-moz-bottom: -280px;
 }
+.node-type-page .flexslider .container-nav,
+.page-taxonomy .flexslider .container-nav{
+	width: 98%;
+}
+.node-type-page .flexslider .flex-direction-nav,
+.page-taxonomy .flexslider .flex-direction-nav{
+	display: block;
+	top: 50%;
+}
+.node-type-page .flexslider .flex-direction-nav a,
+.page-taxonomy .flexslider .flex-direction-nav a{
+	width: 45px; height: 45px;
+	background-repeat: no-repeat;
+	background-position: center;
+	line-height: 83;	
+}
+.node-type-page .flexslider .flex-direction-nav .flex-next,
+.page-taxonomy .flexslider .flex-direction-nav .flex-next{
+	background-image: url('../images/next_slider_interno.png');
+}
+.node-type-page .flexslider .flex-direction-nav .flex-prev,
+.page-taxonomy .flexslider .flex-direction-nav .flex-prev{
+	background-image: url('../images/prev_slider_interno.png');
+}
+
 
 
 .node-type-page .flexslider .flex-caption .flex-caption-inner,
@@ -2281,6 +2304,7 @@ h1.title{
 	font-family: Roboto, sans-serif;
 	color: #58595b;
 	font-size: 16px;
+	line-height: 19px;
 	font-weight: 400;
 }
 .listado-tours-general .view-content .views-row .tour-list-tags a{
@@ -2406,6 +2430,77 @@ h1.title{
 	background-color: #9BB53B;
 }
 
+/* COLOR ESCAPADITAS */ 
+
+.listado-tours-general .view-content .views-row .item-type-escapadita .tour-list-price-box {
+	background-color: #DD6B0E;
+}
+.listado-tours-general .view-content .views-row .item-type-escapadita .tour-list-titulo a{
+	color: #EA7A15;
+}
+.listado-tours-general .view-content .views-row .item-type-escapadita .tour-list-type {
+	background-color: #C95F00;
+}
+.listado-tours-general .view-content .views-row .item-type-escapadita .tour-list-precio,
+.listado-tours-general .view-content .views-row .item-type-escapadita .tour-list-duracion {
+	background-color: #F48A1E;
+}
+
+.page-node-134 .listado-tours-recomedados h3,
+.page-taxonomy-term-63 .listado-tours-recomedados h3{
+	color: #9BB53B;
+}
+
+/* COLOR TOURS */
+
+.listado-tours-general .view-content .views-row .item-type-tour .tour-list-price-box {
+	background-color: #1C75BC;
+}
+.listado-tours-general .view-content .views-row .item-type-tour .tour-list-titulo a{
+	color: #27AAE1;
+}
+.listado-tours-general .view-content .views-row .item-type-tour .tour-list-type {
+	background-color: #1C75BC;
+}
+.listado-tours-general .view-content .views-row .item-type-tour .tour-list-precio,
+.listado-tours-general .view-content .views-row .item-type-tour .tour-list-duracion {
+	background-color: #27AAE1;
+}
+#block-block-24{
+	width: 1000px;
+	max-width: 1000px;
+	margin: 0 auto;
+	position: absolute;
+	overflow: hidden;
+	bottom: -55px;
+	left: 0;
+	right: 0;	
+}
+a.volver-a-tours-link{
+	font-family: Roboto, sans-serif;
+	font-size: 19px;
+	font-weight: 500;	
+	color: #9BB53B;
+	float:right;
+}
+h1.titulo-listado-tours{
+	font-family: Roboto, sans-serif;
+	font-size: 32px;
+	font-weight: 500;	
+	text-transform: uppercase;
+	color: #9BB53B;
+}
+h2.titulo-naranja-tours-listado{
+	text-transform: uppercase;
+	font-family: 'Arvo', sans-serif;
+	font-size: 40px;
+	font-weight: normal;
+	color: #F68C1E;	
+	margin: 0px;
+}
+.listado-tours-general .view-content .views-row .item-type-tour .tour-list-dias{
+	font-size: 17px;
+}
 
 /* COLOR XXXXX */
 
@@ -2524,7 +2619,7 @@ h1.title{
 /* DETALLE ITINERARIO */
 
 .panels-flexible-row-inside{
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 .panels-flexible-tour_detail_layout .flexslider{
@@ -2586,18 +2681,23 @@ h1.title{
 	font-weight: normal;
 }
 
-.panels-flexible-tour_detail_layout .pane-node-field-actividades-por-dia{
-}
 
 .actividades-por-dia-field{
+	margin-top: 30px;
 }
 .actividades-por-dia-field .actividad-row{
 	width: 100%;
+	height: 105px;
+	float:left;
+	overflow: hidden;
 	clear:both;
+	margin-bottom: 40px;
+	display: table;
 }
 .actividades-por-dia-field .actividad-row .actividad-col-izq{
-	float:left;
+	/*float:left;*/
 	width: 25%;
+	display:table-cell;
 }
 .actividades-por-dia-field .actividad-row .actividad-col-izq .actividad-dia-numero{
 	background-color: #F48A1E;
@@ -2612,13 +2712,18 @@ h1.title{
 	border-radius: 50%;
 	-webkit-border-radius: 50%;	
 }
+.actividades-por-dia-field .actividad-row .actividad-col-izq .actividad-dia-numero p{
+	margin: 0px;
+}
 .actividades-por-dia-field .actividad-row.actividad-row2 .actividad-col-izq .actividad-dia-numero{
 	background-color: #9BB53B;
 }
 
 .actividades-por-dia-field .actividad-row .actividad-col-der{
-	float:left;
+	/*float:left;*/
 	width: 75%;	
+	display: table-cell;
+	vertical-align: middle;
 }
 .actividades-por-dia-field .actividad-row .actividad-col-der .actividad-desc{
 	color: #6D6E71;
@@ -2793,13 +2898,21 @@ h1.title{
 	background-image: url('../images/detal_cp_gm.png') !important;
 }
 
-.boton-reservar-tour{
-	float:right;
+.panels-flexible-tour_detail_layout .panels-flexible-region-inside-first .boton-reservar-tour{
+	width: 100%;
+	clear:both;
+	border-bottom: 1px solid #58595B;
+	margin-bottom: 80px;
+}
+.panels-flexible-tour_detail_layout .panels-flexible-region-inside-first .boton-reservar-tour a{
+	margin-top: -22px;
+	margin-right: 25px; 	
 }
 .boton-reservar-tour a{
   display: block;
   width: 160px;
   height: 45px;
+  float:right;
   padding-right: 43px;
   padding-left: 13px;
   background-color: #f48a1e;
@@ -2812,7 +2925,7 @@ h1.title{
   line-height: 45px;
   font-weight: 500;
   text-decoration: none;
-  text-transform: uppercase;	
+  text-transform: uppercase; 	
 }
 
 
@@ -3000,17 +3113,17 @@ h1.title{
 	margin-top: 20px;
 }
 
-.panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component--datos-itinerario--datos-del-itinerario--itinerario label,
-.panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component--datos-itinerario--datos-del-itinerario--tipo-viaje label{
+.panels-flexible-tour_detail_layout .formulario-estilo-general .campo-nombre-pagina label,
+.panels-flexible-tour_detail_layout .formulario-estilo-general .campo-tipo-viaje label{
 	float:left;
 }
-.panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component--datos-itinerario--datos-del-itinerario--itinerario input,
-.panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component--datos-itinerario--datos-del-itinerario--tipo-viaje input{
+.panels-flexible-tour_detail_layout .formulario-estilo-general .campo-nombre-pagina input,
+.panels-flexible-tour_detail_layout .formulario-estilo-general .campo-tipo-viaje input{
 	float:left;
 }
 
-.panels-flexible-tour_detail_layout .formulario-estilo-general #edit-submitted-datos-itinerario-datos-del-itinerario-itinerario,
-.panels-flexible-tour_detail_layout .formulario-estilo-general #edit-submitted-datos-itinerario-datos-del-itinerario-tipo-viaje{
+.panels-flexible-tour_detail_layout .formulario-estilo-general .campo-nombre-pagina input,
+.panels-flexible-tour_detail_layout .formulario-estilo-general .campo-tipo-viaje input{
 	border: none;
 	background-color: transparent;
 	height: 20px;
