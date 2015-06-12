@@ -19,7 +19,8 @@ a{
 	width: 1000px;
 	max-width: 1000px;
 	margin: 0 auto;
-	overflow: hidden;	
+	overflow: hidden;
+	clear: both;	
 }
 
 header.header,
@@ -34,7 +35,9 @@ footer.footerzone{
 	background: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+appearance: none;
 	background-repeat: no-repeat;
 	background-position: 98% 50%;
 	font-family: 'Roboto', sans-serif;
@@ -83,6 +86,7 @@ footer.footerzone{
 	text-transform: uppercase;
 	text-align:center;
 	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 .flexslider .flex-caption p{
 	width: 480px;
@@ -506,9 +510,11 @@ footer.footerzone{
     background-image: url(../images/selector_contacto.png);
 	background-position: 98% 50%;
 	background-repeat:no-repeat;
-    -webkit-appearance: none;
+	-webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;	
+	-ms-appearance: none;
+	-o-appearance: none;
+appearance: none;	
 }
 .webform-client-form-3 label,
 .webform-client-form-4 label{
@@ -577,7 +583,7 @@ h1{
 h2{
 	font-family: 'Roboto', sans-serif;
 	font-size: 32px;
-	/*text-transform: uppercase;*/
+	text-transform: uppercase;
 	font-weight: 500;	
 	color: #F68C1E;	
 }
@@ -587,6 +593,7 @@ h2{
 }
 .field-name-title h2{
 	color: #9BB53B;
+	text-transform: none;
 }
 
 /*#block-views-tipo-de-atraccion-block h2,
@@ -698,11 +705,14 @@ h2{
   text-decoration: none;
   text-transform: uppercase;	
 }
-
+#block-views-tipo-de-atraccion-block h2,
+#block-views-tipo-de-atraccion-block-1 h2{
+	margin-top: 8px;
+}
 #block-views-tipo-de-atraccion-block-2,
 #block-views-tipo-de-atraccion-block-3{
 	 margin-bottom: 50px;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
 }
 #block-views-tipo-de-atraccion-block-2 h2,
 #block-views-tipo-de-atraccion-block-3 h2{
@@ -809,6 +819,9 @@ input[type="checkbox"]:checked + label span {
 	float:left;
 	padding-left: 42px !important;
 }
+.formulario-estilo-general .actividades-box .form-type-checkbox{
+	margin-bottom: 20px;
+}
 .formulario-estilo-general{
 	background-image: url('../images/sombra_form_viaje.png');
 	background-repeat: no-repeat;
@@ -903,6 +916,35 @@ input[type="checkbox"]:checked + label span {
 	background-repeat: no-repeat;
 	background-position: 99% 50%;	
 }
+.formulario-estilo-general .label-gris .datepicker{
+	max-width: 60% !important;
+}
+.destinos-checkbox.webform-layout-box{
+	width: 100%;
+	clear:both;
+	overflow:hidden;
+	margin-bottom: 40px;
+	padding: 0 50px;
+}
+.destinos-checkbox .webform-component{
+	display: inline-block;
+	float:left;
+	width: 25%; padding: 0px; margin: 0px; clear:none;
+}
+.destinos-checkbox .webform-component .form-type-checkbox{
+	width: 100%;
+	float:left;
+	clear:both;
+}
+.formulario-estilo-general .destinos-checkbox .webform-component > label{
+	margin-bottom: 20px;
+}
+
+
+
+.formulario-estilo-general .webform-layout-box.label-gris .webform-component > label{
+	color: #808285;
+}
 .formulario-estilo-general .form-select{
 	border: 1px solid #808285;
 	width: 90%;
@@ -910,9 +952,11 @@ input[type="checkbox"]:checked + label span {
 	background-image: url('../images/selector_formhome.png');
 	background-repeat: no-repeat;
 	background-position: 99% 50%;
-	appearance: none;
-	-moz-appearance: none;
 	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+appearance: none;
 }
 .formulario-estilo-general .form-text{
 	border: 1px solid #808285;
@@ -1152,6 +1196,10 @@ padding: 4px 10px;
 	background-position: 100% 50%;
 	padding-right: 20px;
 	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+appearance: none;
 	font-family: 'Roboto', sans-serif;
 
 	font-size: 14px;
@@ -2242,8 +2290,8 @@ padding: 4px 10px;
 }
 .slider-interno .flexslider .flex-caption p{
 	text-align:left;
-	font-size: 19px;
-	line-height: 22px;
+	font-size: 18px;
+	line-height: 19px;
 }
 
 .slider-interno .flexslider .flex-caption .link-ver-mas-slide{
@@ -2268,9 +2316,11 @@ padding: 4px 10px;
   font-family:'Open Sans', sans-serif;
   color: #808285;
   font-size: 13px;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+appearance: none;
   background-image: url('../images/flecha_select_filtrado.png');
   background-repeat: no-repeat;
   background-position: 97% 50%;
@@ -3439,15 +3489,14 @@ h2.titulo-naranja-tours-listado{
  }
 
 
-.webform-component--fecha-salida-llegada--fecha-de-llegada, .webform-component--fecha-salida-llegada--fecha-de-salida,
-.webform-component--row-specific-row--check-in, .webform-component--row-specific-row--check-out {
+.campo-fecha-paso2 {
 	width: 49% !important;
  	float: left !important;
  	padding: 0 !important;	
  	clear: none !important;
 }
 
-.webform-component--fecha-salida-llegada--fecha-de-llegada input, .webform-component--fecha-salida-llegada--fecha-de-salida input {
+.campo-fecha-paso2 input{
 	width: 93% !important;
 }
 
@@ -3457,7 +3506,7 @@ h2.titulo-naranja-tours-listado{
 	clear: both;
 }
 
-.webform-component--destinos-fila-1 div, .webform-component--destinos-fila-2 div, .row-group div {
+/*.webform-component--destinos-fila-1 div, .webform-component--destinos-fila-2 div, .row-group div {
 	width: 23%;
 	float: left;
 	clear: none !important;
@@ -3467,4 +3516,4 @@ h2.titulo-naranja-tours-listado{
 .webform-component--destinos-fila-1 div div, .webform-component--destinos-fila-2 div div, .row-group div div {
 	width: 100% !important;
 	padding: 0 !important;
-}
+}*/
