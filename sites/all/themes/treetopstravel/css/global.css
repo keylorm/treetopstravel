@@ -516,6 +516,11 @@ appearance: none;
 	-o-appearance: none;
 appearance: none;	
 }
+
+select::-ms-expand {
+    display: none;
+}  
+
 .webform-client-form-3 label,
 .webform-client-form-4 label{
 	color: #000000;
@@ -2300,6 +2305,7 @@ appearance: none;
 	background-repeat: no-repeat;
 	background-position: right center;
 	padding-right: 33px;
+	font-size: 19px;
 }
 
 
@@ -2581,7 +2587,9 @@ appearance: none;
 .page-taxonomy-term-59 #sidebar-second,
 .page-taxonomy-term-60 #sidebar-second,
 
-.node-type-destino #sidebar-second{
+.node-type-destino #sidebar-second,
+.node-type-atraccion #sidebar-second
+{
 	padding-top: 66px;
 }
 .page-taxonomy-term-59 h1,
@@ -2594,6 +2602,7 @@ appearance: none;
 }
 h2.titulo-listado-tours{
 	color: #9BB53B;
+	text-transform: none;
 }
 .panel-volver{
 	position:absolute;
