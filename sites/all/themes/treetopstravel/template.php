@@ -90,6 +90,11 @@ function treetopstravel_preprocess_html(&$variables) {
   if (theme_get_setting('normalize_css')) {
     drupal_add_css(drupal_get_path('theme', 'treetopstravel') . '/css/normalize.css', array('group' => CSS_SYSTEM, 'weight' => -100));
   }
+
+   if (arg(0) == 'taxonomy' && arg(1) == 'term') {
+    $term = taxonomy_term_load(arg(2));
+    $variables['classes_array'][] = 'vocabulary-' . strtolower($term->vocabulary_machine_name);
+  }
 }
 
 /**
