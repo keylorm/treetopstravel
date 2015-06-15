@@ -516,10 +516,7 @@ appearance: none;
 	-o-appearance: none;
 appearance: none;	
 }
-
-select::-ms-expand {
-    display: none;
-}  
+  
 
 .webform-client-form-3 label,
 .webform-client-form-4 label{
@@ -799,7 +796,8 @@ input[type="checkbox"]:checked + label span {
 	background-position:center;	
 }
 
-.page-node-7 h2{
+.page-node-7 h2,
+.page-node-18 h2{
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-weight: 500;
@@ -874,7 +872,9 @@ input[type="checkbox"]:checked + label span {
 	padding-left: 42px !important;
 }
 
-
+.webform-component--encabezado-paso-3{
+	margin-bottom: 40px;
+}
 
 .formulario-estilo-general .encabezado-pasos{
 	clear:both;
@@ -956,7 +956,7 @@ input[type="checkbox"]:checked + label span {
 	height: 45px;
 	background-image: url('../images/selector_formhome.png');
 	background-repeat: no-repeat;
-	background-position: 99% 50%;
+	background-position: 96% 50%;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
@@ -1018,7 +1018,7 @@ appearance: none;
 	clear:both;
 }
 .formulario-estilo-general .form-actions .form-submit{
-	position:absolute;
+  position:absolute;
   padding-right: 55px;
   padding-left: 20px;
   right: 50px;
@@ -1035,7 +1035,112 @@ appearance: none;
   border: none;
   height: 51px;
 }
+.formulario-estilo-general .form-actions .webform-previous{
+	display: none;
+}
 
+
+#edit-submitted-alojamiento .form-type-checkbox,
+#edit-submitted-accommodation .form-type-checkbox{
+	width: 20% !important;
+}
+
+.webform-component--condiciones-adicionales > label,
+.webform-component--additional-conditions > label{
+	color: #9DB73B;
+	font-size: 21px;
+	line-height: 19px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+#edit-submitted-condiciones-adicionales .form-type-checkbox,
+#edit-submitted-additional-conditions .form-type-checkbox,
+.webform-component--transporte .form-type-checkbox,
+.webform-component--transport .form-type-checkbox{
+	width: 25% !important;
+	margin-bottom: 25px !important;
+}
+
+.label-campos-personas{
+	float:left;
+	border: 0px;
+	margin-top: 40px;
+}
+.label-campos-personas legend{
+	padding: 0px 30px;
+}
+.label-campos-personas legend span{
+  color: #9DB73B;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 30px;	
+}
+.label-campos-personas .webform-layout-box .webform-component label{
+	font-size: 18px;
+	font-weight: normal;
+	color: #808285;
+	float:left;
+	line-height: 35px;
+}
+.label-campos-personas .webform-layout-box .webform-component select{
+	width: 80px !important;
+}
+
+.label-campos-personas .wrapper-campo-adultos{
+	width: 275px !important;
+	padding-right: 0px;
+}
+.label-campos-personas .wrapper-campo-ninos{
+	width: 166px !important;
+	padding-right: 0px;
+	padding-left: 7px;
+}
+.label-campos-personas .webform-component--cuantas-personas-van-a-viajar-con-usted--personas-fila-1--habitaciones{
+	width: 395px;
+}
+
+
+
+.webform-component--presupuesto .form-type-checkbox,
+.webform-component--budget .form-type-checkbox{
+	width: 33%;
+	margin-bottom: 15px;
+}
+
+.webform-component--paso-8{
+	border: 0px;
+}
+.formulario-estilo-general .webform-component--paso-8 label{
+	float: left;
+	text-align: right;
+	width: 26%;
+}
+.formulario-estilo-general .webform-component--paso-8 .form-text{
+	width: 70%;
+	float: right;
+	padding-left: 15px;
+}
+.formulario-estilo-general .webform-component--paso-8 .form-textarea-wrapper{
+	width: 70%;
+	float: right;
+}
+.formulario-estilo-general .webform-component--paso-8 .form-textarea-wrapper textarea{
+	padding-left: 15px;
+	padding-top: 10px;	
+}
+
+
+.form-item-submitted-paso-8-recibir-informacion-adicional-1,
+.form-item-submitted-paso-8-receive-additional-information-1{
+	width: 72% !important;
+}
+
+.form-item-submitted-paso-8-receive-additional-information-1 label,
+.form-item-submitted-paso-8-recibir-informacion-adicional-1 label{
+	width: 100% !important;
+	font-family:'Open Sans', sans-serif !important;
+	font-size: 13px !important;	
+}
 
 /* DESTINOS */
 
@@ -2584,9 +2689,7 @@ appearance: none;
 	left: 0;
 	right: 0;	
 }*/
-.page-taxonomy-term-59 #sidebar-second,
-.page-taxonomy-term-60 #sidebar-second,
-
+.vocabulary-categoria_de_tours #sidebar-second,
 .node-type-destino #sidebar-second,
 .node-type-atraccion #sidebar-second
 {
@@ -2813,6 +2916,13 @@ h2.titulo-naranja-tours-listado{
 	line-height: 15px;
 	font-weight: normal;
 	margin-top: 0px; margin-bottom: 25px;	
+}
+
+.node-type-hotel .panels-flexible-tour_detail_layout .formulario-estilo-general fieldset legend span{
+	color: #6D6E71;
+	font-size: 17px;
+}
+.panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component, .panels-flexible-tour_detail_layout .formulario-estilo-general .row-group{
 }
 
 
@@ -3526,3 +3636,54 @@ h2.titulo-naranja-tours-listado{
 	width: 100% !important;
 	padding: 0 !important;
 }*/
+
+.wrapper-campo-adultos{
+	width: 42% !important;
+	margin-right: 0px !important;
+}
+.wrapper-campo-adultos label{
+	display: block;
+	background-image: url('../images/adultos.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	height: 35px;
+	padding-right: 60px;
+	float: left;
+	margin-right: 5px;
+	line-height: 35px !important;
+}
+.wrapper-campo-adultos select,
+.wrapper-campo-ninos select,
+.wrapper-campo-menores-12 select{
+	width: 65px !important;
+}
+
+.wrapper-campo-ninos,
+.wrapper-campo-menores-12{
+	width: 25% !important;
+}
+.wrapper-campo-menores-12 label{
+	font-size: 12px !important;
+	text-transform:none !important;
+	font-style: italic !important;
+}
+.wrapper-campo-ninos label{
+	display: block;
+	overflow: hidden;
+	text-indent: 213px;
+	background-image: url('../images/ninos.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 35px;
+	height: 45px;
+	float: left;
+	margin-right: 5px;
+}
+
+
+select:-ms-expand {
+    display: none;
+}
+select::-ms-expand {
+    display: none;
+}
