@@ -3592,6 +3592,132 @@ h2.titulo-naranja-tours-listado{
 	background-position:center;	
 }
 
+/* HOME */
+
+.front .panels-flexible-region-home_layout-contenido{
+	padding-right:0px;
+}
+.front .panels-flexible-region-home_layout-sidebar{
+	padding-left: 20px;
+}
+.front .listado-tours-recomedados h3 {
+	  margin-top: 35px; margin-bottom: 35px;
+}
+
+.pane-tipo-de-atraccion,
+.pane-tipo-de-atraccion .view-header,
+.pane-tipo-de-atraccion .view-content,
+.pane-tipo-de-atraccion .view-footer{
+	clear: both;
+}
+
+.pane-tipo-de-atraccion .view-header h2.h2-verde{
+	font-family: 'Arvo', sans-serif;
+	font-size: 40px;
+	font-weight: normal;	
+	color: #9BB53B;	
+}
+.pane-tipo-de-atraccion .view-header h2.h2-verde span{
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+  color: #58595B;
+  text-transform: none;	
+}
+
+.front .listado-categorias-tours-atracciones .views-row {
+  width: 177px;
+  height: 177px;
+  margin-right: 25px;
+  float: left;
+  margin-bottom: 25px;
+}
+.front .listado-categorias-tours-atracciones .views-row.views-row-3,
+.front .listado-categorias-tours-atracciones .views-row.views-row-6,
+.front .listado-categorias-tours-atracciones .views-row.views-row-9,
+.front .listado-categorias-tours-atracciones .views-row.views-row-12,
+.front .listado-categorias-tours-atracciones .views-row.views-row-15,
+.front .listado-categorias-tours-atracciones .views-row.views-row-18,
+.front .listado-categorias-tours-atracciones .views-row.views-row-21,
+.front .listado-categorias-tours-atracciones .views-row.views-row-24,
+.front .listado-categorias-tours-atracciones .views-row.views-row-27,
+.front .listado-categorias-tours-atracciones .views-row.views-row-30{
+	margin-right: 0px;
+}
+.front .listado-categorias-tours-atracciones .views-row .tipo-atraccion-imagen {
+  height: 177px;
+}
+.front .listado-categorias-tours-atracciones .views-row .tipo-atraccion-caption{
+
+}
+.front .listado-categorias-tours-atracciones .views-row .tipo-atraccion-caption a {
+  height: 177px;
+  background-image: url('../images/hover_que_hacer.png');
+
+	font-family: 'Arvo', sans-serif;
+	font-size: 31px;
+	font-weight: normal;
+  /* line-height: 156px; */
+  text-align: center;
+  text-transform: uppercase;
+}
+.front .listado-categorias-tours-atracciones .views-row .tipo-atraccion-caption a:after{
+	content: "";
+	background-image: url('../images/icon_btn.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25px; height: 25px;
+	float:left;
+	clear: both;
+	margin: 0 auto;
+}
+
+.front .ver-mas-atracciones a,
+.front .ver-mas-recomendaciones a{
+	font-family: Roboto, sans-serif;
+	font-size: 19px;
+	font-weight: 500;
+	color: #9BB53B;
+	float: right;
+}
+.front .ver-mas-recomendaciones a{
+	color: #F68C1E;
+}
+.front .pane-blog{
+	clear:both;
+}
+.front .listado-blog-sidebar.view-blog{
+	border-top: none;
+}
+.front .listado-blog-sidebar.view-blog h2 span{
+	font-size: 40px;
+}
+.front .listado-blog-sidebar.view-blog h2{
+	font-size: 26px;
+	margin-bottom: 50px;
+}
+.front .listado-blog-sidebar.view-blog .views-row{
+	min-height: 140px;
+	height: auto;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #58595B;
+	margin-bottom: 50px;
+}
+.front .listado-blog-sidebar.view-blog .views-row.views-row-last{
+	margin-bottom: 0px;
+}
+.front .listado-blog-sidebar.view-blog .views-row .group-left{
+  width: 177px;
+  height: 140px;
+  background-image: url('../images/bg_img_consejo.png');	
+}
+.front .listado-blog-sidebar.view-blog .views-row .group-right{
+	width: 68%;
+	padding-left: 7px;
+}
+.front .view-blog .views-row .group-right .field-name-body p{
+	margin: 0px; margin-top: 5px;
+}
 
 
 /*
