@@ -2918,10 +2918,15 @@ h2.titulo-naranja-tours-listado{
 	margin-top: 0px; margin-bottom: 25px;	
 }
 
-.node-type-hotel .panels-flexible-tour_detail_layout .formulario-estilo-general fieldset legend span{
+.node-type-hotel .panels-flexible-tour_detail_layout .formulario-estilo-general fieldset.titulo-fechas-reserva legend span{
 	color: #6D6E71;
 	font-size: 17px;
 }
+
+.formulario-estilo-general .webform-component--datos-itinerario--datos-del-itinerario--reservation-dates .datepicker{
+	max-width: 56% !important;
+}
+
 .panels-flexible-tour_detail_layout .formulario-estilo-general .webform-component, .panels-flexible-tour_detail_layout .formulario-estilo-general .row-group{
 }
 

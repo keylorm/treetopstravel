@@ -97,7 +97,6 @@ class views_handler_filter_selective extends views_handler_filter_in_operator {
     $base_field = $this->definition['field_base'];
     
     parent::options_form($form, $form_state);
-    
     // Filter should always be exposed, show warning.
     array_unshift($form['expose_button'], array(
       'warning' => array(
@@ -112,15 +111,12 @@ class views_handler_filter_selective extends views_handler_filter_in_operator {
     $form['value']['#attributes']['disabled'] = 'disabled';
     // Cannot group without values.
     unset($form['group_button']);
-
-
     
     // Preload handlers, sorts and filters.
     // This gest cached all along.
     $this->view->display_handler->get_handlers('field');
     $this->view->display_handler->get_handlers('sort');
     $this->view->display_handler->get_handlers('filter');
-
     
     // Add combo to pick display field for filter.
     $options = array();
@@ -165,8 +161,6 @@ class views_handler_filter_selective extends views_handler_filter_in_operator {
       '#size' => 10,
       '#element_validate' => array('element_validate_integer_positive'),
     );
-
-   
   }
 
   /**
@@ -175,7 +169,6 @@ class views_handler_filter_selective extends views_handler_filter_in_operator {
   public function expose_form(&$form, &$form_state) {
     parent::expose_form($form, $form_state);
     // Remove reduce resultset interface.
-    
     unset($form['expose']['reduce']);
     // TODO: Populated somewhere through AJAX, I could not find it....
     // Provide default value for filter name.
@@ -218,8 +211,6 @@ class views_handler_filter_selective extends views_handler_filter_in_operator {
     $options['selective_aggregated_fields']['default'] = '';
     // Limit aggregated items to prevent a huge number of options in select.
     $options['selective_items_limit']['default'] = 100;
-
-
 
     return $options;
   }
@@ -380,6 +371,13 @@ class views_handler_filter_selective extends views_handler_filter_in_operator {
       unset($display->display_options['query']['options']['distinct']);
       unset($display->display_options['query']['options']['pure_distinct']);
 
+      // Some style plugins can affect the built query, make sure
+      // we use a reliable field based style plugin.
+      $display->display_options['style_plugin'] = 'default';
+      $display->display_options['style_options'] = unserialize('a:4:{s:9:"row_class";s:0:"";s:17:"default_row_class";i:1;s:17:"row_class_special";i:1;s:11:"uses_fields";i:0;}');
+      $display->display_options['row_plugin'] = 'fields';
+      $display->display_options['row_options'] = unserialize('s:6:"fields";');
+
       // Run View.
       $view_copy->execute($this->view->current_display);
 
@@ -486,6 +484,9 @@ class views_handler_filter_selective extends views_handler_filter_in_operator {
         // We store only non-empty array.
         if (is_array($options) && !empty($options)) {
           $this->originalOptions = $options;
+        }
+        else {
+          $this->originalOptions = array();
         }
       }
     }
