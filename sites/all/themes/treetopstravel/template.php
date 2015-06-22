@@ -95,6 +95,8 @@ function treetopstravel_preprocess_html(&$variables) {
     $term = taxonomy_term_load(arg(2));
     $variables['classes_array'][] = 'vocabulary-' . strtolower($term->vocabulary_machine_name);
   }
+  
+  flexslider_add(); 
 }
 
 /**

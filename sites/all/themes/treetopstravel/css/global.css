@@ -61,6 +61,18 @@ appearance: none;
 	box-shadow: none;
 	position:relative;
 }
+
+.front .flexslider .flex-viewport{
+	max-height: 622px;
+}
+
+.node-type-atraccion .flex-viewport,
+.node-type-destino .flex-viewport,
+.node-type-page .flex-viewport,
+.vocabulary-tipo_de_viaje_atracciones .flex-viewport{
+	max-height: 555px;
+}	
+
 .flexslider .slides > li {
 	position:relative;
 }
@@ -72,7 +84,8 @@ appearance: none;
   width: 1000px;
   right: 0px;
   left: 0px;
-  top: 40%;
+  /*top: 35%;*/
+  top: 220px;
   margin: 0 auto; 
 }
 
@@ -81,7 +94,7 @@ appearance: none;
 	display:block;
 	width: 480px;
 	font-family: 'Arvo', sans-serif;
-	font-size: 33px;
+	font-size: 32px;
 	color: #FFF;
 	text-transform: uppercase;
 	text-align:center;
@@ -196,7 +209,35 @@ appearance: none;
     z-index: 0;
     /*max-height: 620px;*/
    /* overflow: hidden;*/
+
 }
+
+.front .above-content{
+	min-height: 622px;
+	background-image: url(../images/home-loader-negro.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #ccc;
+}
+
+.node-type-atraccion .above-content,
+.node-type-destino .above-content,
+.vocabulary-tipo_de_viaje_atracciones .above-content{
+	min-height: 555px;
+	background-image: url(../images/home-loader-negro.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #ccc;
+}
+
+.node-type-page .above-content{
+	min-height: 234px;
+	background-image: url(../images/above-content-general-loader.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+}
+
 #top-header{
 	background-color: #F68C1E;
 	height: 55px;
@@ -2359,8 +2400,8 @@ appearance: none;
 .slider-interno .flexslider .flex-control-paging{
 	/*display: none;*/
 	width: 100%;
-	bottom: -285px;
-	-moz-bottom: -280px;
+	bottom: -262px;
+	-moz-bottom: -262px;
 }
 .slider-interno .flexslider .container-nav{
 	width: 98%;
@@ -4004,3 +4045,196 @@ select:-ms-expand {
 select::-ms-expand {
     display: none;
 }
+
+
+/* Añadido por Keylor Mora - Formulario del Home */
+
+
+.formulario-slider-home {
+    display: block;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    width: 1000px;
+}
+
+.formulario-slider-home .content{
+	width: 450px;
+	height: 440px;
+	float: right;
+	padding: 15px 28px;
+	background-image: url(../images/bg-formulario-slider-home.png);
+	background-repeat: repeat;
+	position: relative;
+}
+
+.formulario-slider-home h3{
+	margin-top: 0;
+	font-family: 'Arvo', sans-serif;
+	color: #9BB53B;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.formulario-slider-home h3 span{
+	font-family: 'Roboto', sans-serif;
+	text-transform: none;
+	display: block;
+}
+
+.formulario-slider-home .grupos-filtro-home{
+	width: 100%;
+	float: left;
+}
+
+.formulario-slider-home .grupo-tipo-experiencia-filtro-home .views-exposed-widget {
+	float: left;
+    padding-right: 8px;
+    padding-top: 0;
+    width: 50%;
+
+
+}
+
+.formulario-slider-home .grupo-tipo-experiencia-filtro-home label{
+	color: #E4E5E6;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 14px;
+}
+
+.formulario-slider-home .grupo-tipo-experiencia-filtro-home .views-widget {
+	margin-top: 5px;
+}
+
+.formulario-slider-home .grupo-tipo-experiencia-filtro-home .views-widget label{
+	font-weight: 400;
+	line-height: 22px;
+	height: 22px;
+	display: block;
+}
+
+.formulario-slider-home .grupo-tipo-experiencia-filtro-home .views-widget .form-type-radio{
+	height: 23px;
+}
+
+.formulario-slider-home .grupo-fechas-filtro-home h3{
+	margin-top: 5px;
+}
+
+.formulario-slider-home .grupo-fechas-filtro-home{
+	clear: both;
+	margin-top: 5px;
+}
+
+.formulario-slider-home .grupo-fechas-filtro-home p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-style: italic;
+	font-size: 12px;
+	color: #E4E5E6;
+	margin: 0;
+}
+
+.formulario-slider-home .grupo-fechas-filtro-home label{
+	color: #E4E5E6;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 30px;
+	display: block;
+	float: left;
+	width: 65px;
+}
+
+.formulario-slider-home .grupo-fechas-filtro-home .views-widget{
+	
+	float: left;
+	height: 30px;
+	width: 122px;
+}
+
+.formulario-slider-home .grupo-fechas-filtro-home .views-widget input{
+    background-color: transparent;
+    border: 2px solid #A5A7AA;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #e4e5e6;
+    display: block;
+    font-family: "Roboto",sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 100%;
+    font-style: italic;
+    background-image: url(../images/calendario_formhome.png);
+    background-position: 98% center;
+    background-repeat: no-repeat;
+}
+
+.formulario-slider-home .grupo-fechas-filtro-home .views-exposed-widget {
+    float: left;
+    padding-right: 8px;
+    padding-top: 0;
+    width: 50%;
+}
+
+.formulario-slider-home .grupo-fechas-filtro-home .views-widget .description {
+	display: none;
+}
+
+.formulario-slider-home  .views-exposed-widget.views-submit-button {
+    bottom: -16px;
+    display: block;
+    height: 42px;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 214px;
+}
+
+
+.formulario-slider-home  .views-exposed-widget.views-submit-button input{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	box-shadow: none;
+	background-color: #F48A1E;
+	text-align: center;
+	font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 42px;
+    color: #FFFFFF;
+    background-image: url(../images/viaje-a-su-medida-bg-form-home.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    padding-right: 40px;
+}
+
+.formulario-slider-home .grupo-tipo-experiencia-filtro-home .views-widget .form-type-radio input {
+	display: none;
+	
+}
+.formulario-slider-home .grupo-tipo-experiencia-filtro-home .views-widget .form-type-radio input + label{
+	background-image: url(../images/form-home-radio-desact.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	padding-left: 25px;
+}
+
+.formulario-slider-home .grupo-tipo-experiencia-filtro-home .views-widget .form-type-radio input:checked + label {
+	background-image: url(../images/form-home-radio-act.png);
+}
+
+
+
