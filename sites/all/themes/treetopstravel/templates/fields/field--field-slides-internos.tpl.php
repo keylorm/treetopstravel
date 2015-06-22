@@ -6,7 +6,7 @@ $imagen ="";
 ?>
 <!-- Place somewhere in the <body> of your page -->
 <?php for ($i=0; $i < count($items); $i++) {
-	dpm($items);
+	
 	$url = "";
 	$link="";
 	$titulo_slide="";

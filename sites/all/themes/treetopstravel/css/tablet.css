@@ -43,7 +43,22 @@
 	  margin-right: 35px;
 	}	
 	
+
+	/* Agregado por Keylor Mora */
+	
+	/* Slider Home */
+	
+	.front .above-content{
+		min-height: 335px;
+	}
+	
+	
+	
+	
+
+
 }
+
 
 @media only screen and (max-width : 800px) {
 
@@ -57,4 +72,15 @@
 		padding-left: 4px;
 	}		
 	
+	
+	/* Agregado por Keylor Mora */
+	
+	/* Slider Home */
+
+	.flexslider .flex-caption{
+		display: none;
+	}
+
+
+
 }
