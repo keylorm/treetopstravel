@@ -68,13 +68,23 @@
     width: 80%;
 }
 
-.flexslider .flex-caption h3, .flexslider .flex-caption h3 a {
-    margin: 20px auto 30px;
-    width: 80%;
-}
+	.flexslider .flex-caption h3, .flexslider .flex-caption h3 a {
+	    margin: 20px auto 30px;
+	    width: 80%;
+	}
+
+	.front .flexslider .flex-viewport{
+		height: auto;
+	}	
+
+	.flexslider .slides img{
+		height: auto;
+	}
 
 	.front .above-content{
 		min-height: 335px;
+		background-color: transparent;
+    background-image: none;
 	}
 
 	.formulario-slider-home{
@@ -94,18 +104,20 @@
 		margin-left: 2%;
     margin-right: 2%;
     overflow: hidden;
-    width: 27%;
+    width: 29%;
 	}
 
 	.front .listado-categorias-tours-atracciones .views-row{
 		margin-left: 2%;
     margin-right: 2%;
     overflow: hidden;
-    width: 27%;
+    width: 29%;
 	}
 	
 	
-	
+	.tours-oferta-desc {
+		display: none;
+	}
 	
 
 
@@ -190,6 +202,10 @@
     overflow: hidden;
     width: 46%;
 	}
+
+	.tipo-atraccion-imagen img {
+    width: 100%;
+}
 
 
 }
