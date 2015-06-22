@@ -18,7 +18,12 @@ $imagen ="";
 
 
 		if (isset($items[$i]['field_image']['#items'][0]['uri'])){
-			$url = '/sites/default/files/slides/'.str_replace("public://slides/","",$items[$i]['field_image']['#items'][0]['uri']);
+			if ($items[$i]['field_image']['#view_mode']=='slider_movil'){
+				$url = '/sites/default/files/styles/slider_movil/public/slides/'.str_replace("public://slides/","",$items[$i]['field_image']['#items'][0]['uri']);
+			}else{
+				$url = '/sites/default/files/slides/'.str_replace("public://slides/","",$items[$i]['field_image']['#items'][0]['uri']);
+			}
+			
 			
 
 		}

@@ -1,7 +1,15 @@
 @media only screen and (max-width : 1000px) {
 	
-.above-content{
+/*.above-content{
 	display: none;
+}*/
+
+/* Agregado por Keylor Mora */
+
+/* Slider Home */
+
+.front .above-content{
+	min-height: 335px;
 }
 	
 }
