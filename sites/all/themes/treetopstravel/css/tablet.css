@@ -236,4 +236,7 @@
 	padding: 8px 0 0;
 }
 
+#block-custom-search-blocks-1 .search-form input[type="text"]{
+	width: 130px;
+}
 }
