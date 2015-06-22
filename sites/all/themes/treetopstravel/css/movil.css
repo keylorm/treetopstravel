@@ -1,4 +1,36 @@
 @media only screen and (max-width : 640px) {
+	header.header, div.main-content, footer.footerzone{
+		overflow: visible;
+	}
+	#block-system-main-menu{
+		height: 50px;
+	}
+	#top-header {
+	  height: 240px;
+	}
+	#block-custom-search-blocks-1{
+		display: none;
+	}	
+	#block-lang-dropdown-language{
+		padding-top: 0px;
+	}
+	#block-menu-menu-top-menu{
+		padding-top: 0px;
+	}
+	.logo-container{
+		float: none !important;
+		margin: 0 auto;
+		width: 260px;
+	}
+	#logo{
+		margin-left: 0px;
+	}
+	.tinynav-wrapper{
+	}
+	.tinynav-wrapper select{
+		height: 50px;
+		border: none;
+	}	
 	.footer-left{
 		width: 50%;
 		margin: 0 auto;
@@ -12,6 +44,10 @@
 		float: none;
 		clear:both;
 	}
+	.redes-top-header{
+		float: none;
+		margin: 0 auto;
+	}
 	.logo-footer-content{
 		float: none;
 		margin: 0px;
@@ -22,14 +58,13 @@
 	.footer-left .block, .contact-info-footer{
 		float:none;
 	}
+
+	/* Keylor */
 	.formulario-slider-home{
 		display: none;
 	}
-
-	/* Keylor */
-
 	.front .above-content {
-    min-height: 150px;
+    	min-height: 150px;
 	}
 
 	.flexslider .flex-caption{
