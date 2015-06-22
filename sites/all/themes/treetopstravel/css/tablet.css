@@ -3,6 +3,7 @@
 	.grid-1000, .main-content{
 		width: 100%;
 		max-width: 100%;
+		padding: 0 2%
 	}	
 	
 	#block-block-1{
@@ -118,6 +119,11 @@
 	.tours-oferta-desc {
 		display: none;
 	}
+
+	.front .listado-blog-sidebar.view-blog .views-row .group-left{
+	width: 32%;
+	overflow: hidden;
+}
 	
 
 
@@ -189,25 +195,45 @@
 	}
 
 
-	/*.front .listado-categorias-tours-atracciones .views-row.views-row-3, .front .listado-categorias-tours-atracciones .views-row.views-row-6, .front .listado-categorias-tours-atracciones .views-row.views-row-9, .front .listado-categorias-tours-atracciones .views-row.views-row-12, .front .listado-categorias-tours-atracciones .views-row.views-row-15, .front .listado-categorias-tours-atracciones .views-row.views-row-18, .front .listado-categorias-tours-atracciones .views-row.views-row-21, .front .listado-categorias-tours-atracciones .views-row.views-row-24, .front .listado-categorias-tours-atracciones .views-row.views-row-27, .front .listado-categorias-tours-atracciones .views-row.views-row-30{
+	.front .listado-categorias-tours-atracciones .views-row.views-row-3, .front .listado-categorias-tours-atracciones .views-row.views-row-6, .front .listado-categorias-tours-atracciones .views-row.views-row-9, .front .listado-categorias-tours-atracciones .views-row.views-row-12, .front .listado-categorias-tours-atracciones .views-row.views-row-15, .front .listado-categorias-tours-atracciones .views-row.views-row-18, .front .listado-categorias-tours-atracciones .views-row.views-row-21, .front .listado-categorias-tours-atracciones .views-row.views-row-24, .front .listado-categorias-tours-atracciones .views-row.views-row-27, .front .listado-categorias-tours-atracciones .views-row.views-row-30{
 		margin-left: 2%;
     margin-right: 2%;
     overflow: hidden;
-    width: 46%;
+    width: 175px;
 	}
 
 	.front .listado-categorias-tours-atracciones .views-row{
 		margin-left: 2%;
     margin-right: 2%;
     overflow: hidden;
-    width: 46%;
-	}*/
+    width: 175px;
+	}
 
 	
 
 .view-tipo-de-atraccion .view-content {
     margin: 0 auto;
     width: 382px;
+}
+
+.front .panels-flexible-region-home_layout-sidebar {
+    padding-left: 10px;
+}
+
+.tours-oferta-precio{
+	left: 10px;
+}
+
+.tours-oferta-vermas a{
+	right: 10px;
+}
+
+.front .pane-testimonios h2.pane-title{
+	font-size: 30px;
+}
+
+.front .pane-testimonios .jcarousel-skin-tango .jcarousel-container{
+	padding: 8px 0 0;
 }
 
 }

@@ -77,9 +77,70 @@
 	.above-content{
 		margin-top: 105px;
 	}
+
+	.front .panels-flexible-region-home_layout-contenido{
+		float: none;
+    width: 100%;
+
+	}
+
+	.front .panels-flexible-region-home_layout-sidebar{
+		clear: both;
+	    float: none;
+	    margin: 20px auto;
+	    width: 360px;
+	    padding-left: 0;
+	}
+
+	.panels-flexible-home_layout .panels-flexible-region-inside-last {
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+
+	.pane-tipo-de-atraccion .view-header h2.h2-verde{
+		text-align: center;
+	}
+
+	.listado-tours-recomedados h3{
+		text-align: center;
+	}
+
+	.front .pane-testimonios h2.pane-title{
+		font-size: 32px;
+	}
+
+	.front .pane-testimonios .jcarousel-skin-tango .jcarousel-container{
+		padding: 15px 50px 0;
+	}
+
+	.tours-oferta-desc {
+		display: block;
+	}
+	
+	.llamado-boton {
+    	float: right;
+	}
+
+	.llamado-boton a{
+		background-image: none;
+		font-size: 16px;
+	}
+	.llamado-texto{
+		width: 70%;
+	}
+
+	.llamado-texto p span{
+		font-size: 22px;
+	}
+
+
+	.llamado-texto p{
+		font-size: 18px;
+	}
+
 }
 
-@media only screen and (max-width : 359px) {
+@media only screen and (max-width : 400px) {
 	#top-header {
 		height: 270px;
 	}
@@ -97,6 +158,43 @@
 		clear: both;
 		width: 95px;
 		margin: 0 auto;	
+	}
+
+	.view-tipo-de-atraccion .view-content {
+    margin: 0 auto;
+    width: 300px;
+}
+
+	.front .listado-categorias-tours-atracciones .views-row {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 175px;
+}
+
+.front .listado-categorias-tours-atracciones .views-row.views-row-3, .front .listado-categorias-tours-atracciones .views-row.views-row-6, .front .listado-categorias-tours-atracciones .views-row.views-row-9, .front .listado-categorias-tours-atracciones .views-row.views-row-12, .front .listado-categorias-tours-atracciones .views-row.views-row-15, .front .listado-categorias-tours-atracciones .views-row.views-row-18, .front .listado-categorias-tours-atracciones .views-row.views-row-21, .front .listado-categorias-tours-atracciones .views-row.views-row-24, .front .listado-categorias-tours-atracciones .views-row.views-row-27, .front .listado-categorias-tours-atracciones .views-row.views-row-30 {
+   float: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 175px;
+}
+
+.front .panels-flexible-region-home_layout-contenido{
+		float: none;
+    width: 100%;
+
+	}
+
+	.front .panels-flexible-region-home_layout-sidebar{
+		
+		clear: both;
+    float: none;
+    margin: 20px auto;
+    width: 100%;
+    padding-left: 0;
+    max-width: 360px;
 	}
 
 }
