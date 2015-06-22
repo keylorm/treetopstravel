@@ -1,5 +1,27 @@
 @media only screen and (max-width : 640px) {
-		
+	.footer-left{
+		width: 50%;
+		margin: 0 auto;
+		float: none;
+		clear:both;
+		text-align:center;
+	}
+	.footer-right{
+		width: 50%;
+		margin: 0 auto;
+		float: none;
+		clear:both;
+	}
+	.logo-footer-content{
+		float: none;
+		margin: 0px;
+	}
+	.footer-left .block:first-child{
+		margin: 0px;
+	}
+	.footer-left .block, .contact-info-footer{
+		float:none;
+	}
 }
 
 @media only screen and (max-width : 359px) {
