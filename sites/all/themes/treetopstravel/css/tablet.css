@@ -12,4 +12,10 @@
 	min-height: 335px;
 }
 	
+.flexslider .flex-caption{
+	display: none;
+}
+
+
+
 }
