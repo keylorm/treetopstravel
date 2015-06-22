@@ -1,5 +1,19 @@
 @media only screen and (max-width : 640px) {
-		
+	.formulario-slider-home{
+		display: none;
+	}
+
+	.front .above-content {
+    min-height: 150px;
+	}
+
+	.flexslider .flex-caption{
+		display: none;
+	}
+
+	.container-nav{
+		top: 70%;
+	}
 }
 
 @media only screen and (max-width : 359px) {
