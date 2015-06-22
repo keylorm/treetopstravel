@@ -91,13 +91,17 @@
 	}
 	
 	.front .listado-categorias-tours-atracciones .views-row.views-row-3, .front .listado-categorias-tours-atracciones .views-row.views-row-6, .front .listado-categorias-tours-atracciones .views-row.views-row-9, .front .listado-categorias-tours-atracciones .views-row.views-row-12, .front .listado-categorias-tours-atracciones .views-row.views-row-15, .front .listado-categorias-tours-atracciones .views-row.views-row-18, .front .listado-categorias-tours-atracciones .views-row.views-row-21, .front .listado-categorias-tours-atracciones .views-row.views-row-24, .front .listado-categorias-tours-atracciones .views-row.views-row-27, .front .listado-categorias-tours-atracciones .views-row.views-row-30{
-		margin-left: 25px;
-		margin-right: 25px;
+		margin-left: 2%;
+    margin-right: 2%;
+    overflow: hidden;
+    width: 27%;
 	}
 
 	.front .listado-categorias-tours-atracciones .views-row{
-		margin-left: 25px;
-		margin-right: 25px;
+		margin-left: 2%;
+    margin-right: 2%;
+    overflow: hidden;
+    width: 27%;
 	}
 	
 	
@@ -172,6 +176,20 @@
 		margin-top: -51px;
 	}
 
+
+	.front .listado-categorias-tours-atracciones .views-row.views-row-3, .front .listado-categorias-tours-atracciones .views-row.views-row-6, .front .listado-categorias-tours-atracciones .views-row.views-row-9, .front .listado-categorias-tours-atracciones .views-row.views-row-12, .front .listado-categorias-tours-atracciones .views-row.views-row-15, .front .listado-categorias-tours-atracciones .views-row.views-row-18, .front .listado-categorias-tours-atracciones .views-row.views-row-21, .front .listado-categorias-tours-atracciones .views-row.views-row-24, .front .listado-categorias-tours-atracciones .views-row.views-row-27, .front .listado-categorias-tours-atracciones .views-row.views-row-30{
+		margin-left: 2%;
+    margin-right: 2%;
+    overflow: hidden;
+    width: 46%;
+	}
+
+	.front .listado-categorias-tours-atracciones .views-row{
+		margin-left: 2%;
+    margin-right: 2%;
+    overflow: hidden;
+    width: 46%;
+	}
 
 
 }
