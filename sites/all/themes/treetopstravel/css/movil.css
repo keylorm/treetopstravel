@@ -80,5 +80,23 @@
 }
 
 @media only screen and (max-width : 359px) {
+	#top-header {
+		height: 270px;
+	}
+	/*#block-block-1{
+		float: none !important;
+	}*/
+	#block-menu-menu-top-menu .menu{
+		float: none;
+	}
+	.form-item-lang-dropdown-select{
+		float: none !important;
+	}
+	#block-lang-dropdown-language{
+		float: none !important;
+		clear: both;
+		width: 95px;
+		margin: 0 auto;	
+	}
 
 }
