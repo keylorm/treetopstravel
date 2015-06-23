@@ -132,16 +132,25 @@
 
 @media only screen and (max-width : 800px) {
 	#top-header{
-		height: 100px;
+		height: 55px;
 	}
 	#block-custom-search-blocks-1{
 		float:right;
 	}
 	
-	.tinynav-wrapper{
-		width: 180px;
-  		margin: 0 auto;
+	.tinynav-wrapper {
+	    border: 0 none;
+	    float: right;
+	    height: 46px;
+	    margin: 22px 15px 22px 0;
+	    width: 300px;
 	}
+
+	.tinynav {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
 
 	.footer-zone .prefooter{
 		min-height: 30px;
@@ -238,5 +247,15 @@
 
 #block-custom-search-blocks-1 .search-form input[type="text"]{
 	width: 130px;
+}
+
+#block-custom-search-blocks-1{
+	display: none;
+}
+
+#block-system-main-menu{
+	background: none;
+	background-color: #9bb53b;
+
 }
 }
