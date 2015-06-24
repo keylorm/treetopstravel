@@ -58,6 +58,40 @@
 	.footer-left .block, .contact-info-footer{
 		float:none;
 	}
+	#top-header {
+		height: 270px;
+	}
+	#block-menu-menu-top-menu .menu{
+		float: none;
+	}
+	.form-item-lang-dropdown-select{
+		float: none !important;
+	}
+	#block-lang-dropdown-language{
+		float: none !important;
+		clear: both;
+		width: 95px;
+		margin: 0 auto;	
+	}
+	#block-menu-menu-top-menu {
+	  width: 235px;
+	  margin: 0 auto;
+	  float: none;
+	}	
+	#block-menu-menu-top-menu .menu li.menu-626 a,
+	#block-menu-menu-top-menu .menu li.menu-663 a{
+		width: 120px;
+	}
+	#block-menu-menu-top-menu .menu li.menu-664 a,
+	#block-menu-menu-top-menu .menu li.menu-665 a{
+		border: none;
+	}	
+	
+	
+	
+	
+	
+	
 
 	/* Keylor */
 	.formulario-slider-home{
@@ -76,27 +110,10 @@
 	}
 	.above-content{
 		margin-top: 105px;
-	}
+	}		
 }
 
 @media only screen and (max-width : 359px) {
-	#top-header {
-		height: 270px;
-	}
-	/*#block-block-1{
-		float: none !important;
-	}*/
-	#block-menu-menu-top-menu .menu{
-		float: none;
-	}
-	.form-item-lang-dropdown-select{
-		float: none !important;
-	}
-	#block-lang-dropdown-language{
-		float: none !important;
-		clear: both;
-		width: 95px;
-		margin: 0 auto;	
-	}
+
 
 }

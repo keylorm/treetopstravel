@@ -14,7 +14,8 @@
 	#block-menu-menu-top-menu .menu li a{
 		float: left;
 	}
-	#block-menu-menu-top-menu .menu li.menu-626 a{
+	#block-menu-menu-top-menu .menu li.menu-626 a,
+	#block-menu-menu-top-menu .menu li.menu-663 a{
 		width: 150px; line-height: 13px;
 	}
 	#block-system-main-menu .menu{
