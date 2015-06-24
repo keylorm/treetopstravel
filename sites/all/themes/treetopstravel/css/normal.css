@@ -6,4 +6,21 @@
 	.flexslider .slides img{
 		height: 622px;
 	}
+
+	/* Atracciones */
+
+	.imagen-top-box{
+		width: 100%;
+		overflow: hidden;
+		
+	}
+
+	ul.primary{
+		clear: both;
+	}
+
+	.front .pane-testimonios h2.pane-title{
+		text-align: left;
+	}
+	
 }
