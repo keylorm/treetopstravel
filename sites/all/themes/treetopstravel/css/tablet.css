@@ -1,4 +1,17 @@
 @media only screen and (max-width : 1000px) {
+    .node-type-blog .field-name-field-imagen img{
+		height: auto;
+	}
+	#block-views-blog-block-art-rel .view-blog .views-row .group-left{
+		width: 165px;
+	}
+	#block-views-blog-block-art-rel .view-blog .views-row .group-left .field-name-field-imagen{
+		width: 165px;
+	}
+	#block-views-blog-block-art-rel .view-blog .views-row .group-right{
+		width: 60%;
+		padding-left: 0px;
+	}
 	.view-blog .views-row{
 		height: auto;
 	}
@@ -641,6 +654,7 @@
 	}
     .page-node-3 .one-sidebar #sidebar-first, #sidebar-second{
 		width: 80%;
+		overflow:hidden;
 	}	
 
 	.one-sidebar .main{
