@@ -3,7 +3,7 @@
 		height: 622px;
 	}	
 
-	.flexslider .slides img{
+	.front .flexslider .slides img{
 		height: 622px;
 	}
 
@@ -23,4 +23,14 @@
 		text-align: left;
 	}
 	
+
+	.slider-interno .flexslider .flex-control-paging{
+		bottom: -215px;
+	}
+
+	.slider-interno .flexslider .flex-caption{
+		top: 155px;
+	}
+
+
 }

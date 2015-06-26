@@ -963,7 +963,7 @@ input[type="checkbox"]:checked + label span {
 	background-position: 99% 50%;	
 }
 .formulario-estilo-general .label-gris .datepicker{
-	max-width: 60% !important;
+	max-width: 58% !important;
 }
 .destinos-checkbox.webform-layout-box{
 	width: 100%;
@@ -1130,14 +1130,25 @@ appearance: none;
 .label-campos-personas .wrapper-campo-adultos{
 	width: 275px !important;
 	padding-right: 0px;
+	clear: none;
+	float: left;
 }
 .label-campos-personas .wrapper-campo-ninos{
 	width: 166px !important;
 	padding-right: 0px;
 	padding-left: 7px;
+	clear: none;
+	float: left;
 }
-.label-campos-personas .webform-component--cuantas-personas-van-a-viajar-con-usted--personas-fila-1--habitaciones{
-	width: 395px;
+.label-campos-personas .webform-component--cuantas-personas-van-a-viajar-con-usted--personas-fila-1--habitaciones,
+.label-campos-personas .webform-component--how-many-people-will-travel-with-you--row-people--number-of-rooms{
+	width: 400px;
+	clear: none;
+	float: left;
+}
+
+.form-viaje-a-su-medida  .label-campos-personas{
+	width: 100%;
 }
 
 
@@ -4238,3 +4249,7 @@ select::-ms-expand {
 
 
 
+.messages-wrapper {
+    clear: both;
+    margin: 35px auto;
+}

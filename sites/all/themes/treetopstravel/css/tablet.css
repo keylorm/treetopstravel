@@ -107,7 +107,7 @@
 		height: auto;
 	}	
 
-	.flexslider .slides img{
+	.front .flexslider .slides img{
 		height: auto;
 	}
 
@@ -331,7 +331,124 @@
 	.slider-interno .flexslider .flex-caption .flex-caption-inner{
 		margin: 0 auto;
 	}
+
+	.panels-flexible-tour_detail_layout .flexslider{
+		width: 100%;
+	}
+
+	.compartir-box{
+		width: 318px;
+		float: none;
+		margin: 0 auto 10px;
+	}
+
+	.boton-reservar-tour{
+		width: 160px;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.listado-tours-recomedados .views-row .views-field-field-imagenes-de-slider img{
+	width: auto;
 }
+
+.listado-tours-recomedados .views-row{
+	overflow: hidden;
+}
+
+.view-detalles-de-productos .gmap-control {
+	width: 100% !important;
+}
+
+.panels-flexible-tour_detail_layout .formulario-estilo-general .row-group div.wrapper-campo-adultos,
+	.panels-flexible-tour_detail_layout .formulario-estilo-general .row-group div.wrapper-campo-ninos,
+	.panels-flexible-tour_detail_layout .formulario-estilo-general .row-group div.wrapper-campo-menores-12{
+		width: 100% !important;
+	}
+
+	.panels-flexible-tour_detail_layout .formulario-estilo-general .row-group div.wrapper-campo-ninos{
+		padding-left: 113px !important;
+	}
+
+	.i18n-en .panels-flexible-tour_detail_layout .formulario-estilo-general .row-group div.wrapper-campo-ninos{
+	padding-left: 102px !important;
+}	
+
+.panels-flexible-tour_detail_layout .formulario-estilo-general .row-group div.wrapper-campo-menores-12{
+		padding-left: 153px !important;
+	}
+
+	.i18n-en .panels-flexible-tour_detail_layout .formulario-estilo-general .row-group div.wrapper-campo-menores-12{
+	padding-left: 142px !important;
+}	
+
+
+
+.formulario-estilo-general .titulo-fechas-reserva .row-group .form-item{
+ 	width: 100%;
+ 	padding: 0;
+ 	margin-bottom: 15px !important;
+
+}
+
+.front .pane-testimonios h2.pane-title{
+		font-size: 30px;
+	}
+
+
+/* Viaje a su medida */
+	.formulario-estilo-general .form-type-checkbox{
+		height: 60px;
+	}
+
+
+	.campo-fecha-paso2{
+		width: 50% !important;
+		margin-left: 0 !important;
+	}
+
+	.campo-fecha-paso2 input{
+		width: 90% !important;
+	}
+
+	.formulario-estilo-general .label-gris .datepicker{
+	max-width: 100% !important;
+}
+
+
+.destinos-checkbox .webform-component{
+	width: 50%;
+	margin-bottom: 30px;
+}
+
+.formulario-estilo-general .destinos-checkbox   .form-type-checkbox{
+	height: auto;
+}
+
+
+#edit-submitted-alojamiento .form-type-checkbox, #edit-submitted-accommodation .form-type-checkbox{
+	width: 33% !important;
+}
+
+#edit-submitted-condiciones-adicionales .form-type-checkbox, #edit-submitted-additional-conditions .form-type-checkbox, .webform-component--transporte .form-type-checkbox, .webform-component--transport .form-type-checkbox{
+	width: 33% !important;
+}
+
+.label-campos-personas .webform-component--cuantas-personas-van-a-viajar-con-usted--personas-fila-1--habitaciones,
+.label-campos-personas .webform-component--how-many-people-will-travel-with-you--row-people--number-of-rooms{
+	width: 400px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+}
+
+.listado-blog-sidebar.view-blog .views-row .group-right h3 a, #block-views-blog-block-art-rel .view-blog .views-row .group-right h3 a{
+	font-size: 17px;
+}
+	
+}
+
+
 
 
 @media only screen and (max-width : 800px) {
@@ -581,7 +698,62 @@
 		top: 20%;
 	}
 
+	.panels-flexible-tour_detail_layout .panels-flexible-region-first,
+	.panels-flexible-tour_detail_layout .panels-flexible-region{
+		width: 490px;
+		margin:  10px auto;
+		float: none;
+		padding: 0;
+	}
+
+	.compartir-box {
+  width: auto;
+  float: left;
+  margin: 0;
+}
+.boton-reservar-tour{
+	width: auto;
+	float: right;
+	margin: 0;
+}
+
+ .panels-flexible-tour_detail_layout .panels-flexible-region.grid-1-3{
+ 	width: 366px;
+ 	margin: 50px auto 30px;
+ 	float: none;
+ 	padding: 0;
+ }
+
+ .panels-flexible-tour_detail_layout .grid-1-3 .panels-flexible-region-inside-last{
+ 	padding: 0;
+ }
+
+ .panels-flexible-tour_detail_layout .grid-2-3  .panels-flexible-region-inside-first{
+	padding: 0;
+ }
+
+ .panels-flexible-tour_detail_layout .panels-flexible-region-inside{
+		padding: 0;
+}
+
+.panel-volver{
+	position: relative;
+	height: 30px;
+	margin: 20px auto;
+	top: 0;
+}
+
+/* Viaje a su medida */
 	
-	
+#edit-submitted-alojamiento .form-type-checkbox, #edit-submitted-accommodation .form-type-checkbox{
+	width: 50% !important;
+}
+
+#edit-submitted-condiciones-adicionales .form-type-checkbox, #edit-submitted-additional-conditions .form-type-checkbox, .webform-component--transporte .form-type-checkbox, .webform-component--transport .form-type-checkbox{
+	width: 50% !important;
+}
+
+
+
 
 }
