@@ -1,14 +1,18 @@
 @media only screen and (max-width : 640px) {
-	#block-views-blog-block-art-rel .view-blog .views-row .group-left{
+	#block-views-blog-block-art-rel .view-blog .views-row .group-left,
+	.front .listado-blog-sidebar.view-blog .views-row .group-left{
 		width: 140px;
 	}
-	#block-views-blog-block-art-rel .view-blog .views-row .group-left .field-name-field-imagen{
+	#block-views-blog-block-art-rel .view-blog .views-row .group-left .field-name-field-imagen,
+	.front .listado-blog-sidebar.view-blog .views-row .group-left .field-name-field-imagen{
 		width: 140px;
 	}
-	#block-views-blog-block-art-rel .view-blog .views-row{
+	#block-views-blog-block-art-rel .view-blog .views-row,
+	.listado-blog-sidebar.view-blog .views-row{
 		height: auto;
 	}
-	#block-views-blog-block-art-rel .view-blog .views-row .group-right .field-name-body{
+	#block-views-blog-block-art-rel .view-blog .views-row .group-right .field-name-body,
+	.listado-blog-sidebar.view-blog .views-row .group-right .field-name-body{
 		height: auto;
 		overflow: visible;
 	}
@@ -547,30 +551,70 @@
 	line-height: 44px;
 }
 
+
+.front .pane-testimonios .jcarousel-skin-tango .jcarousel-prev-horizontal,
+.front .pane-testimonios .jcarousel-skin-tango .jcarousel-next-horizontal{
+	top: -57px;
+}
+
+/*Hoteles y Tours*/
+
+
+.listado-hoteles-tours .views-row {
+    /*height: 230px;*/
+    margin: 0 6% 50px  !important;
+    overflow: hidden;
+    width: 38%;
+}
+
+#block-views-hoteles-y-tours-principal-block {
+    width: 100%;
+}
+
+.listado-hoteles-tours .views-row .tour-caption a{
+	font-size: 28px;
+}
+
+
 }
 
 @media only screen and (max-width : 400px) {
 	#block-block-14 div > span, #block-block-15 div > span{
 		margin-left: 0px;
 	}
-	#block-views-blog-block-art-rel .view-blog .views-row .group-left .field-name-field-imagen{
+	#block-views-blog-block-art-rel .view-blog .views-row .group-left .field-name-field-imagen,
+	.listado-blog-sidebar.view-blog .views-row .group-left .field-name-field-imagen,
+	.front .listado-blog-sidebar.view-blog .views-row .group-left .field-name-field-imagen{
 		background: none;
 	}
-	#block-views-blog-block-art-rel .view-blog .views-row .group-right{
+	#block-views-blog-block-art-rel .view-blog .views-row .group-right,
+	.listado-blog-sidebar.view-blog .views-row .group-right,
+	.front .listado-blog-sidebar.view-blog .views-row .group-right{
 		width: 100%;
 	}
-	#block-views-blog-block-art-rel .view-blog .views-row .group-right .field-name-node-link a{
+	#block-views-blog-block-art-rel .view-blog .views-row .group-right .field-name-node-link a,
+	.listado-blog-sidebar.view-blog .views-row .group-right .field-name-node-link a,
+	.front .listado-blog-sidebar.view-blog .views-row .group-right .field-name-node-link a{
 		float: none;
 		margin: 0 auto;
+		position: relative;
 	}
-	.view-blog .views-row{
+	.view-blog .views-row,
+	.listado-blog-sidebar.view-blog .views-row,
+	.front .listado-blog-sidebar.view-blog .views-row{
 		padding-bottom: 23px;
 	}
-	.view-blog .views-row .group-left{
+	.view-blog .views-row .group-left,
+	.listado-blog-sidebar.view-blog .views-row .group-left,
+	.front .listado-blog-sidebar.view-blog .views-row .group-left{
 		margin: 0 auto;
-		float: none;		
+		float: none;
+		background: none;		
 	}
-	.view-blog .views-row .group-right{
+
+	.view-blog .views-row .group-right,
+	.listado-blog-sidebar.view-blog .views-row .group-right,
+	.front .listado-blog-sidebar.view-blog .views-row .group-right{
 		width: 100%;
 		text-align: center;
 	}
@@ -936,6 +980,25 @@
 		  line-height: 60px;
 		  width: 60px;
 		  height: 60px;
+	}
+
+
+	/* Hoteles y Tours */
+
+	.listado-hoteles-tours .views-row {
+	   /* height: 230px;*/
+	    margin: 0 auto 40px  !important;
+	    overflow: hidden;
+	    float: none;
+	    width: 230px;
+	}
+
+	#block-views-hoteles-y-tours-principal-block {
+	    width: 100%;
+	}
+
+	.listado-hoteles-tours .views-row .tour-caption a{
+		font-size: 28px;
 	}
 
 

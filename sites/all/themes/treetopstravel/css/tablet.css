@@ -2,16 +2,23 @@
     .node-type-blog .field-name-field-imagen img{
 		height: auto;
 	}
-	#block-views-blog-block-art-rel .view-blog .views-row .group-left{
+	#block-views-blog-block-art-rel .view-blog .views-row .group-left,
+	.front .listado-blog-sidebar.view-blog .views-row .group-left {
 		width: 165px;
 	}
-	#block-views-blog-block-art-rel .view-blog .views-row .group-left .field-name-field-imagen{
+	#block-views-blog-block-art-rel .view-blog .views-row .group-left .field-name-field-imagen,
+	.front .listado-blog-sidebar.view-blog .views-row .group-left .field-name-field-imagen{
 		width: 165px;
 	}
-	#block-views-blog-block-art-rel .view-blog .views-row .group-right{
+	#block-views-blog-block-art-rel .view-blog .views-row .group-right,
+	.front .listado-blog-sidebar.view-blog .views-row  .group-right{
 		width: 60%;
 		padding-left: 0px;
 	}
+
+	 .listado-blog-sidebar.view-blog .views-row  .group-right{
+	 	padding-left: 0;
+	 }
 	.view-blog .views-row{
 		height: auto;
 	}
@@ -19,6 +26,11 @@
 		width: 170px;
 		margin-right: 10px;
 	}
+
+	.front .view-blog .views-row .group-left {
+		margin-right: 0;
+	}
+
 	.view-blog .views-row .group-left img{
 		width: 100%;
 		height: auto;
@@ -458,6 +470,18 @@
 .listado-blog-sidebar.view-blog .views-row .group-right h3 a, #block-views-blog-block-art-rel .view-blog .views-row .group-right h3 a{
 	font-size: 17px;
 }
+
+#block-views-hoteles-y-tours-principal-block{
+	width: 600px;
+}
+
+.listado-hoteles-tours .views-row{
+	width: 230px;
+	float: left;
+	/*height: 230px;*/
+	margin: 0 35px 50px !important;
+}
+
 	
 }
 
@@ -652,7 +676,7 @@
 		  padding-left: 0;
 		  padding-top: 0 !important;
 	}
-    .page-node-3 .one-sidebar #sidebar-first, #sidebar-second{
+    .page-node-3 .one-sidebar #sidebar-second{
 		width: 80%;
 		overflow:hidden;
 	}	
@@ -765,6 +789,12 @@
 
 #edit-submitted-condiciones-adicionales .form-type-checkbox, #edit-submitted-additional-conditions .form-type-checkbox, .webform-component--transporte .form-type-checkbox, .webform-component--transport .form-type-checkbox{
 	width: 50% !important;
+}
+
+
+.front .pane-testimonios .jcarousel-skin-tango .jcarousel-prev-horizontal,
+.front .pane-testimonios .jcarousel-skin-tango .jcarousel-next-horizontal{
+	top: -28px;
 }
 
 
