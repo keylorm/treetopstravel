@@ -104,7 +104,18 @@
 	.tinynav-wrapper select{
 		height: 50px;
 		border: none;
-	}	
+
+		background-color: transparent;
+    	color: #fff;
+	}
+
+	.tinynav-wrapper select option{
+		
+    	background-image: url('../images/bg_menu.png');
+    	background-repeat: repeat;
+	}		
+
+
 	.footer-left{
 		width: 200px;
 		margin: 0 auto;
@@ -149,7 +160,7 @@
 		top: 70%;
 	}
 	.above-content{
-		margin-top: 105px;
+		margin-top: 51px;
 	}
 
 	.front .panels-flexible-region-home_layout-contenido{

@@ -64,21 +64,12 @@ class i18nviews_plugin_localization_i18nstrings extends views_plugin_localizatio
    */
   function stringid($keys) {
 
-    /*Arreglo  hecho por Keylor Mora. Ver https://www.drupal.org/node/2464901*/
-
-    /*Esta es la linea original*/
-    /*return 'views:' . implode(':', $keys);*/
-
-
-    /*Este es el nuevo codigo*/
-
-    foreach($keys AS $key => $value) {
-        if(is_array($value)) 
-        { 
-                    $keys[ $key ] = implode(':', $value); 
-        }
+    foreach ($keys as $key => $value) {
+      if (is_array($value)) {
+        $keys[$key] = implode(':', $value);
+      }
     }
-             
+
     return 'views:' . implode(':', $keys);
   }
 }
